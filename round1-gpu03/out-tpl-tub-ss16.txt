@@ -1,0 +1,57 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/tpl-tub-ss16.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 1 NAME tpl-tub-ss16
+At line 2 ROWS
+At line 901876 COLUMNS
+At line 5041684 RHS
+At line 5839001 BOUNDS
+At line 6434068 ENDATA
+Problem tpl-tub-ss16 has 901872 rows, 595066 columns and 3687098 elements
+Coin0008I tpl-tub-ss16 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 150344 - 6148.28 seconds
+Cgl0002I 3799 variables fixed
+Cgl0011I 7673 variables made integer
+Cgl0003I 34 fixed, 0 tightened bounds, 34122 strengthened rows, 276 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1047 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 2826 strengthened rows, 2 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 2291 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 2208 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 2090 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1998 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1921 strengthened rows, 2 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1825 strengthened rows, 2 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1685 strengthened rows, 0 substitutions
+Cgl0004I processed model has 222161 rows, 587742 columns (587742 integer (584938 of which binary)) and 2062253 elements
+Coin3009W Conflict graph built in 13.372 seconds, density: 0.005%
+Cgl0015I Clique Strengthening extended 621 cliques, 1377 were dominated
+After applying Clique Strengthening continuous objective value is 150376
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 2721 integers unsatisfied sum - 853.883
+Cbc0038I Pass   1: (11329.49 seconds) suminf.  121.10180 (707) obj. 304529 iterations 73405
+Cbc0038I No solution found this major pass
+Cbc0038I After 11329.58 seconds - Feasibility pump exiting - took 619.20 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 150376.14), took 0 iterations and 0 nodes (11331.71 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 150376 to 150376
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    150376
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             11311.3
+Time (Wallclock seconds):       11391.9
+Total time (CPU seconds):       11328.8   (Wallclock seconds):       11446

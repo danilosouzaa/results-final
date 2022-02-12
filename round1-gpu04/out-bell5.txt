@@ -1,0 +1,133 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/bell5.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 15 NAME          BELL5
+At line 16 ROWS
+At line 109 COLUMNS
+At line 308 RHS
+At line 325 BOUNDS
+At line 384 ENDATA
+Problem BELL5 has 91 rows, 104 columns and 266 elements
+Coin0008I BELL5 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 8.60842e+06 - 0.003738 seconds
+Cgl0003I 5 fixed, 2 tightened bounds, 0 strengthened rows, 0 substitutions
+Cgl0004I processed model has 75 rows, 94 columns (52 integer (24 of which binary)) and 217 elements
+Coin3009W Conflict graph built in 0.000 seconds, density: 0.163%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0038I Initial state - 22 integers unsatisfied sum - 4.16352
+Cbc0038I Pass   1: suminf.    2.39613 (10) obj. 8.99929e+06 iterations 9
+Cbc0038I Solution found of 8.99929e+06
+Cbc0038I Branch and bound needed to clear up 10 general integers
+Cbc0038I Full problem 75 rows 94 columns, reduced to 56 rows 61 columns
+Cbc0038I Cleaned solution of 9.03315e+06
+Cbc0038I Before mini branch and bound, 28 integers at bound fixed and 18 continuous of which 1 were internal integer and 0 internal continuous
+Cbc0038I Full problem 75 rows 94 columns, reduced to 28 rows 31 columns
+Cbc0038I Mini branch and bound did not improve solution (0.23 seconds)
+Cbc0038I Round again with cutoff of 9.02069e+06
+Cbc0038I Pass   2: suminf.    2.39613 (10) obj. 8.99929e+06 iterations 0
+Cbc0038I Solution found of 8.99929e+06
+Cbc0038I Branch and bound needed to clear up 10 general integers
+Cbc0038I Full problem 76 rows 94 columns, reduced to 57 rows 61 columns
+Cbc0038I Mini branch and bound could not fix general integers
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 28 integers at bound fixed and 18 continuous of which 1 were internal integer and 0 internal continuous
+Cbc0038I Full problem 75 rows 94 columns, reduced to 28 rows 31 columns
+Cbc0038I Mini branch and bound did not improve solution (0.43 seconds)
+Cbc0038I After 0.43 seconds - Feasibility pump exiting with objective of 9.03315e+06 - took 0.42 seconds
+Cbc0012I Integer solution of 9033155 found by feasibility pump after 0 iterations and 0 nodes (0.43 seconds)
+Cbc0012I Integer solution of 9014738 found by DiveCoefficient after 0 iterations and 0 nodes (0.44 seconds)
+Cbc0038I Full problem 75 rows 94 columns, reduced to 46 rows 54 columns
+Cbc0012I Integer solution of 9004522.7 found by RINS after 0 iterations and 0 nodes (0.55 seconds)
+Cbc0031I 18 added rows had average density of 25.444444
+Cbc0013I At root node, 18 cuts changed objective from 8908552.5 to 8939955.7 in 100 passes
+Cbc0014I Cut generator 0 (Probing) - 44 row cuts average 2.0 elements, 2 column cuts (2 active)  in 0.125 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 993 row cuts average 35.0 elements, 0 column cuts (0 active)  in 0.107 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.058 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.008 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.004 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (MixedIntegerRounding2) - 57 row cuts average 2.2 elements, 0 column cuts (0 active)  in 0.044 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.037 seconds - new frequency is -100
+Cbc0014I Cut generator 7 (TwoMirCuts) - 90 row cuts average 15.4 elements, 0 column cuts (0 active)  in 0.016 seconds - new frequency is -100
+Cbc0010I After 0 nodes, 1 on tree, 9004522.7 best solution, best possible 8939955.7 (1.33 seconds)
+Cbc0004I Integer solution of 8998530.8 found after 1860 iterations and 20 nodes (1.50 seconds)
+Cbc0004I Integer solution of 8997876 found after 1883 iterations and 31 nodes (1.52 seconds)
+Cbc0004I Integer solution of 8997221.1 found after 1918 iterations and 42 nodes (1.53 seconds)
+Cbc0004I Integer solution of 8997139.1 found after 2194 iterations and 76 nodes (1.63 seconds)
+Cbc0004I Integer solution of 8997105.2 found after 2247 iterations and 103 nodes (1.65 seconds)
+Cbc0004I Integer solution of 8995230 found after 2363 iterations and 113 nodes (1.69 seconds)
+Cbc0004I Integer solution of 8995166.3 found after 2394 iterations and 129 nodes (1.70 seconds)
+Cbc0010I After 495 nodes, 30 on tree, 8995166.3 best solution, best possible 8939955.7 (2.03 seconds)
+Cbc0016I Integer solution of 8995038.7 found by strong branching after 2849 iterations and 524 nodes (2.44 seconds)
+Cbc0016I Integer solution of 8994511.5 found by strong branching after 2849 iterations and 528 nodes (2.57 seconds)
+Cbc0010I After 535 nodes, 18 on tree, 8994511.5 best solution, best possible 8939955.7 (2.79 seconds)
+Cbc0010I After 550 nodes, 17 on tree, 8994511.5 best solution, best possible 8939955.7 (3.77 seconds)
+Cbc0016I Integer solution of 8994326.2 found by strong branching after 2881 iterations and 552 nodes (4.34 seconds)
+Cbc0016I Integer solution of 8994262.5 found by strong branching after 2882 iterations and 553 nodes (4.36 seconds)
+Cbc0010I After 557 nodes, 16 on tree, 8994262.5 best solution, best possible 8939955.7 (4.66 seconds)
+Cbc0016I Integer solution of 8993735.3 found by strong branching after 2889 iterations and 559 nodes (4.68 seconds)
+Cbc0010I After 570 nodes, 6 on tree, 8993735.3 best solution, best possible 8939955.7 (5.36 seconds)
+Cbc0016I Integer solution of 8988466.7 found by strong branching after 3054 iterations and 580 nodes (5.41 seconds)
+Cbc0010I After 618 nodes, 8 on tree, 8988466.7 best solution, best possible 8939955.7 (6.11 seconds)
+Cbc0010I After 632 nodes, 6 on tree, 8988466.7 best solution, best possible 8939955.7 (6.82 seconds)
+Cbc0010I After 656 nodes, 9 on tree, 8988466.7 best solution, best possible 8939955.7 (7.81 seconds)
+Cbc0010I After 685 nodes, 8 on tree, 8988466.7 best solution, best possible 8939955.7 (8.51 seconds)
+Cbc0010I After 783 nodes, 7 on tree, 8988466.7 best solution, best possible 8939955.7 (9.22 seconds)
+Cbc0010I After 818 nodes, 6 on tree, 8988466.7 best solution, best possible 8939955.7 (9.93 seconds)
+Cbc0016I Integer solution of 8988318.2 found by strong branching after 4200 iterations and 862 nodes (10.42 seconds)
+Cbc0016I Integer solution of 8988254.5 found by strong branching after 4200 iterations and 863 nodes (10.42 seconds)
+Cbc0016I Integer solution of 8987463.8 found by strong branching after 4253 iterations and 883 nodes (10.78 seconds)
+Cbc0010I After 883 nodes, 8 on tree, 8987463.8 best solution, best possible 8939955.7 (10.78 seconds)
+Cbc0010I After 949 nodes, 7 on tree, 8987463.8 best solution, best possible 8939955.7 (11.48 seconds)
+Cbc0016I Integer solution of 8986936.6 found by strong branching after 4567 iterations and 1023 nodes (12.19 seconds)
+Cbc0010I After 1023 nodes, 5 on tree, 8986936.6 best solution, best possible 8939955.7 (12.19 seconds)
+Cbc0012I Integer solution of 8984838.5 found by DiveCoefficient after 4904 iterations and 1084 nodes (12.64 seconds)
+Cbc0016I Integer solution of 8978133 found by strong branching after 5210 iterations and 1095 nodes (13.24 seconds)
+Cbc0010I After 1095 nodes, 10 on tree, 8978133 best solution, best possible 8947498.7 (13.24 seconds)
+Cbc0016I Integer solution of 8978125.7 found by strong branching after 5210 iterations and 1096 nodes (13.33 seconds)
+Cbc0016I Integer solution of 8977875.3 found by strong branching after 5211 iterations and 1098 nodes (13.46 seconds)
+Cbc0016I Integer solution of 8977470.9 found by strong branching after 5212 iterations and 1099 nodes (13.56 seconds)
+Cbc0010I After 1122 nodes, 9 on tree, 8977470.9 best solution, best possible 8947498.7 (14.16 seconds)
+Cbc0016I Integer solution of 8976943.7 found by strong branching after 5332 iterations and 1157 nodes (14.49 seconds)
+Cbc0010I After 1194 nodes, 6 on tree, 8976943.7 best solution, best possible 8947498.7 (14.86 seconds)
+Cbc0010I After 1258 nodes, 6 on tree, 8976943.7 best solution, best possible 8947498.7 (15.57 seconds)
+Cbc0016I Integer solution of 8972754.2 found by strong branching after 5838 iterations and 1289 nodes (17.21 seconds)
+Cbc0010I After 1289 nodes, 9 on tree, 8972754.2 best solution, best possible 8947498.7 (17.21 seconds)
+Cbc0016I Integer solution of 8972564 found by strong branching after 5883 iterations and 1293 nodes (17.30 seconds)
+Cbc0010I After 1316 nodes, 15 on tree, 8972564 best solution, best possible 8947498.7 (17.91 seconds)
+Cbc0016I Integer solution of 8972227 found by strong branching after 6015 iterations and 1325 nodes (18.12 seconds)
+Cbc0016I Integer solution of 8972036.8 found by strong branching after 6015 iterations and 1330 nodes (18.44 seconds)
+Cbc0010I After 1337 nodes, 9 on tree, 8972036.8 best solution, best possible 8947498.7 (18.62 seconds)
+Cbc0016I Integer solution of 8971675.1 found by strong branching after 6331 iterations and 1434 nodes (19.03 seconds)
+Cbc0010I After 1550 nodes, 1 on tree, 8971675.1 best solution, best possible 8956661.7 (19.33 seconds)
+Cbc0016I Integer solution of 8966940.9 found by strong branching after 6996 iterations and 1572 nodes (19.42 seconds)
+Cbc0016I Integer solution of 8966933.7 found by strong branching after 6997 iterations and 1573 nodes (19.43 seconds)
+Cbc0010I After 1648 nodes, 7 on tree, 8966933.7 best solution, best possible 8956661.7 (20.03 seconds)
+Cbc0016I Integer solution of 8966775.4 found by strong branching after 8068 iterations and 1841 nodes (20.68 seconds)
+Cbc0010I After 1859 nodes, 7 on tree, 8966775.4 best solution, best possible 8956661.7 (20.73 seconds)
+Cbc0016I Integer solution of 8966768.2 found by strong branching after 8158 iterations and 1876 nodes (20.77 seconds)
+Cbc0016I Integer solution of 8966413.7 found by strong branching after 8366 iterations and 1982 nodes (21.12 seconds)
+Cbc0016I Integer solution of 8966406.5 found by strong branching after 8368 iterations and 1983 nodes (21.12 seconds)
+Cbc0010I After 2143 nodes, 6 on tree, 8966406.5 best solution, best possible 8962629.6 (21.44 seconds)
+Cbc0001I Search completed - best objective 8966406.491519999, took 196291 iterations and 142228 nodes (21.57 seconds)
+Cbc0032I Strong branching done 6024 times (11849 iterations), fathomed 113 nodes and fixed 339 variables
+Cbc0041I Maximum depth 26, 1008 variables fixed on reduced cost (complete fathoming 643 times, 140016 nodes taking 187044 iterations)
+Cuts at root node changed objective from 8.90855e+06 to 8.93996e+06
+Probing was tried 100 times and created 46 cuts of which 0 were active after adding rounds of cuts (0.124783 seconds)
+Gomory was tried 1312 times and created 3298 cuts of which 0 were active after adding rounds of cuts (0.39039 seconds)
+Knapsack was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.058039 seconds)
+Clique was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.007754 seconds)
+OddWheel was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.003879 seconds)
+MixedIntegerRounding2 was tried 100 times and created 57 cuts of which 0 were active after adding rounds of cuts (0.043847 seconds)
+FlowCover was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.037022 seconds)
+TwoMirCuts was tried 100 times and created 90 cuts of which 0 were active after adding rounds of cuts (0.015701 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000516 seconds)
+
+Result - Optimal solution found
+Objective value:                8966406.49152
+Enumerated nodes:               142228
+Total iterations:               196291
+Time (CPU seconds):             21.3843
+Time (Wallclock seconds):       21.5804
+Total time (CPU seconds):       21.3867   (Wallclock seconds):       21.6089

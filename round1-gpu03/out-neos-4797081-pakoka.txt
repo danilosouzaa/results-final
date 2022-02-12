@@ -1,0 +1,61 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/neos-4797081-pakoka.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 7 NAME          neos-4797081-pakoka
+At line 8 ROWS
+At line 7157 COLUMNS
+At line 241560 RHS
+At line 245135 BOUNDS
+At line 257529 ENDATA
+Problem neos-4797081-pakoka has 7147 rows, 12393 columns and 456124 elements
+Coin0008I neos-4797081-pakoka read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0 - 3063.46 seconds
+Cgl0008I 1655 inequality constraints converted to equality constraints
+Cgl0004I processed model has 5792 rows, 12717 columns (12717 integer (11585 of which binary)) and 725525 elements
+Coin3009W Conflict graph built in 0.069 seconds, density: 0.014%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I No integer variables out of 12717 objects (12717 integer) have costs
+Cbc0045I branch on satisfied N create fake objective Y random cost Y
+Cbc0038I Initial state - 2156 integers unsatisfied sum - 545.914
+Cbc0038I Pass   1: (3510.01 seconds) suminf.  229.06569 (949) obj. 0 iterations 16871
+Cbc0038I Pass   2: (3524.81 seconds) suminf.  186.63772 (861) obj. 0 iterations 3859
+Cbc0038I Pass   3: (3529.15 seconds) suminf.  175.50049 (843) obj. 0 iterations 1364
+Cbc0038I Pass   4: (3540.08 seconds) suminf.  129.12421 (778) obj. 0 iterations 3026
+Cbc0038I Pass   5: (3544.48 seconds) suminf.  109.99451 (798) obj. 0 iterations 1151
+Cbc0038I Pass   6: (3548.17 seconds) suminf.  104.06909 (730) obj. 0 iterations 1095
+Cbc0038I Pass   7: (3553.14 seconds) suminf.   98.27708 (656) obj. 0 iterations 1351
+Cbc0038I Pass   8: (3569.76 seconds) suminf.  111.10307 (648) obj. 0 iterations 4204
+Cbc0038I Pass   9: (3580.30 seconds) suminf.   82.31704 (706) obj. 0 iterations 3074
+Cbc0038I Pass  10: (3648.92 seconds) suminf.   52.99506 (263) obj. 0 iterations 9880
+Cbc0038I Pass  11: (3726.02 seconds) suminf.   33.17172 (154) obj. 0 iterations 10495
+Cbc0038I Pass  12: (3734.45 seconds) suminf.   27.18421 (150) obj. 0 iterations 1178
+Cbc0038I Pass  13: (3758.31 seconds) suminf.   15.00000 (59) obj. 0 iterations 3075
+Cbc0038I Pass  14: (3765.03 seconds) suminf.    0.00000 (0) obj. 0 iterations 819
+Cbc0038I Solution found of 0
+Cbc0038I Cleaned solution of 0
+Cbc0038I Before mini branch and bound, 8584 integers at bound fixed and 1217 continuous of which 79 were internal integer and 0 internal continuous
+Cbc0038I Mini branch and bound did not improve solution (3835.30 seconds)
+Cbc0038I After 3877.03 seconds - Feasibility pump exiting with objective of 0 - took 790.05 seconds
+Cbc0012I Integer solution of 0 found by feasibility pump after 0 iterations and 0 nodes (3877.08 seconds)
+Cbc0001I Search completed - best objective 0, took 0 iterations and 0 nodes (3878.86 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 0 to 0
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                0
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             3886.07
+Time (Wallclock seconds):       3895.54
+Total time (CPU seconds):       3886.56   (Wallclock seconds):       3896.04

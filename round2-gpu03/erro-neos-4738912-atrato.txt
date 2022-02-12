@@ -1,0 +1,58 @@
+cbc: /home/danilo/versao2022/Clp/src/ClpNonLinearCost.cpp:1087: void ClpNonLinearCost::checkInfeasibilities(double): Assertion `lowerValue <= upperValue' failed.
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/home/danilo/Exec2022/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x169) [0x7fd7bb63fbf2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3efd0) [0x7fd7ba44cfd0]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fd7ba44cf47]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fd7ba44e8b1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3042a) [0x7fd7ba43e42a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x304a2) [0x7fd7ba43e4a2]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN16ClpNonLinearCost20checkInfeasibilitiesEd+0x209b) [0x7fd7b97d0bff]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN10ClpSimplex14gutsOfSolutionEPdPKdb+0x37b) [0x7fd7b986a91b]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN16ClpSimplexPrimal23statusOfProblemInPrimalERiiP18ClpSimplexProgressbiP10ClpSimplex+0xbf5) [0x7fd7b990b27b]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN16ClpSimplexPrimal6primalEii+0x888) [0x7fd7b9909256]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN10ClpSimplex4dualEii+0x4c4) [0x7fd7b9883810]
+/home/danilo/Exec2022/lib/libOsiClp.so.0(_ZN21OsiClpSolverInterface6crunchEv+0x1000) [0x7fd7bb2196a8]
+/home/danilo/Exec2022/lib/libOsiClp.so.0(_ZN21OsiClpSolverInterface7resolveEv+0x1687) [0x7fd7bb1f6f4d]
+/home/danilo/Exec2022/lib/libCbc.so.0(_ZN16CbcHeuristicDive8solutionERdRiS1_PP9OsiRowCutRPP13CbcSubProblemPd+0x20d6) [0x7fd7bb56f8e6]
+/home/danilo/Exec2022/lib/libCbc.so.0(_ZN16CbcHeuristicDive8solutionERdPd+0x13a) [0x7fd7bb570ffc]
+/home/danilo/Exec2022/lib/libCbc.so.0(_ZN8CbcModel9doOneNodeEPS_RP7CbcNodeS3_+0x3846) [0x7fd7bb60050e]
+/home/danilo/Exec2022/lib/libCbc.so.0(_ZN8CbcModel14branchAndBoundEi+0xe7fc) [0x7fd7bb5ce9c8]
+/home/danilo/Exec2022/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x21736) [0x7fd7bb665194]
+./cbc(+0x4d1a) [0x55ac2c053d1a]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fd7ba42fb97]
+./cbc(+0x487a) [0x55ac2c05387a]
+
+
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/home/danilo/Exec2022/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x169) [0x7fd7bb63fbf2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3efd0) [0x7fd7ba44cfd0]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fd7ba44cf47]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fd7ba44e8b1]
+/home/danilo/Exec2022/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x25f) [0x7fd7bb63fce8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3efd0) [0x7fd7ba44cfd0]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fd7ba44cf47]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fd7ba44e8b1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3042a) [0x7fd7ba43e42a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x304a2) [0x7fd7ba43e4a2]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN16ClpNonLinearCost20checkInfeasibilitiesEd+0x209b) [0x7fd7b97d0bff]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN10ClpSimplex14gutsOfSolutionEPdPKdb+0x37b) [0x7fd7b986a91b]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN16ClpSimplexPrimal23statusOfProblemInPrimalERiiP18ClpSimplexProgressbiP10ClpSimplex+0xbf5) [0x7fd7b990b27b]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN16ClpSimplexPrimal6primalEii+0x888) [0x7fd7b9909256]
+/home/danilo/Exec2022/lib/libClp.so.0(_ZN10ClpSimplex4dualEii+0x4c4) [0x7fd7b9883810]
+/home/danilo/Exec2022/lib/libOsiClp.so.0(_ZN21OsiClpSolverInterface6crunchEv+0x1000) [0x7fd7bb2196a8]
+/home/danilo/Exec2022/lib/libOsiClp.so.0(_ZN21OsiClpSolverInterface7resolveEv+0x1687) [0x7fd7bb1f6f4d]
+/home/danilo/Exec2022/lib/libCbc.so.0(_ZN16CbcHeuristicDive8solutionERdRiS1_PP9OsiRowCutRPP13CbcSubProblemPd+0x20d6) [0x7fd7bb56f8e6]
+/home/danilo/Exec2022/lib/libCbc.so.0(_ZN16CbcHeuristicDive8solutionERdPd+0x13a) [0x7fd7bb570ffc]
+/home/danilo/Exec2022/lib/libCbc.so.0(_ZN8CbcModel9doOneNodeEPS_RP7CbcNodeS3_+0x3846) [0x7fd7bb60050e]
+/home/danilo/Exec2022/lib/libCbc.so.0(_ZN8CbcModel14branchAndBoundEi+0xe7fc) [0x7fd7bb5ce9c8]
+/home/danilo/Exec2022/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x21736) [0x7fd7bb665194]
+./cbc(+0x4d1a) [0x55ac2c053d1a]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fd7ba42fb97]
+./cbc(+0x487a) [0x55ac2c05387a]
+
+
+timeout: the monitored command dumped core

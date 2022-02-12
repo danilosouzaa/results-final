@@ -1,0 +1,52 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/square37.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 2 NAME          square37
+At line 3 ROWS
+At line 33155 COLUMNS
+At line 9558114 RHS
+At line 9559519 BOUNDS
+At line 9608840 ENDATA
+Problem square37 has 33150 rows, 49320 columns and 9475672 elements
+Coin0008I square37 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 8.66667 - 1278.3 seconds
+Cgl0002I 31710 variables fixed
+Cgl0004I processed model has 1440 rows, 17610 columns (17610 integer (17574 of which binary)) and 2658568 elements
+Coin3009W Conflict graph built in 731.874 seconds, density: 8.729%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 111 integers unsatisfied sum - 15
+Cbc0038I Pass   1: suminf.   15.00000 (111) obj. 8.66667 iterations 717
+Cbc0038I Pass   2: suminf.   14.75559 (1007) obj. 9.87843 iterations 47121
+Cbc0038I Pass   3: suminf.   14.06954 (920) obj. 9.33502 iterations 43608
+Cbc0038I Pass   4: suminf.   14.58946 (224) obj. 9.87305 iterations 35123
+Cbc0038I Pass   5: suminf.   17.53727 (1196) obj. 13.439 iterations 44350
+Cbc0038I Pass   6: suminf.   14.21649 (636) obj. 9.68677 iterations 40780
+Cbc0038I Pass   7: suminf.   14.22786 (638) obj. 10.0407 iterations 18687
+Cbc0038I Pass   8: suminf.   15.00000 (76) obj. 16.75 iterations 35679
+Cbc0038I No solution found this major pass
+Cbc0038I After 11118.42 seconds - Feasibility pump exiting - took 9004.13 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 8.6666667), took 0 iterations and 0 nodes (11119.11 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 8.66667 to 8.66667
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    8.66667
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             11110.8
+Time (Wallclock seconds):       11119.1
+Total time (CPU seconds):       11121.8   (Wallclock seconds):       11130.3

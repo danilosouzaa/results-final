@@ -1,0 +1,51 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/neos-948268.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 1 NAME          file
+At line 2 ROWS
+At line 4777 COLUMNS
+At line 34968 RHS
+At line 35970 BOUNDS
+At line 43521 ENDATA
+Problem file has 4773 rows, 7550 columns and 26410 elements
+Coin0008I file read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 60 - 1.72987 seconds
+Cgl0004I processed model has 4773 rows, 7545 columns (7545 integer (7544 of which binary)) and 26405 elements
+Coin3009W Conflict graph built in 0.071 seconds, density: 0.094%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 858 integers unsatisfied sum - 167.642
+Cbc0038I Pass   1: (7.61 seconds) suminf.   65.38750 (307) obj. 60 iterations 4073
+Cbc0038I Pass   2: (9.84 seconds) suminf.   54.16515 (364) obj. 60 iterations 2049
+Cbc0038I Pass   3: (13.00 seconds) suminf.   45.50000 (114) obj. 60 iterations 2766
+Cbc0038I Pass   4: (15.54 seconds) suminf.   35.68000 (224) obj. 60 iterations 2200
+Cbc0038I Pass   5: (21.13 seconds) suminf.   23.00000 (46) obj. 60 iterations 4257
+Cbc0038I Pass   6: (22.21 seconds) suminf.    0.00000 (0) obj. 60 iterations 680
+Cbc0038I Solution found of 60
+Cbc0038I Cleaned solution of 60
+Cbc0038I Before mini branch and bound, 6391 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (22.25 seconds)
+Cbc0038I After 22.25 seconds - Feasibility pump exiting with objective of 60 - took 18.43 seconds
+Cbc0012I Integer solution of 60 found by feasibility pump after 0 iterations and 0 nodes (22.26 seconds)
+Cbc0001I Search completed - best objective 60, took 0 iterations and 0 nodes (22.30 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 60 to 60
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                60
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             22.3524
+Time (Wallclock seconds):       22.3991
+Total time (CPU seconds):       22.3981   (Wallclock seconds):       22.4754

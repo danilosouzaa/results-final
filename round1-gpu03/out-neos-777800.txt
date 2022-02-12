@@ -1,0 +1,49 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/neos-777800.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 2 NAME        queens_8
+At line 3 ROWS
+At line 484 COLUMNS
+At line 38887 RHS
+At line 39367 BOUNDS
+At line 52168 ENDATA
+Problem queens_8 has 479 rows, 6400 columns and 32000 elements
+Coin0008I queens_8 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -80 - 1.92813 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 6 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 2 strengthened rows, 0 substitutions
+Cgl0004I processed model has 475 rows, 6400 columns (6400 integer (6400 of which binary)) and 32004 elements
+Coin3009W Conflict graph built in 0.595 seconds, density: 1.034%
+Cgl0015I Clique Strengthening extended 7 cliques, 7 were dominated
+After applying Clique Strengthening continuous objective value is -80
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 220 integers unsatisfied sum - 52.3908
+Cbc0038I Pass   1: suminf.   16.50000 (54) obj. -80 iterations 2255
+Cbc0038I Pass   2: suminf.    0.00000 (0) obj. -80 iterations 1477
+Cbc0038I Solution found of -80
+Cbc0038I Before mini branch and bound, 6129 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (7.29 seconds)
+Cbc0038I After 7.29 seconds - Feasibility pump exiting with objective of -80 - took 1.77 seconds
+Cbc0012I Integer solution of -80 found by feasibility pump after 0 iterations and 0 nodes (7.30 seconds)
+Cbc0001I Search completed - best objective -80, took 0 iterations and 0 nodes (7.33 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -80 to -80
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                -80
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             7.37505
+Time (Wallclock seconds):       7.4553
+Total time (CPU seconds):       7.43109   (Wallclock seconds):       7.54526

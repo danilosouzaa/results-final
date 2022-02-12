@@ -1,0 +1,55 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/fhnw-schedule-pairb400.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 1 NAME fhnw-schedule-pairb400
+At line 2 ROWS
+At line 399100 COLUMNS
+At line 1596601 RHS
+At line 1836002 BOUNDS
+At line 1996707 ENDATA
+Problem fhnw-schedule-pairb400 has 399096 rows, 160400 columns and 1197096 elements
+Coin0008I fhnw-schedule-pairb400 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -146.941 - 113.21 seconds
+Cgl0002I 33840 variables fixed
+Cgl0003I 3782 fixed, 0 tightened bounds, 55 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 5707 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 24523 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 16974 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 21264 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 15191 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 10376 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 8969 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 7405 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 6879 strengthened rows, 0 substitutions
+Cgl0004I processed model has 212036 rows, 82085 columns (81781 integer (81781 of which binary)) and 737702 elements
+Coin3009W Conflict graph built in 0.191 seconds, density: 0.001%
+Cgl0015I Clique Strengthening extended 1882 cliques, 4338 were dominated
+After applying Clique Strengthening continuous objective value is -111.024
+Cbc0038I Initial state - 19943 integers unsatisfied sum - 3062.42
+Cbc0038I Pass   1: (11106.76 seconds) suminf. 1161.03618 (34277) obj. -109.902 iterations 201058
+Cbc0038I No solution found this major pass
+Cbc0038I After 11106.80 seconds - Feasibility pump exiting - took 6747.63 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible -111.02417), took 0 iterations and 0 nodes (11107.77 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -111.024 to -111.024
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    -111.024
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             11070.6
+Time (Wallclock seconds):       11107.8
+Total time (CPU seconds):       11072.8   (Wallclock seconds):       11110.1

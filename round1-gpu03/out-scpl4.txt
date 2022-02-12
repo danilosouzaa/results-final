@@ -1,0 +1,62 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/scpl4.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 2 NAME          scpl4
+At line 3 ROWS
+At line 2005 COLUMNS
+At line 2202008 RHS
+At line 2204009 BOUNDS
+At line 2404010 ENDATA
+Problem scpl4 has 2000 rows, 200000 columns and 2000000 elements
+Coin0008I scpl4 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 211.742 - 12.8716 seconds
+Cgl0004I processed model has 2000 rows, 200000 columns (200000 integer (200000 of which binary)) and 2000000 elements
+Coin3009W Conflict graph built in 0.521 seconds, density: 0.000%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 1149 integers unsatisfied sum - 199.805
+Cbc0038I Pass   1: suminf.  102.02185 (1662) obj. 5128.4 iterations 45068
+Cbc0038I Pass   2: suminf.   96.78920 (1481) obj. 5260.41 iterations 15683
+Cbc0038I Pass   3: suminf.   84.69840 (1078) obj. 5870.27 iterations 20869
+Cbc0038I Pass   4: suminf.   72.64588 (788) obj. 6311.32 iterations 12095
+Cbc0038I Pass   5: suminf.   61.83959 (563) obj. 6785.28 iterations 6038
+Cbc0038I Pass   6: suminf.   45.34971 (319) obj. 7211.45 iterations 4697
+Cbc0038I Pass   7: suminf.   43.79233 (300) obj. 7248.1 iterations 553
+Cbc0038I Pass   8: suminf.   41.56553 (279) obj. 7245.66 iterations 724
+Cbc0038I Pass   9: suminf.   39.89807 (263) obj. 7282.77 iterations 429
+Cbc0038I Pass  10: suminf.   37.56454 (238) obj. 7414.13 iterations 741
+Cbc0038I Pass  11: suminf.   35.25785 (215) obj. 7451.55 iterations 856
+Cbc0038I Pass  12: suminf.   34.54550 (207) obj. 7500.7 iterations 359
+Cbc0038I Pass  13: suminf.   33.77443 (201) obj. 7573.43 iterations 585
+Cbc0038I Pass  14: suminf.   31.77070 (188) obj. 7550.75 iterations 1392
+Cbc0038I Pass  15: suminf.   27.31002 (148) obj. 7643.81 iterations 20971
+Cbc0038I Pass  16: suminf.   24.21228 (481) obj. 7675.44 iterations 62404
+Cbc0038I Pass  17: suminf.   20.02243 (95) obj. 7702.72 iterations 77821
+Cbc0038I Rounding solution of 8332 is better than previous of 1e+50
+Cbc0038I After 11272.60 seconds - Feasibility pump exiting with objective of 8332 - took 11217.56 seconds
+Cbc0012I Integer solution of 8332 found by feasibility pump after 0 iterations and 0 nodes (11292.72 seconds)
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 8332 (best possible 211.74223), took 0 iterations and 0 nodes (11319.90 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 211.742 to 211.742
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+Objective value:                8332
+Lower bound:                    211.742
+Gap:                            38.3497
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             11250.2
+Time (Wallclock seconds):       11357.9
+Total time (CPU seconds):       11253.2   (Wallclock seconds):       11361.2

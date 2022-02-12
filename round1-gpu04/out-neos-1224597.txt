@@ -1,0 +1,63 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/neos-1224597.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 1 NAME          file
+At line 2 ROWS
+At line 3280 COLUMNS
+At line 31768 RHS
+At line 34575 RANGES
+At line 34786 BOUNDS
+At line 38182 ENDATA
+Problem file has 3276 rows, 3395 columns and 25090 elements
+Coin0008I file read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -428 - 0.276446 seconds
+Cgl0003I 15 fixed, 7 tightened bounds, 1280 strengthened rows, 840 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 724 strengthened rows, 50 substitutions
+Cgl0003I 0 fixed, 1 tightened bounds, 1189 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1003 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 869 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 796 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 796 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 796 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 792 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 747 strengthened rows, 0 substitutions
+Cgl0004I processed model has 2655 rows, 2620 columns (2620 integer (2393 of which binary)) and 29905 elements
+Coin3009W Conflict graph built in 0.023 seconds, density: 0.231%
+Cgl0015I Clique Strengthening extended 96 cliques, 748 were dominated
+After applying Clique Strengthening continuous objective value is -428
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 128 integers unsatisfied sum - 41.6638
+Cbc0038I Pass   1: suminf.   17.35714 (50) obj. -427.5 iterations 588
+Cbc0038I Pass   2: suminf.    9.92857 (32) obj. -427 iterations 142
+Cbc0038I Pass   3: suminf.    9.92857 (32) obj. -427 iterations 19
+Cbc0038I Pass   4: suminf.    9.51071 (32) obj. -427 iterations 191
+Cbc0038I Pass   5: suminf.    0.00000 (0) obj. -427 iterations 101
+Cbc0038I Solution found of -427
+Cbc0038I Cleaned solution of -427
+Cbc0038I Rounding solution of -428 is better than previous of -427
+Cbc0038I Before mini branch and bound, 2445 integers at bound fixed and 0 continuous of which 23 were internal integer and 0 internal continuous
+Cbc0038I Mini branch and bound did not improve solution (6.81 seconds)
+Cbc0038I After 6.81 seconds - Feasibility pump exiting with objective of -428 - took 0.32 seconds
+Cbc0012I Integer solution of -428 found by feasibility pump after 0 iterations and 0 nodes (6.81 seconds)
+Cbc0001I Search completed - best objective -428, took 0 iterations and 0 nodes (6.82 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -428 to -428
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                -428
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             6.88495
+Time (Wallclock seconds):       6.98414
+Total time (CPU seconds):       6.92327   (Wallclock seconds):       7.04861

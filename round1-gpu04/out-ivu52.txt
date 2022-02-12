@@ -1,0 +1,44 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/ivu52.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 1 NAME          ivu52
+At line 2 ROWS
+At line 2122 COLUMNS
+At line 2607347 RHS
+At line 2609464 BOUNDS
+At line 2609465 ENDATA
+Problem ivu52 has 2116 rows, 157591 columns and 2179476 elements
+Coin0008I ivu52 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 480.25 - 2007.21 seconds
+Cgl0004I processed model has 2116 rows, 157543 columns (157543 integer (157543 of which binary)) and 2178871 elements
+Coin3009W Conflict graph built in 146.534 seconds, density: 0.537%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0038I Initial state - 359 integers unsatisfied sum - 82.0358
+Cbc0038I Pass   1: suminf.   26.72172 (11378) obj. 483.772 iterations 153509
+Cbc0038I Pass   2: suminf.   16.90268 (8985) obj. 496.899 iterations 116912
+Cbc0038I No solution found this major pass
+Cbc0038I After 11852.47 seconds - Feasibility pump exiting - took 9681.59 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 480.25044), took 0 iterations and 0 nodes (11853.04 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 480.25 to 480.25
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    480.25
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             11848.6
+Time (Wallclock seconds):       11853
+Total time (CPU seconds):       11851.3   (Wallclock seconds):       11855.8

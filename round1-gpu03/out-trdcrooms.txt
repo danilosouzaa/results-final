@@ -1,0 +1,56 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/trdcrooms.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 2 NAME          courseRooms.lp
+At line 3 ROWS
+At line 338310 COLUMNS
+At line 1523366 RHS
+At line 1528462 BOUNDS
+At line 1703378 ENDATA
+Problem courseRooms.lp has 338305 rows, 174915 columns and 1176743 elements
+Coin0008I courseRooms.lp read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 6.20426e+08 - 1148.14 seconds
+Cgl0003I 0 fixed, 3006 tightened bounds, 840 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 260 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 55 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1 strengthened rows, 0 substitutions
+Cgl0004I processed model has 338009 rows, 173828 columns (173828 integer (3525 of which binary)) and 1175789 elements
+Coin3009W Conflict graph built in 0.159 seconds, density: 0.000%
+Cgl0015I Clique Strengthening extended 197 cliques, 756 were dominated
+After applying Clique Strengthening continuous objective value is 6.20488e+08
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0031I 13068 added rows had average density of 90.93442
+Cbc0013I At root node, 13068 cuts changed objective from 6.2048755e+08 to 6.5508939e+08 in 2 passes
+Cbc0014I Cut generator 0 (Probing) - 356 row cuts average 59.1 elements, 0 column cuts (0 active)  in 31.265 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 8101 row cuts average 86.3 elements, 0 column cuts (0 active)  in 522.437 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.793 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.013 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.030 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (MixedIntegerRounding2) - 3875 row cuts average 65.8 elements, 0 column cuts (0 active)  in 17.522 seconds - new frequency is 1
+Cbc0014I Cut generator 6 (FlowCover) - 67 row cuts average 5.2 elements, 0 column cuts (0 active)  in 0.404 seconds - new frequency is -100
+Cbc0014I Cut generator 7 (TwoMirCuts) - 10499 row cuts average 70.8 elements, 0 column cuts (0 active)  in 812.475 seconds - new frequency is 1
+Cbc0014I Cut generator 8 (ZeroHalf) - 3891 row cuts average 122.4 elements, 0 column cuts (0 active)  in 1522.394 seconds - new frequency is 1
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 6.5508939e+08), took 495242 iterations and 0 nodes (11999.31 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 6.20488e+08 to 6.55089e+08
+Probing was tried 2 times and created 356 cuts of which 0 were active after adding rounds of cuts (31.2653 seconds)
+Gomory was tried 2 times and created 8101 cuts of which 0 were active after adding rounds of cuts (522.437 seconds)
+Knapsack was tried 2 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.793079 seconds)
+Clique was tried 2 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.012787 seconds)
+OddWheel was tried 2 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.03015 seconds)
+MixedIntegerRounding2 was tried 2 times and created 3875 cuts of which 0 were active after adding rounds of cuts (17.5218 seconds)
+FlowCover was tried 2 times and created 67 cuts of which 0 were active after adding rounds of cuts (0.404255 seconds)
+TwoMirCuts was tried 2 times and created 10499 cuts of which 0 were active after adding rounds of cuts (812.475 seconds)
+ZeroHalf was tried 2 times and created 3891 cuts of which 0 were active after adding rounds of cuts (1522.39 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    6.55089e+08
+Enumerated nodes:               0
+Total iterations:               495242
+Time (CPU seconds):             11749.8
+Time (Wallclock seconds):       12003.1
+Total time (CPU seconds):       11754.8   (Wallclock seconds):       12011.8

@@ -1,0 +1,59 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/opm2-z12-s8.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 2 NAME          opm2-z12-s8
+At line 3 ROWS
+At line 319513 COLUMNS
+At line 1055617 RHS
+At line 1055626 BOUNDS
+At line 1066427 ENDATA
+Problem opm2-z12-s8 has 319508 rows, 10800 columns and 725377 elements
+Coin0008I opm2-z12-s8 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -85456.2 - 1411.26 seconds
+Cgl0004I processed model has 300349 rows, 10409 columns (10409 integer (10409 of which binary)) and 683931 elements
+Coin3009W Conflict graph built in 0.206 seconds, density: 0.143%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 9990 integers unsatisfied sum - 1771.1
+Cbc0038I Solution found of -1914
+Cbc0038I Before mini branch and bound, 419 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 300349 rows 10409 columns, reduced to 279818 rows 9990 columns - 2 fixed gives 279720, 9988 - still too large
+Cbc0038I Mini branch and bound did not improve solution (1443.89 seconds)
+Cbc0038I Round again with cutoff of -10269.1
+Cbc0038I Pass   1: (4655.69 seconds) suminf.  173.00249 (9974) obj. -10269.1 iterations 61810
+Cbc0038I No solution found this major pass
+Cbc0038I After 4655.71 seconds - Feasibility pump exiting with objective of -1914 - took 3210.83 seconds
+Cbc0012I Integer solution of -1914 found by feasibility pump after 0 iterations and 0 nodes (4655.99 seconds)
+Cbc0013I At root node, 0 cuts changed objective from -85456.21 to -85456.21 in 1 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 10.257 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 84.709 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.724 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 60.490 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 548.756 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 1.203 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.036 seconds - new frequency is -100
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective -1914 (best possible -85456.21), took 0 iterations and 0 nodes (11161.52 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -85456.2 to -85456.2
+Probing was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (10.2565 seconds)
+Gomory was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (84.7088 seconds)
+Knapsack was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.723953 seconds)
+Clique was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (60.4898 seconds)
+OddWheel was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (548.756 seconds)
+MixedIntegerRounding2 was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (1.20299 seconds)
+FlowCover was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.03575 seconds)
+TwoMirCuts was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (185.185 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (4392.3 seconds)
+
+Result - Stopped on time limit
+Objective value:                -1914
+Lower bound:                    -85456.2
+Gap:                            0.977603
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             11353.8
+Time (Wallclock seconds):       11367
+Total time (CPU seconds):       11355.2   (Wallclock seconds):       11368.5

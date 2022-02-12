@@ -1,0 +1,60 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/neos-785914.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 1 NAME          file
+At line 2 ROWS
+At line 1594 COLUMNS
+At line 18027 RHS
+At line 18358 BOUNDS
+At line 19619 ENDATA
+Problem file has 1590 rows, 1260 columns and 15290 elements
+Coin0008I file read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 38 - 0.335106 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 1170 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 325 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 110 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 80 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 20 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 20 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 10 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 5 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 5 strengthened rows, 0 substitutions
+Cgl0004I processed model has 860 rows, 1230 columns (1230 integer (1230 of which binary)) and 14245 elements
+Coin3009W Conflict graph built in 0.027 seconds, density: 1.393%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 171 integers unsatisfied sum - 38.2801
+Cbc0038I Pass   1: suminf.   20.67964 (117) obj. 38 iterations 603
+Cbc0038I Pass   2: suminf.   18.11796 (151) obj. 38 iterations 402
+Cbc0038I Pass   3: suminf.   17.60404 (130) obj. 38 iterations 245
+Cbc0038I Pass   4: suminf.   10.80833 (45) obj. 38 iterations 405
+Cbc0038I Pass   5: suminf.    6.54167 (20) obj. 38 iterations 78
+Cbc0038I Pass   6: suminf.    4.87500 (15) obj. 38 iterations 19
+Cbc0038I Pass   7: suminf.    0.00000 (0) obj. 38 iterations 126
+Cbc0038I Solution found of 38
+Cbc0038I Before mini branch and bound, 910 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (3.10 seconds)
+Cbc0038I After 3.10 seconds - Feasibility pump exiting with objective of 38 - took 0.51 seconds
+Cbc0012I Integer solution of 38 found by feasibility pump after 0 iterations and 0 nodes (3.10 seconds)
+Cbc0001I Search completed - best objective 38, took 0 iterations and 0 nodes (3.11 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 38 to 38
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                38
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             3.17773
+Time (Wallclock seconds):       3.20892
+Total time (CPU seconds):       3.19694   (Wallclock seconds):       3.24659

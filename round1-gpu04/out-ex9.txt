@@ -1,0 +1,72 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Feb  6 2022
+command line - -import /home/danilo/cbc-test-set/ex9.mps.gz -timeM elapsed -seconds 10800 -solve -quit (default strategy 1)
+At line 1 NAME           ex9
+At line 2 ROWS
+At line 40966 COLUMNS
+At line 568485 RHS
+At line 609448 BOUNDS
+At line 630257 ENDATA
+Problem ex9 has 40962 rows, 10404 columns and 517112 elements
+Coin0008I ex9 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 81 - 32.0185 seconds
+Cgl0002I 1256 variables fixed
+Cgl0003I 16 fixed, 0 tightened bounds, 348 strengthened rows, 136 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 851 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 730 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 431 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 299 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 417 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 176 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 55 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 37 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 14 strengthened rows, 0 substitutions
+Cgl0004I processed model has 33273 rows, 8464 columns (8464 integer (8464 of which binary)) and 399672 elements
+Coin3009W Conflict graph built in 0.937 seconds, density: 0.949%
+Cgl0015I Clique Strengthening extended 144 cliques, 1111 were dominated
+After applying Clique Strengthening continuous objective value is 81
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 1906 integers unsatisfied sum - 75.4289
+Cbc0038I Pass   1: (2930.15 seconds) suminf.   74.97293 (1768) obj. 81 iterations 52875
+Cbc0038I Pass   2: (3163.22 seconds) suminf.   73.92620 (1670) obj. 81 iterations 23180
+Cbc0038I Pass   3: (3390.80 seconds) suminf.   72.12522 (1650) obj. 81 iterations 22194
+Cbc0038I Pass   4: (3872.61 seconds) suminf.   65.94758 (1632) obj. 81 iterations 44226
+Cbc0038I Pass   5: (4311.46 seconds) suminf.   62.96499 (1729) obj. 81 iterations 38277
+Cbc0038I Pass   6: (4623.07 seconds) suminf.   62.18611 (1750) obj. 81 iterations 27030
+Cbc0038I Pass   7: (5198.10 seconds) suminf.   62.12508 (1718) obj. 81 iterations 47843
+Cbc0038I Pass   8: (5630.11 seconds) suminf.   61.00104 (1715) obj. 81 iterations 34824
+Cbc0038I Pass   9: (6968.63 seconds) suminf.   61.35823 (1647) obj. 81 iterations 109040
+Cbc0038I Pass  10: (7494.07 seconds) suminf.   59.81853 (1709) obj. 81 iterations 42815
+Cbc0038I Pass  11: (8424.97 seconds) suminf.   61.84043 (1623) obj. 81 iterations 76953
+Cbc0038I Pass  12: (9016.36 seconds) suminf.   59.51995 (1640) obj. 81 iterations 45707
+Cbc0038I Pass  13: (9237.10 seconds) suminf.   59.32176 (1627) obj. 81 iterations 16318
+Cbc0038I Pass  14: (9822.69 seconds) suminf.   61.51801 (1703) obj. 81 iterations 47115
+Cbc0038I Pass  15: (10351.74 seconds) suminf.   59.99921 (1656) obj. 81 iterations 44859
+Cbc0038I Pass  16: (10503.42 seconds) suminf.   59.89276 (1654) obj. 81 iterations 12832
+Cbc0038I Pass  17: (11099.68 seconds) suminf.   61.13193 (1631) obj. 81 iterations 47720
+Cbc0038I No solution found this major pass
+Cbc0038I After 11099.68 seconds - Feasibility pump exiting - took 8713.14 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 81), took 0 iterations and 0 nodes (11099.88 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 81 to 81
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    81
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             11095.4
+Time (Wallclock seconds):       11099.9
+Total time (CPU seconds):       11096.1   (Wallclock seconds):       11100.6
