@@ -1,0 +1,1373 @@
+SCIP version 8.0.0 [precision: 8 byte] [memory: block] [mode: optimized] [LP solver: SoPlex 6.0.0] [GitHash: a740f0891e]
+Copyright (C) 2002-2021 Konrad-Zuse-Zentrum fuer Informationstechnik Berlin (ZIB)
+
+read problem </home/danilo/cbc-test-set/ex1010-pi.mps.gz> ...
+
+original problem has 25200 variables (25200 bin, 0 int, 0 impl, 0 cont) and 1468 constraints
+solve problem ...
+
+presolving:
+   Deactivated symmetry handling methods, since SCIP was built without symmetry detector (SYM=none).
+presolving (0 rounds: 0 fast, 0 medium, 0 exhaustive):
+ 0 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 25200 variables (25200 bin, 0 int, 0 impl, 0 cont) and 1468 constraints
+   1468 constraints of type <linear>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 0.01
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+ 11.5s|     1 |     0 | 19835 |     - |    88M |   0 |  25k|1468 |1468 |   0 |  0 |   0 |   0 | 2.206701e+02 |      --      |    Inf | unknown
+*24.7s|     1 |     0 | 19835 |     - |strongbr|   0 |  25k|1468 |1468 |   0 |  1 |   0 |  17 | 2.206701e+02 | 1.055000e+03 | 378.09%| unknown
+ 33.3s|     1 |     2 | 19843 |     - |   114M |   0 |  25k|1468 |1468 |   0 |  1 |   0 |  29 | 2.207516e+02 | 1.055000e+03 | 377.91%| unknown
+
+SCIP Status        : solving was interrupted [node limit reached]
+Solving Time (sec) : 33.27
+Solving Nodes      : 1
+Primal Bound       : +1.05500000000000e+03 (1 solutions)
+Dual Bound         : +2.20751585337891e+02
+Gap                : 377.91 %
+primal solution:
+objective value:                                 1055
+x12                                                 1 	(obj:1)
+x15                                                 1 	(obj:1)
+x38                                                 1 	(obj:1)
+x71                                                 1 	(obj:1)
+x86                                                 1 	(obj:1)
+x127                                                1 	(obj:1)
+x137                                                1 	(obj:1)
+x152                                                1 	(obj:1)
+x165                                                1 	(obj:1)
+x171                                                1 	(obj:1)
+x179                                                1 	(obj:1)
+x212                                                1 	(obj:1)
+x226                                                1 	(obj:1)
+x244                                                1 	(obj:1)
+x249                                                1 	(obj:1)
+x255                                                1 	(obj:1)
+x265                                                1 	(obj:1)
+x281                                                1 	(obj:1)
+x312                                                1 	(obj:1)
+x317                                                1 	(obj:1)
+x346                                                1 	(obj:1)
+x352                                                1 	(obj:1)
+x371                                                1 	(obj:1)
+x384                                                1 	(obj:1)
+x395                                                1 	(obj:1)
+x400                                                1 	(obj:1)
+x419                                                1 	(obj:1)
+x422                                                1 	(obj:1)
+x441                                                1 	(obj:1)
+x460                                                1 	(obj:1)
+x489                                                1 	(obj:1)
+x493                                                1 	(obj:1)
+x495                                                1 	(obj:1)
+x496                                                1 	(obj:1)
+x502                                                1 	(obj:1)
+x549                                                1 	(obj:1)
+x555                                                1 	(obj:1)
+x576                                                1 	(obj:1)
+x591                                                1 	(obj:1)
+x611                                                1 	(obj:1)
+x630                                                1 	(obj:1)
+x676                                                1 	(obj:1)
+x689                                                1 	(obj:1)
+x716                                                1 	(obj:1)
+x730                                                1 	(obj:1)
+x743                                                1 	(obj:1)
+x770                                                1 	(obj:1)
+x776                                                1 	(obj:1)
+x801                                                1 	(obj:1)
+x809                                                1 	(obj:1)
+x814                                                1 	(obj:1)
+x846                                                1 	(obj:1)
+x888                                                1 	(obj:1)
+x891                                                1 	(obj:1)
+x902                                                1 	(obj:1)
+x913                                                1 	(obj:1)
+x960                                                1 	(obj:1)
+x964                                                1 	(obj:1)
+x976                                                1 	(obj:1)
+x979                                                1 	(obj:1)
+x984                                                1 	(obj:1)
+x1026                                               1 	(obj:1)
+x1059                                               1 	(obj:1)
+x1067                                               1 	(obj:1)
+x1072                                               1 	(obj:1)
+x1086                                               1 	(obj:1)
+x1108                                               1 	(obj:1)
+x1132                                               1 	(obj:1)
+x1149                                               1 	(obj:1)
+x1156                                               1 	(obj:1)
+x1201                                               1 	(obj:1)
+x1204                                               1 	(obj:1)
+x1211                                               1 	(obj:1)
+x1232                                               1 	(obj:1)
+x1276                                               1 	(obj:1)
+x1280                                               1 	(obj:1)
+x1286                                               1 	(obj:1)
+x1293                                               1 	(obj:1)
+x1296                                               1 	(obj:1)
+x1302                                               1 	(obj:1)
+x1314                                               1 	(obj:1)
+x1327                                               1 	(obj:1)
+x1355                                               1 	(obj:1)
+x1381                                               1 	(obj:1)
+x1418                                               1 	(obj:1)
+x1436                                               1 	(obj:1)
+x1438                                               1 	(obj:1)
+x1446                                               1 	(obj:1)
+x1452                                               1 	(obj:1)
+x1454                                               1 	(obj:1)
+x1486                                               1 	(obj:1)
+x1530                                               1 	(obj:1)
+x1539                                               1 	(obj:1)
+x1555                                               1 	(obj:1)
+x1562                                               1 	(obj:1)
+x1564                                               1 	(obj:1)
+x1569                                               1 	(obj:1)
+x1590                                               1 	(obj:1)
+x1611                                               1 	(obj:1)
+x1646                                               1 	(obj:1)
+x1648                                               1 	(obj:1)
+x1673                                               1 	(obj:1)
+x1755                                               1 	(obj:1)
+x1870                                               1 	(obj:1)
+x1981                                               1 	(obj:1)
+x1990                                               1 	(obj:1)
+x2003                                               1 	(obj:1)
+x2004                                               1 	(obj:1)
+x2007                                               1 	(obj:1)
+x2075                                               1 	(obj:1)
+x2081                                               1 	(obj:1)
+x2112                                               1 	(obj:1)
+x2120                                               1 	(obj:1)
+x2121                                               1 	(obj:1)
+x2130                                               1 	(obj:1)
+x2137                                               1 	(obj:1)
+x2186                                               1 	(obj:1)
+x2206                                               1 	(obj:1)
+x2220                                               1 	(obj:1)
+x2269                                               1 	(obj:1)
+x2299                                               1 	(obj:1)
+x2301                                               1 	(obj:1)
+x2312                                               1 	(obj:1)
+x2337                                               1 	(obj:1)
+x2349                                               1 	(obj:1)
+x2352                                               1 	(obj:1)
+x2358                                               1 	(obj:1)
+x2407                                               1 	(obj:1)
+x2418                                               1 	(obj:1)
+x2430                                               1 	(obj:1)
+x2489                                               1 	(obj:1)
+x2499                                               1 	(obj:1)
+x2512                                               1 	(obj:1)
+x2536                                               1 	(obj:1)
+x2546                                               1 	(obj:1)
+x2560                                               1 	(obj:1)
+x2575                                               1 	(obj:1)
+x2593                                               1 	(obj:1)
+x2658                                               1 	(obj:1)
+x2660                                               1 	(obj:1)
+x2706                                               1 	(obj:1)
+x2711                                               1 	(obj:1)
+x2722                                               1 	(obj:1)
+x2725                                               1 	(obj:1)
+x2758                                               1 	(obj:1)
+x2759                                               1 	(obj:1)
+x2764                                               1 	(obj:1)
+x2768                                               1 	(obj:1)
+x2772                                               1 	(obj:1)
+x2780                                               1 	(obj:1)
+x2784                                               1 	(obj:1)
+x2785                                               1 	(obj:1)
+x2788                                               1 	(obj:1)
+x2790                                               1 	(obj:1)
+x2819                                               1 	(obj:1)
+x2828                                               1 	(obj:1)
+x2844                                               1 	(obj:1)
+x2846                                               1 	(obj:1)
+x2866                                               1 	(obj:1)
+x2954                                               1 	(obj:1)
+x2966                                               1 	(obj:1)
+x2988                                               1 	(obj:1)
+x2997                                               1 	(obj:1)
+x2998                                               1 	(obj:1)
+x3002                                               1 	(obj:1)
+x3007                                               1 	(obj:1)
+x3011                                               1 	(obj:1)
+x3013                                               1 	(obj:1)
+x3030                                               1 	(obj:1)
+x3058                                               1 	(obj:1)
+x3090                                               1 	(obj:1)
+x3173                                               1 	(obj:1)
+x3178                                               1 	(obj:1)
+x3232                                               1 	(obj:1)
+x3255                                               1 	(obj:1)
+x3264                                               1 	(obj:1)
+x3294                                               1 	(obj:1)
+x3335                                               1 	(obj:1)
+x3344                                               1 	(obj:1)
+x3361                                               1 	(obj:1)
+x3373                                               1 	(obj:1)
+x3391                                               1 	(obj:1)
+x3442                                               1 	(obj:1)
+x3463                                               1 	(obj:1)
+x3474                                               1 	(obj:1)
+x3477                                               1 	(obj:1)
+x3480                                               1 	(obj:1)
+x3483                                               1 	(obj:1)
+x3523                                               1 	(obj:1)
+x3554                                               1 	(obj:1)
+x3555                                               1 	(obj:1)
+x3580                                               1 	(obj:1)
+x3581                                               1 	(obj:1)
+x3582                                               1 	(obj:1)
+x3587                                               1 	(obj:1)
+x3596                                               1 	(obj:1)
+x3621                                               1 	(obj:1)
+x3636                                               1 	(obj:1)
+x3710                                               1 	(obj:1)
+x3733                                               1 	(obj:1)
+x3756                                               1 	(obj:1)
+x3795                                               1 	(obj:1)
+x3809                                               1 	(obj:1)
+x3823                                               1 	(obj:1)
+x3835                                               1 	(obj:1)
+x3843                                               1 	(obj:1)
+x3855                                               1 	(obj:1)
+x3856                                               1 	(obj:1)
+x3863                                               1 	(obj:1)
+x3909                                               1 	(obj:1)
+x3913                                               1 	(obj:1)
+x3929                                               1 	(obj:1)
+x3936                                               1 	(obj:1)
+x3941                                               1 	(obj:1)
+x3978                                               1 	(obj:1)
+x3983                                               1 	(obj:1)
+x4013                                               1 	(obj:1)
+x4024                                               1 	(obj:1)
+x4040                                               1 	(obj:1)
+x4046                                               1 	(obj:1)
+x4051                                               1 	(obj:1)
+x4052                                               1 	(obj:1)
+x4061                                               1 	(obj:1)
+x4229                                               1 	(obj:1)
+x4253                                               1 	(obj:1)
+x4265                                               1 	(obj:1)
+x4270                                               1 	(obj:1)
+x4371                                               1 	(obj:1)
+x4372                                               1 	(obj:1)
+x4437                                               1 	(obj:1)
+x4476                                               1 	(obj:1)
+x4517                                               1 	(obj:1)
+x4580                                               1 	(obj:1)
+x4611                                               1 	(obj:1)
+x4630                                               1 	(obj:1)
+x4692                                               1 	(obj:1)
+x4736                                               1 	(obj:1)
+x4740                                               1 	(obj:1)
+x4747                                               1 	(obj:1)
+x4757                                               1 	(obj:1)
+x4761                                               1 	(obj:1)
+x4775                                               1 	(obj:1)
+x4880                                               1 	(obj:1)
+x4956                                               1 	(obj:1)
+x5007                                               1 	(obj:1)
+x5054                                               1 	(obj:1)
+x5056                                               1 	(obj:1)
+x5067                                               1 	(obj:1)
+x5074                                               1 	(obj:1)
+x5076                                               1 	(obj:1)
+x5079                                               1 	(obj:1)
+x5094                                               1 	(obj:1)
+x5153                                               1 	(obj:1)
+x5173                                               1 	(obj:1)
+x5200                                               1 	(obj:1)
+x5235                                               1 	(obj:1)
+x5240                                               1 	(obj:1)
+x5254                                               1 	(obj:1)
+x5266                                               1 	(obj:1)
+x5288                                               1 	(obj:1)
+x5313                                               1 	(obj:1)
+x5372                                               1 	(obj:1)
+x5389                                               1 	(obj:1)
+x5437                                               1 	(obj:1)
+x5470                                               1 	(obj:1)
+x5474                                               1 	(obj:1)
+x5636                                               1 	(obj:1)
+x5638                                               1 	(obj:1)
+x5655                                               1 	(obj:1)
+x5661                                               1 	(obj:1)
+x5696                                               1 	(obj:1)
+x5726                                               1 	(obj:1)
+x5748                                               1 	(obj:1)
+x5752                                               1 	(obj:1)
+x5772                                               1 	(obj:1)
+x5774                                               1 	(obj:1)
+x5838                                               1 	(obj:1)
+x5863                                               1 	(obj:1)
+x5890                                               1 	(obj:1)
+x5995                                               1 	(obj:1)
+x6013                                               1 	(obj:1)
+x6048                                               1 	(obj:1)
+x6050                                               1 	(obj:1)
+x6089                                               1 	(obj:1)
+x6096                                               1 	(obj:1)
+x6118                                               1 	(obj:1)
+x6159                                               1 	(obj:1)
+x6179                                               1 	(obj:1)
+x6195                                               1 	(obj:1)
+x6253                                               1 	(obj:1)
+x6265                                               1 	(obj:1)
+x6290                                               1 	(obj:1)
+x6318                                               1 	(obj:1)
+x6352                                               1 	(obj:1)
+x6383                                               1 	(obj:1)
+x6386                                               1 	(obj:1)
+x6400                                               1 	(obj:1)
+x6444                                               1 	(obj:1)
+x6480                                               1 	(obj:1)
+x6485                                               1 	(obj:1)
+x6491                                               1 	(obj:1)
+x6507                                               1 	(obj:1)
+x6516                                               1 	(obj:1)
+x6540                                               1 	(obj:1)
+x6618                                               1 	(obj:1)
+x6619                                               1 	(obj:1)
+x6628                                               1 	(obj:1)
+x6630                                               1 	(obj:1)
+x6633                                               1 	(obj:1)
+x6635                                               1 	(obj:1)
+x6638                                               1 	(obj:1)
+x6678                                               1 	(obj:1)
+x6693                                               1 	(obj:1)
+x6703                                               1 	(obj:1)
+x6728                                               1 	(obj:1)
+x6731                                               1 	(obj:1)
+x6733                                               1 	(obj:1)
+x6742                                               1 	(obj:1)
+x6773                                               1 	(obj:1)
+x6910                                               1 	(obj:1)
+x6916                                               1 	(obj:1)
+x6920                                               1 	(obj:1)
+x6955                                               1 	(obj:1)
+x6959                                               1 	(obj:1)
+x6974                                               1 	(obj:1)
+x7065                                               1 	(obj:1)
+x7068                                               1 	(obj:1)
+x7084                                               1 	(obj:1)
+x7112                                               1 	(obj:1)
+x7114                                               1 	(obj:1)
+x7121                                               1 	(obj:1)
+x7125                                               1 	(obj:1)
+x7143                                               1 	(obj:1)
+x7153                                               1 	(obj:1)
+x7198                                               1 	(obj:1)
+x7211                                               1 	(obj:1)
+x7218                                               1 	(obj:1)
+x7228                                               1 	(obj:1)
+x7245                                               1 	(obj:1)
+x7246                                               1 	(obj:1)
+x7254                                               1 	(obj:1)
+x7273                                               1 	(obj:1)
+x7319                                               1 	(obj:1)
+x7380                                               1 	(obj:1)
+x7389                                               1 	(obj:1)
+x7405                                               1 	(obj:1)
+x7410                                               1 	(obj:1)
+x7439                                               1 	(obj:1)
+x7456                                               1 	(obj:1)
+x7471                                               1 	(obj:1)
+x7507                                               1 	(obj:1)
+x7512                                               1 	(obj:1)
+x7518                                               1 	(obj:1)
+x7539                                               1 	(obj:1)
+x7602                                               1 	(obj:1)
+x7603                                               1 	(obj:1)
+x7610                                               1 	(obj:1)
+x7674                                               1 	(obj:1)
+x7718                                               1 	(obj:1)
+x7723                                               1 	(obj:1)
+x7749                                               1 	(obj:1)
+x7775                                               1 	(obj:1)
+x7797                                               1 	(obj:1)
+x7806                                               1 	(obj:1)
+x7812                                               1 	(obj:1)
+x7828                                               1 	(obj:1)
+x7831                                               1 	(obj:1)
+x7872                                               1 	(obj:1)
+x7880                                               1 	(obj:1)
+x7889                                               1 	(obj:1)
+x8025                                               1 	(obj:1)
+x8032                                               1 	(obj:1)
+x8095                                               1 	(obj:1)
+x8117                                               1 	(obj:1)
+x8130                                               1 	(obj:1)
+x8154                                               1 	(obj:1)
+x8158                                               1 	(obj:1)
+x8188                                               1 	(obj:1)
+x8234                                               1 	(obj:1)
+x8244                                               1 	(obj:1)
+x8302                                               1 	(obj:1)
+x8333                                               1 	(obj:1)
+x8378                                               1 	(obj:1)
+x8390                                               1 	(obj:1)
+x8393                                               1 	(obj:1)
+x8397                                               1 	(obj:1)
+x8404                                               1 	(obj:1)
+x8430                                               1 	(obj:1)
+x8435                                               1 	(obj:1)
+x8450                                               1 	(obj:1)
+x8459                                               1 	(obj:1)
+x8461                                               1 	(obj:1)
+x8462                                               1 	(obj:1)
+x8639                                               1 	(obj:1)
+x8643                                               1 	(obj:1)
+x8660                                               1 	(obj:1)
+x8673                                               1 	(obj:1)
+x8685                                               1 	(obj:1)
+x8693                                               1 	(obj:1)
+x8709                                               1 	(obj:1)
+x8728                                               1 	(obj:1)
+x8729                                               1 	(obj:1)
+x8737                                               1 	(obj:1)
+x8741                                               1 	(obj:1)
+x8744                                               1 	(obj:1)
+x8752                                               1 	(obj:1)
+x8753                                               1 	(obj:1)
+x8755                                               1 	(obj:1)
+x8801                                               1 	(obj:1)
+x8808                                               1 	(obj:1)
+x8826                                               1 	(obj:1)
+x8830                                               1 	(obj:1)
+x8831                                               1 	(obj:1)
+x8835                                               1 	(obj:1)
+x8851                                               1 	(obj:1)
+x8852                                               1 	(obj:1)
+x8857                                               1 	(obj:1)
+x8862                                               1 	(obj:1)
+x8892                                               1 	(obj:1)
+x8932                                               1 	(obj:1)
+x8939                                               1 	(obj:1)
+x8949                                               1 	(obj:1)
+x8965                                               1 	(obj:1)
+x9003                                               1 	(obj:1)
+x9058                                               1 	(obj:1)
+x9063                                               1 	(obj:1)
+x9065                                               1 	(obj:1)
+x9097                                               1 	(obj:1)
+x9099                                               1 	(obj:1)
+x9144                                               1 	(obj:1)
+x9154                                               1 	(obj:1)
+x9202                                               1 	(obj:1)
+x9214                                               1 	(obj:1)
+x9258                                               1 	(obj:1)
+x9283                                               1 	(obj:1)
+x9305                                               1 	(obj:1)
+x9310                                               1 	(obj:1)
+x9315                                               1 	(obj:1)
+x9337                                               1 	(obj:1)
+x9346                                               1 	(obj:1)
+x9357                                               1 	(obj:1)
+x9384                                               1 	(obj:1)
+x9479                                               1 	(obj:1)
+x9522                                               1 	(obj:1)
+x9531                                               1 	(obj:1)
+x9569                                               1 	(obj:1)
+x9581                                               1 	(obj:1)
+x9599                                               1 	(obj:1)
+x9632                                               1 	(obj:1)
+x9666                                               1 	(obj:1)
+x9673                                               1 	(obj:1)
+x9676                                               1 	(obj:1)
+x9704                                               1 	(obj:1)
+x9705                                               1 	(obj:1)
+x9710                                               1 	(obj:1)
+x9759                                               1 	(obj:1)
+x9762                                               1 	(obj:1)
+x9790                                               1 	(obj:1)
+x9792                                               1 	(obj:1)
+x9820                                               1 	(obj:1)
+x9825                                               1 	(obj:1)
+x9827                                               1 	(obj:1)
+x9846                                               1 	(obj:1)
+x9869                                               1 	(obj:1)
+x9889                                               1 	(obj:1)
+x9891                                               1 	(obj:1)
+x9945                                               1 	(obj:1)
+x9957                                               1 	(obj:1)
+x9960                                               1 	(obj:1)
+x10003                                              1 	(obj:1)
+x10012                                              1 	(obj:1)
+x10035                                              1 	(obj:1)
+x10043                                              1 	(obj:1)
+x10056                                              1 	(obj:1)
+x10058                                              1 	(obj:1)
+x10062                                              1 	(obj:1)
+x10094                                              1 	(obj:1)
+x10137                                              1 	(obj:1)
+x10158                                              1 	(obj:1)
+x10171                                              1 	(obj:1)
+x10202                                              1 	(obj:1)
+x10207                                              1 	(obj:1)
+x10228                                              1 	(obj:1)
+x10230                                              1 	(obj:1)
+x10232                                              1 	(obj:1)
+x10286                                              1 	(obj:1)
+x10300                                              1 	(obj:1)
+x10306                                              1 	(obj:1)
+x10313                                              1 	(obj:1)
+x10422                                              1 	(obj:1)
+x10424                                              1 	(obj:1)
+x10427                                              1 	(obj:1)
+x10442                                              1 	(obj:1)
+x10444                                              1 	(obj:1)
+x10474                                              1 	(obj:1)
+x10479                                              1 	(obj:1)
+x10490                                              1 	(obj:1)
+x10576                                              1 	(obj:1)
+x10581                                              1 	(obj:1)
+x10582                                              1 	(obj:1)
+x10589                                              1 	(obj:1)
+x10594                                              1 	(obj:1)
+x10635                                              1 	(obj:1)
+x10643                                              1 	(obj:1)
+x10644                                              1 	(obj:1)
+x10647                                              1 	(obj:1)
+x10733                                              1 	(obj:1)
+x10749                                              1 	(obj:1)
+x10756                                              1 	(obj:1)
+x10757                                              1 	(obj:1)
+x10807                                              1 	(obj:1)
+x10810                                              1 	(obj:1)
+x10927                                              1 	(obj:1)
+x10941                                              1 	(obj:1)
+x10954                                              1 	(obj:1)
+x10963                                              1 	(obj:1)
+x10983                                              1 	(obj:1)
+x10988                                              1 	(obj:1)
+x10996                                              1 	(obj:1)
+x11031                                              1 	(obj:1)
+x11057                                              1 	(obj:1)
+x11075                                              1 	(obj:1)
+x11076                                              1 	(obj:1)
+x11077                                              1 	(obj:1)
+x11120                                              1 	(obj:1)
+x11139                                              1 	(obj:1)
+x11169                                              1 	(obj:1)
+x11223                                              1 	(obj:1)
+x11231                                              1 	(obj:1)
+x11264                                              1 	(obj:1)
+x11275                                              1 	(obj:1)
+x11329                                              1 	(obj:1)
+x11336                                              1 	(obj:1)
+x11354                                              1 	(obj:1)
+x11357                                              1 	(obj:1)
+x11359                                              1 	(obj:1)
+x11382                                              1 	(obj:1)
+x11410                                              1 	(obj:1)
+x11429                                              1 	(obj:1)
+x11434                                              1 	(obj:1)
+x11450                                              1 	(obj:1)
+x11474                                              1 	(obj:1)
+x11514                                              1 	(obj:1)
+x11562                                              1 	(obj:1)
+x11567                                              1 	(obj:1)
+x11592                                              1 	(obj:1)
+x11599                                              1 	(obj:1)
+x11615                                              1 	(obj:1)
+x11631                                              1 	(obj:1)
+x11650                                              1 	(obj:1)
+x11673                                              1 	(obj:1)
+x11687                                              1 	(obj:1)
+x11714                                              1 	(obj:1)
+x11795                                              1 	(obj:1)
+x11815                                              1 	(obj:1)
+x11819                                              1 	(obj:1)
+x11820                                              1 	(obj:1)
+x11875                                              1 	(obj:1)
+x11891                                              1 	(obj:1)
+x11893                                              1 	(obj:1)
+x11956                                              1 	(obj:1)
+x11990                                              1 	(obj:1)
+x12050                                              1 	(obj:1)
+x12111                                              1 	(obj:1)
+x12120                                              1 	(obj:1)
+x12138                                              1 	(obj:1)
+x12139                                              1 	(obj:1)
+x12179                                              1 	(obj:1)
+x12215                                              1 	(obj:1)
+x12239                                              1 	(obj:1)
+x12279                                              1 	(obj:1)
+x12303                                              1 	(obj:1)
+x12342                                              1 	(obj:1)
+x12382                                              1 	(obj:1)
+x12442                                              1 	(obj:1)
+x12450                                              1 	(obj:1)
+x12475                                              1 	(obj:1)
+x12478                                              1 	(obj:1)
+x12503                                              1 	(obj:1)
+x12504                                              1 	(obj:1)
+x12523                                              1 	(obj:1)
+x12544                                              1 	(obj:1)
+x12568                                              1 	(obj:1)
+x12569                                              1 	(obj:1)
+x12597                                              1 	(obj:1)
+x12653                                              1 	(obj:1)
+x12669                                              1 	(obj:1)
+x12682                                              1 	(obj:1)
+x12687                                              1 	(obj:1)
+x12689                                              1 	(obj:1)
+x12704                                              1 	(obj:1)
+x12761                                              1 	(obj:1)
+x12786                                              1 	(obj:1)
+x12799                                              1 	(obj:1)
+x12807                                              1 	(obj:1)
+x12809                                              1 	(obj:1)
+x12812                                              1 	(obj:1)
+x12868                                              1 	(obj:1)
+x12902                                              1 	(obj:1)
+x12916                                              1 	(obj:1)
+x12920                                              1 	(obj:1)
+x12985                                              1 	(obj:1)
+x13045                                              1 	(obj:1)
+x13186                                              1 	(obj:1)
+x13196                                              1 	(obj:1)
+x13215                                              1 	(obj:1)
+x13241                                              1 	(obj:1)
+x13272                                              1 	(obj:1)
+x13276                                              1 	(obj:1)
+x13280                                              1 	(obj:1)
+x13320                                              1 	(obj:1)
+x13322                                              1 	(obj:1)
+x13341                                              1 	(obj:1)
+x13354                                              1 	(obj:1)
+x13384                                              1 	(obj:1)
+x13385                                              1 	(obj:1)
+x13391                                              1 	(obj:1)
+x13394                                              1 	(obj:1)
+x13413                                              1 	(obj:1)
+x13493                                              1 	(obj:1)
+x13523                                              1 	(obj:1)
+x13589                                              1 	(obj:1)
+x13597                                              1 	(obj:1)
+x13634                                              1 	(obj:1)
+x13651                                              1 	(obj:1)
+x13659                                              1 	(obj:1)
+x13698                                              1 	(obj:1)
+x13816                                              1 	(obj:1)
+x13844                                              1 	(obj:1)
+x13914                                              1 	(obj:1)
+x13916                                              1 	(obj:1)
+x13925                                              1 	(obj:1)
+x13946                                              1 	(obj:1)
+x13964                                              1 	(obj:1)
+x13983                                              1 	(obj:1)
+x13992                                              1 	(obj:1)
+x14017                                              1 	(obj:1)
+x14052                                              1 	(obj:1)
+x14063                                              1 	(obj:1)
+x14079                                              1 	(obj:1)
+x14098                                              1 	(obj:1)
+x14145                                              1 	(obj:1)
+x14199                                              1 	(obj:1)
+x14252                                              1 	(obj:1)
+x14263                                              1 	(obj:1)
+x14274                                              1 	(obj:1)
+x14316                                              1 	(obj:1)
+x14360                                              1 	(obj:1)
+x14435                                              1 	(obj:1)
+x14460                                              1 	(obj:1)
+x14522                                              1 	(obj:1)
+x14570                                              1 	(obj:1)
+x14576                                              1 	(obj:1)
+x14663                                              1 	(obj:1)
+x14664                                              1 	(obj:1)
+x14693                                              1 	(obj:1)
+x14715                                              1 	(obj:1)
+x14723                                              1 	(obj:1)
+x14755                                              1 	(obj:1)
+x14794                                              1 	(obj:1)
+x14799                                              1 	(obj:1)
+x14816                                              1 	(obj:1)
+x14916                                              1 	(obj:1)
+x14939                                              1 	(obj:1)
+x14996                                              1 	(obj:1)
+x14997                                              1 	(obj:1)
+x15015                                              1 	(obj:1)
+x15033                                              1 	(obj:1)
+x15038                                              1 	(obj:1)
+x15043                                              1 	(obj:1)
+x15048                                              1 	(obj:1)
+x15059                                              1 	(obj:1)
+x15082                                              1 	(obj:1)
+x15083                                              1 	(obj:1)
+x15091                                              1 	(obj:1)
+x15105                                              1 	(obj:1)
+x15106                                              1 	(obj:1)
+x15130                                              1 	(obj:1)
+x15131                                              1 	(obj:1)
+x15156                                              1 	(obj:1)
+x15178                                              1 	(obj:1)
+x15203                                              1 	(obj:1)
+x15245                                              1 	(obj:1)
+x15268                                              1 	(obj:1)
+x15315                                              1 	(obj:1)
+x15317                                              1 	(obj:1)
+x15320                                              1 	(obj:1)
+x15324                                              1 	(obj:1)
+x15328                                              1 	(obj:1)
+x15329                                              1 	(obj:1)
+x15354                                              1 	(obj:1)
+x15359                                              1 	(obj:1)
+x15395                                              1 	(obj:1)
+x15413                                              1 	(obj:1)
+x15431                                              1 	(obj:1)
+x15447                                              1 	(obj:1)
+x15477                                              1 	(obj:1)
+x15481                                              1 	(obj:1)
+x15511                                              1 	(obj:1)
+x15581                                              1 	(obj:1)
+x15586                                              1 	(obj:1)
+x15650                                              1 	(obj:1)
+x15671                                              1 	(obj:1)
+x15708                                              1 	(obj:1)
+x15709                                              1 	(obj:1)
+x15715                                              1 	(obj:1)
+x15716                                              1 	(obj:1)
+x15717                                              1 	(obj:1)
+x15718                                              1 	(obj:1)
+x15784                                              1 	(obj:1)
+x15790                                              1 	(obj:1)
+x15794                                              1 	(obj:1)
+x15798                                              1 	(obj:1)
+x15799                                              1 	(obj:1)
+x15880                                              1 	(obj:1)
+x15894                                              1 	(obj:1)
+x15895                                              1 	(obj:1)
+x15967                                              1 	(obj:1)
+x15978                                              1 	(obj:1)
+x15981                                              1 	(obj:1)
+x15990                                              1 	(obj:1)
+x15999                                              1 	(obj:1)
+x16066                                              1 	(obj:1)
+x16108                                              1 	(obj:1)
+x16112                                              1 	(obj:1)
+x16158                                              1 	(obj:1)
+x16184                                              1 	(obj:1)
+x16194                                              1 	(obj:1)
+x16230                                              1 	(obj:1)
+x16259                                              1 	(obj:1)
+x16263                                              1 	(obj:1)
+x16264                                              1 	(obj:1)
+x16267                                              1 	(obj:1)
+x16276                                              1 	(obj:1)
+x16285                                              1 	(obj:1)
+x16309                                              1 	(obj:1)
+x16339                                              1 	(obj:1)
+x16350                                              1 	(obj:1)
+x16363                                              1 	(obj:1)
+x16454                                              1 	(obj:1)
+x16485                                              1 	(obj:1)
+x16497                                              1 	(obj:1)
+x16630                                              1 	(obj:1)
+x16654                                              1 	(obj:1)
+x16671                                              1 	(obj:1)
+x16674                                              1 	(obj:1)
+x16677                                              1 	(obj:1)
+x16712                                              1 	(obj:1)
+x16734                                              1 	(obj:1)
+x16736                                              1 	(obj:1)
+x16739                                              1 	(obj:1)
+x16743                                              1 	(obj:1)
+x16763                                              1 	(obj:1)
+x16892                                              1 	(obj:1)
+x16917                                              1 	(obj:1)
+x16918                                              1 	(obj:1)
+x16946                                              1 	(obj:1)
+x16950                                              1 	(obj:1)
+x16959                                              1 	(obj:1)
+x16984                                              1 	(obj:1)
+x17090                                              1 	(obj:1)
+x17152                                              1 	(obj:1)
+x17165                                              1 	(obj:1)
+x17196                                              1 	(obj:1)
+x17199                                              1 	(obj:1)
+x17206                                              1 	(obj:1)
+x17216                                              1 	(obj:1)
+x17240                                              1 	(obj:1)
+x17264                                              1 	(obj:1)
+x17328                                              1 	(obj:1)
+x17340                                              1 	(obj:1)
+x17345                                              1 	(obj:1)
+x17353                                              1 	(obj:1)
+x17356                                              1 	(obj:1)
+x17372                                              1 	(obj:1)
+x17376                                              1 	(obj:1)
+x17453                                              1 	(obj:1)
+x17457                                              1 	(obj:1)
+x17475                                              1 	(obj:1)
+x17488                                              1 	(obj:1)
+x17520                                              1 	(obj:1)
+x17624                                              1 	(obj:1)
+x17643                                              1 	(obj:1)
+x17689                                              1 	(obj:1)
+x17710                                              1 	(obj:1)
+x17716                                              1 	(obj:1)
+x17751                                              1 	(obj:1)
+x17765                                              1 	(obj:1)
+x17813                                              1 	(obj:1)
+x17819                                              1 	(obj:1)
+x17886                                              1 	(obj:1)
+x17894                                              1 	(obj:1)
+x17912                                              1 	(obj:1)
+x17976                                              1 	(obj:1)
+x18062                                              1 	(obj:1)
+x18067                                              1 	(obj:1)
+x18138                                              1 	(obj:1)
+x18161                                              1 	(obj:1)
+x18172                                              1 	(obj:1)
+x18176                                              1 	(obj:1)
+x18178                                              1 	(obj:1)
+x18211                                              1 	(obj:1)
+x18233                                              1 	(obj:1)
+x18239                                              1 	(obj:1)
+x18290                                              1 	(obj:1)
+x18327                                              1 	(obj:1)
+x18394                                              1 	(obj:1)
+x18432                                              1 	(obj:1)
+x18455                                              1 	(obj:1)
+x18479                                              1 	(obj:1)
+x18524                                              1 	(obj:1)
+x18667                                              1 	(obj:1)
+x18715                                              1 	(obj:1)
+x18717                                              1 	(obj:1)
+x18728                                              1 	(obj:1)
+x18731                                              1 	(obj:1)
+x18752                                              1 	(obj:1)
+x18758                                              1 	(obj:1)
+x18761                                              1 	(obj:1)
+x18796                                              1 	(obj:1)
+x18812                                              1 	(obj:1)
+x18815                                              1 	(obj:1)
+x18847                                              1 	(obj:1)
+x18855                                              1 	(obj:1)
+x18858                                              1 	(obj:1)
+x18859                                              1 	(obj:1)
+x18879                                              1 	(obj:1)
+x18918                                              1 	(obj:1)
+x18928                                              1 	(obj:1)
+x18947                                              1 	(obj:1)
+x19025                                              1 	(obj:1)
+x19037                                              1 	(obj:1)
+x19039                                              1 	(obj:1)
+x19053                                              1 	(obj:1)
+x19059                                              1 	(obj:1)
+x19111                                              1 	(obj:1)
+x19119                                              1 	(obj:1)
+x19122                                              1 	(obj:1)
+x19123                                              1 	(obj:1)
+x19172                                              1 	(obj:1)
+x19216                                              1 	(obj:1)
+x19270                                              1 	(obj:1)
+x19290                                              1 	(obj:1)
+x19319                                              1 	(obj:1)
+x19328                                              1 	(obj:1)
+x19359                                              1 	(obj:1)
+x19488                                              1 	(obj:1)
+x19497                                              1 	(obj:1)
+x19514                                              1 	(obj:1)
+x19520                                              1 	(obj:1)
+x19536                                              1 	(obj:1)
+x19541                                              1 	(obj:1)
+x19556                                              1 	(obj:1)
+x19587                                              1 	(obj:1)
+x19635                                              1 	(obj:1)
+x19637                                              1 	(obj:1)
+x19662                                              1 	(obj:1)
+x19666                                              1 	(obj:1)
+x19676                                              1 	(obj:1)
+x19699                                              1 	(obj:1)
+x19711                                              1 	(obj:1)
+x19712                                              1 	(obj:1)
+x19739                                              1 	(obj:1)
+x19744                                              1 	(obj:1)
+x19748                                              1 	(obj:1)
+x19762                                              1 	(obj:1)
+x19768                                              1 	(obj:1)
+x19819                                              1 	(obj:1)
+x19843                                              1 	(obj:1)
+x19877                                              1 	(obj:1)
+x19896                                              1 	(obj:1)
+x19934                                              1 	(obj:1)
+x19974                                              1 	(obj:1)
+x19976                                              1 	(obj:1)
+x20076                                              1 	(obj:1)
+x20082                                              1 	(obj:1)
+x20090                                              1 	(obj:1)
+x20098                                              1 	(obj:1)
+x20135                                              1 	(obj:1)
+x20136                                              1 	(obj:1)
+x20161                                              1 	(obj:1)
+x20208                                              1 	(obj:1)
+x20211                                              1 	(obj:1)
+x20227                                              1 	(obj:1)
+x20233                                              1 	(obj:1)
+x20270                                              1 	(obj:1)
+x20282                                              1 	(obj:1)
+x20294                                              1 	(obj:1)
+x20297                                              1 	(obj:1)
+x20322                                              1 	(obj:1)
+x20324                                              1 	(obj:1)
+x20328                                              1 	(obj:1)
+x20358                                              1 	(obj:1)
+x20399                                              1 	(obj:1)
+x20410                                              1 	(obj:1)
+x20417                                              1 	(obj:1)
+x20478                                              1 	(obj:1)
+x20515                                              1 	(obj:1)
+x20534                                              1 	(obj:1)
+x20538                                              1 	(obj:1)
+x20547                                              1 	(obj:1)
+x20623                                              1 	(obj:1)
+x20631                                              1 	(obj:1)
+x20640                                              1 	(obj:1)
+x20662                                              1 	(obj:1)
+x20679                                              1 	(obj:1)
+x20680                                              1 	(obj:1)
+x20682                                              1 	(obj:1)
+x20684                                              1 	(obj:1)
+x20717                                              1 	(obj:1)
+x20754                                              1 	(obj:1)
+x20808                                              1 	(obj:1)
+x20823                                              1 	(obj:1)
+x20855                                              1 	(obj:1)
+x20857                                              1 	(obj:1)
+x20859                                              1 	(obj:1)
+x20865                                              1 	(obj:1)
+x20999                                              1 	(obj:1)
+x21075                                              1 	(obj:1)
+x21086                                              1 	(obj:1)
+x21108                                              1 	(obj:1)
+x21141                                              1 	(obj:1)
+x21186                                              1 	(obj:1)
+x21195                                              1 	(obj:1)
+x21197                                              1 	(obj:1)
+x21207                                              1 	(obj:1)
+x21272                                              1 	(obj:1)
+x21275                                              1 	(obj:1)
+x21324                                              1 	(obj:1)
+x21325                                              1 	(obj:1)
+x21347                                              1 	(obj:1)
+x21366                                              1 	(obj:1)
+x21402                                              1 	(obj:1)
+x21416                                              1 	(obj:1)
+x21452                                              1 	(obj:1)
+x21473                                              1 	(obj:1)
+x21476                                              1 	(obj:1)
+x21482                                              1 	(obj:1)
+x21493                                              1 	(obj:1)
+x21497                                              1 	(obj:1)
+x21618                                              1 	(obj:1)
+x21708                                              1 	(obj:1)
+x21751                                              1 	(obj:1)
+x21782                                              1 	(obj:1)
+x21785                                              1 	(obj:1)
+x21796                                              1 	(obj:1)
+x21836                                              1 	(obj:1)
+x21885                                              1 	(obj:1)
+x21920                                              1 	(obj:1)
+x21937                                              1 	(obj:1)
+x21938                                              1 	(obj:1)
+x21941                                              1 	(obj:1)
+x21964                                              1 	(obj:1)
+x21982                                              1 	(obj:1)
+x21989                                              1 	(obj:1)
+x22005                                              1 	(obj:1)
+x22033                                              1 	(obj:1)
+x22070                                              1 	(obj:1)
+x22095                                              1 	(obj:1)
+x22101                                              1 	(obj:1)
+x22120                                              1 	(obj:1)
+x22133                                              1 	(obj:1)
+x22218                                              1 	(obj:1)
+x22219                                              1 	(obj:1)
+x22222                                              1 	(obj:1)
+x22246                                              1 	(obj:1)
+x22261                                              1 	(obj:1)
+x22283                                              1 	(obj:1)
+x22309                                              1 	(obj:1)
+x22351                                              1 	(obj:1)
+x22353                                              1 	(obj:1)
+x22360                                              1 	(obj:1)
+x22393                                              1 	(obj:1)
+x22418                                              1 	(obj:1)
+x22424                                              1 	(obj:1)
+x22504                                              1 	(obj:1)
+x22577                                              1 	(obj:1)
+x22592                                              1 	(obj:1)
+x22613                                              1 	(obj:1)
+x22619                                              1 	(obj:1)
+x22624                                              1 	(obj:1)
+x22634                                              1 	(obj:1)
+x22642                                              1 	(obj:1)
+x22653                                              1 	(obj:1)
+x22718                                              1 	(obj:1)
+x22754                                              1 	(obj:1)
+x22765                                              1 	(obj:1)
+x22776                                              1 	(obj:1)
+x22845                                              1 	(obj:1)
+x22896                                              1 	(obj:1)
+x22916                                              1 	(obj:1)
+x22918                                              1 	(obj:1)
+x22933                                              1 	(obj:1)
+x23019                                              1 	(obj:1)
+x23039                                              1 	(obj:1)
+x23042                                              1 	(obj:1)
+x23069                                              1 	(obj:1)
+x23118                                              1 	(obj:1)
+x23174                                              1 	(obj:1)
+x23218                                              1 	(obj:1)
+x23244                                              1 	(obj:1)
+x23290                                              1 	(obj:1)
+x23354                                              1 	(obj:1)
+x23413                                              1 	(obj:1)
+x23513                                              1 	(obj:1)
+x23532                                              1 	(obj:1)
+x23537                                              1 	(obj:1)
+x23580                                              1 	(obj:1)
+x23611                                              1 	(obj:1)
+x23616                                              1 	(obj:1)
+x23643                                              1 	(obj:1)
+x23644                                              1 	(obj:1)
+x23671                                              1 	(obj:1)
+x23689                                              1 	(obj:1)
+x23693                                              1 	(obj:1)
+x23694                                              1 	(obj:1)
+x23711                                              1 	(obj:1)
+x23748                                              1 	(obj:1)
+x23817                                              1 	(obj:1)
+x23857                                              1 	(obj:1)
+x23881                                              1 	(obj:1)
+x23898                                              1 	(obj:1)
+x23913                                              1 	(obj:1)
+x23922                                              1 	(obj:1)
+x24009                                              1 	(obj:1)
+x24044                                              1 	(obj:1)
+x24063                                              1 	(obj:1)
+x24069                                              1 	(obj:1)
+x24108                                              1 	(obj:1)
+x24199                                              1 	(obj:1)
+x24254                                              1 	(obj:1)
+x24267                                              1 	(obj:1)
+x24347                                              1 	(obj:1)
+x24348                                              1 	(obj:1)
+x24464                                              1 	(obj:1)
+x24483                                              1 	(obj:1)
+x24565                                              1 	(obj:1)
+x24573                                              1 	(obj:1)
+x24606                                              1 	(obj:1)
+x24609                                              1 	(obj:1)
+x24617                                              1 	(obj:1)
+x24635                                              1 	(obj:1)
+x24783                                              1 	(obj:1)
+x24795                                              1 	(obj:1)
+x24849                                              1 	(obj:1)
+x24854                                              1 	(obj:1)
+x24882                                              1 	(obj:1)
+x24904                                              1 	(obj:1)
+x24918                                              1 	(obj:1)
+x24920                                              1 	(obj:1)
+x24966                                              1 	(obj:1)
+x24968                                              1 	(obj:1)
+x25090                                              1 	(obj:1)
+x25115                                              1 	(obj:1)
+x25144                                              1 	(obj:1)
+Statistics:
+SCIP Status        : solving was interrupted [node limit reached]
+Total Time         :      33.37
+  solving          :      33.27
+  presolving       :       0.01 (included in solving)
+  reading          :       0.10
+  copying          :       0.00 (0 times copied the problem)
+Original Problem   :
+  Problem name     : ex1010-pi
+  Variables        : 25200 (25200 binary, 0 integer, 0 implicit integer, 0 continuous)
+  Constraints      : 1468 initial, 1468 maximal
+  Objective        : minimize, 25200 non-zeros (abs.min = 1, abs.max = 1)
+Presolved Problem  :
+  Problem name     : t_ex1010-pi
+  Variables        : 25200 (25200 binary, 0 integer, 0 implicit integer, 0 continuous)
+  Constraints      : 1468 initial, 1468 maximal
+  Objective        : minimize, 25200 non-zeros (abs.min = 1, abs.max = 1)
+  Nonzeros         : 102114 constraint, 0 clique table
+Presolvers         :   ExecTime  SetupTime  Calls  FixedVars   AggrVars   ChgTypes  ChgBounds   AddHoles    DelCons    AddCons   ChgSides   ChgCoefs
+  boundshift       :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  convertinttobin  :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  domcol           :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  dualagg          :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  dualcomp         :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  dualinfer        :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  dualsparsify     :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  gateextraction   :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  implics          :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  inttobinary      :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  qpkktref         :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  redvub           :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  sparsify         :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  stuffing         :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  trivial          :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  tworowbnd        :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  dualfix          :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  genvbounds       :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  probing          :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  pseudoobj        :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  symmetry         :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  vbounds          :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  linear           :       0.00       0.02      0          0          0          0          0          0          0          0          0          0
+  benders          :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  components       :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  root node        :          -          -      -          0          -          -          0          -          -          -          -          -
+Constraints        :     Number  MaxNumber  #Separate #Propagate    #EnfoLP    #EnfoRelax  #EnfoPS    #Check   #ResProp    Cutoffs    DomReds       Cuts    Applied      Conss   Children
+  benderslp        :          0          0          0          0          1          0          0          3          0          0          0          0          0          0          0
+  integral         :          0          0          0          0          1          0          0          3          0          0          0          0          0          0          2
+  linear           :       1468       1468          1         59          0          0          0          1          0          0          0          0          0          0          0
+  benders          :          0          0          0          0          0          0          0          2          0          0          0          0          0          0          0
+  countsols        :          0          0          0          0          0          0          0          2          0          0          0          0          0          0          0
+  components       :          0          0          0          0          0          0          0          0          0          0          0          0          0          0          0
+Constraint Timings :  TotalTime  SetupTime   Separate  Propagate     EnfoLP     EnfoPS     EnfoRelax   Check    ResProp    SB-Prop
+  benderslp        :       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00
+  integral         :      21.50       0.00       0.00       0.00      21.49       0.00       0.00       0.00       0.00       0.00
+  linear           :       0.31       0.02       0.28       0.01       0.00       0.00       0.00       0.00       0.00       0.00
+  benders          :       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00
+  countsols        :       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00
+  components       :       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00
+Propagators        : #Propagate   #ResProp    Cutoffs    DomReds
+  dualfix          :          1          0          0          0
+  genvbounds       :          0          0          0          0
+  nlobbt           :          0          0          0          0
+  obbt             :          0          0          0          0
+  probing          :          0          0          0          0
+  pseudoobj        :          3          0          0          0
+  redcost          :          2          0          0          0
+  rootredcost      :          0          0          0          0
+  symmetry         :          0          0          0          0
+  vbounds          :          0          0          0          0
+Propagator Timings :  TotalTime  SetupTime   Presolve  Propagate    ResProp    SB-Prop
+  dualfix          :       0.00       0.00       0.00       0.00       0.00       0.00
+  genvbounds       :       0.00       0.00       0.00       0.00       0.00       0.00
+  nlobbt           :       0.00       0.00       0.00       0.00       0.00       0.00
+  obbt             :       0.00       0.00       0.00       0.00       0.00       0.00
+  probing          :       0.00       0.00       0.00       0.00       0.00       0.00
+  pseudoobj        :       0.01       0.00       0.00       0.01       0.00       0.00
+  redcost          :       0.00       0.00       0.00       0.00       0.00       0.00
+  rootredcost      :       0.00       0.00       0.00       0.00       0.00       0.00
+  symmetry         :       0.00       0.00       0.00       0.00       0.00       0.00
+  vbounds          :       0.01       0.00       0.00       0.01       0.00       0.00
+Conflict Analysis  :       Time      Calls    Success    DomReds  Conflicts   Literals    Reconvs ReconvLits   Dualrays   Nonzeros   LP Iters   (pool size: [--,--])
+  propagation      :       0.00          0          0          -          0        0.0          0        0.0          -          -          -
+  infeasible LP    :       0.00          0          0          -          0        0.0          0        0.0          0        0.0          0
+  bound exceed. LP :       0.00          0          0          -          0        0.0          0        0.0          0        0.0          0
+  strong branching :       0.00          0          0          -          0        0.0          0        0.0          -          -          0
+  pseudo solution  :       0.00          0          0          -          0        0.0          0        0.0          -          -          -
+  applied globally :       0.00          -          -          0          0        0.0          -          -          0          -          -
+  applied locally  :          -          -          -          0          0        0.0          -          -          0          -          -
+Separators         :   ExecTime  SetupTime      Calls    Cutoffs    DomReds       Cuts    Applied      Conss
+  cut pool         :       0.00                     0          -          -          0          -          -    (maximal pool size: 0)
+  aggregation      :       0.00       0.00          0          0          0          0          0          0
+  > cmir           :          -          -          -          -          -          -          0          -
+  > flowcover      :          -          -          -          -          -          -          0          -
+  > knapsackcover  :          -          -          -          -          -          -          0          -
+  cgmip            :       0.00       0.00          0          0          0          0          0          0
+  clique           :       0.00       0.00          0          0          0          0          0          0
+  closecuts        :       0.00       0.00          0          0          0          0          0          0
+  convexproj       :       0.00       0.00          0          0          0          0          0          0
+  disjunctive      :       0.00       0.00          0          0          0          0          0          0
+  eccuts           :       0.00       0.00          0          0          0          0          0          0
+  gauge            :       0.00       0.00          0          0          0          0          0          0
+  gmi              :       0.00       0.00          0          0          0          0          0          0
+  gomory           :       0.00       0.00          0          0          0          0          0          0
+  > gomorymi       :          -          -          -          -          -          -          0          -
+  > strongcg       :          -          -          -          -          -          -          0          -
+  impliedbounds    :       0.00       0.00          0          0          0          0          0          0
+  interminor       :       0.00       0.00          0          0          0          0          0          0
+  intobj           :       0.00       0.00          0          0          0          0          0          0
+  mcf              :       0.00       0.00          0          0          0          0          0          0
+  minor            :       0.00       0.00          0          0          0          0          0          0
+  mixing           :       0.00       0.00          0          0          0          0          0          0
+  oddcycle         :       0.00       0.00          0          0          0          0          0          0
+  rapidlearning    :       0.00       0.00          0          0          0          0          0          0
+  rlt              :       0.00       0.00          0          0          0          0          0          0
+  zerohalf         :       0.00       0.00          0          0          0          0          0          0
+Cutselectors       :   ExecTime  SetupTime
+  hybrid           :       0.00       0.00
+Pricers            :   ExecTime  SetupTime      Calls       Vars
+  problem variables:       0.00          -          0          0
+Branching Rules    :   ExecTime  SetupTime   BranchLP  BranchExt   BranchPS    Cutoffs    DomReds       Cuts      Conss   Children
+  allfullstrong    :       0.00       0.00          0          0          0          0          0          0          0          0
+  cloud            :       0.00       0.00          0          0          0          0          0          0          0          0
+  distribution     :       0.00       0.00          0          0          0          0          0          0          0          0
+  fullstrong       :       0.00       0.00          0          0          0          0          0          0          0          0
+  inference        :       0.00       0.00          0          0          0          0          0          0          0          0
+  leastinf         :       0.00       0.00          0          0          0          0          0          0          0          0
+  lookahead        :       0.00       0.00          0          0          0          0          0          0          0          0
+  mostinf          :       0.00       0.00          0          0          0          0          0          0          0          0
+  multaggr         :       0.00       0.00          0          0          0          0          0          0          0          0
+  nodereopt        :       0.00       0.00          0          0          0          0          0          0          0          0
+  pscost           :       0.00       0.00          0          0          0          0          0          0          0          0
+  random           :       0.00       0.00          0          0          0          0          0          0          0          0
+  relpscost        :      21.49       0.00          1          0          0          0          0          0          0          2
+  vanillafullstrong:       0.00       0.00          0          0          0          0          0          0          0          0
+Primal Heuristics  :   ExecTime  SetupTime      Calls      Found       Best
+  LP solutions     :       0.00          -          -          0          0
+  relax solutions  :       0.00          -          -          0          0
+  pseudo solutions :       0.00          -          -          0          0
+  strong branching :       0.01          -          -          1          1
+  actconsdiving    :       0.00       0.00          0          0          0
+  adaptivediving   :       0.00       0.00          0          0          0
+  alns             :       0.00       0.00          0          0          0
+  bound            :       0.00       0.00          0          0          0
+  clique           :       0.00       0.00          0          0          0
+  coefdiving       :       0.00       0.00          0          0          0
+  completesol      :       0.00       0.00          0          0          0
+  conflictdiving   :       0.00       0.00          0          0          0
+  crossover        :       0.00       0.00          0          0          0
+  dins             :       0.00       0.00          0          0          0
+  distributiondivin:       0.00       0.00          0          0          0
+  dps              :       0.00       0.00          0          0          0
+  dualval          :       0.00       0.00          0          0          0
+  farkasdiving     :       0.00       0.00          0          0          0
+  feaspump         :       0.00       0.00          0          0          0
+  fixandinfer      :       0.00       0.00          0          0          0
+  fracdiving       :       0.00       0.00          0          0          0
+  gins             :       0.00       0.00          0          0          0
+  guideddiving     :       0.00       0.00          0          0          0
+  indicator        :       0.00       0.00          0          0          0
+  intdiving        :       0.00       0.00          0          0          0
+  intshifting      :       0.00       0.00          0          0          0
+  linesearchdiving :       0.00       0.00          0          0          0
+  localbranching   :       0.00       0.00          0          0          0
+  locks            :       0.00       0.00          0          0          0
+  lpface           :       0.00       0.00          0          0          0
+  mpec             :       0.00       0.00          0          0          0
+  multistart       :       0.00       0.00          0          0          0
+  mutation         :       0.00       0.00          0          0          0
+  nlpdiving        :       0.00       0.00          0          0          0
+  objpscostdiving  :       0.00       0.00          0          0          0
+  octane           :       0.00       0.00          0          0          0
+  ofins            :       0.00       0.00          0          0          0
+  oneopt           :       0.00       0.00          0          0          0
+  padm             :       0.00       0.00          0          0          0
+  proximity        :       0.00       0.00          0          0          0
+  pscostdiving     :       0.00       0.00          0          0          0
+  randrounding     :       0.00       0.00          0          0          0
+  rens             :       0.00       0.00          0          0          0
+  reoptsols        :       0.00       0.00          0          0          0
+  repair           :       0.00       0.00          0          0          0
+  rins             :       0.00       0.00          0          0          0
+  rootsoldiving    :       0.00       0.00          0          0          0
+  rounding         :       0.00       0.00          0          0          0
+  shiftandpropagate:       0.00       0.00          0          0          0
+  shifting         :       0.00       0.00          0          0          0
+  simplerounding   :       0.00       0.00          0          0          0
+  subnlp           :       0.00       0.00          0          0          0
+  trivial          :       0.00       0.00          0          0          0
+  trivialnegation  :       0.00       0.00          0          0          0
+  trustregion      :       0.00       0.00          0          0          0
+  trysol           :       0.00       0.00          0          0          0
+  twoopt           :       0.00       0.00          0          0          0
+  undercover       :       0.00       0.00          0          0          0
+  vbounds          :       0.00       0.00          0          0          0
+  veclendiving     :       0.00       0.00          0          0          0
+  zeroobj          :       0.00       0.00          0          0          0
+  zirounding       :       0.00       0.00          0          0          0
+  other solutions  :          -          -          -          0          -
+Diving (single)    :      Calls      Nodes   LP Iters Backtracks  Conflicts   MinDepth   MaxDepth   AvgDepth  RoundSols  NLeafSols  MinSolDpt  MaxSolDpt  AvgSolDpt
+  actconsdiving    :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  coefdiving       :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  conflictdiving   :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  distributiondivin:          0          -          -          -          -          -          -          -          -          -          -          -          -
+  farkasdiving     :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  fracdiving       :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  guideddiving     :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  linesearchdiving :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  pscostdiving     :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  veclendiving     :          0          -          -          -          -          -          -          -          -          -          -          -          -
+Diving (adaptive)  :      Calls      Nodes   LP Iters Backtracks  Conflicts   MinDepth   MaxDepth   AvgDepth  RoundSols  NLeafSols  MinSolDpt  MaxSolDpt  AvgSolDpt
+  actconsdiving    :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  coefdiving       :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  conflictdiving   :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  distributiondivin:          0          -          -          -          -          -          -          -          -          -          -          -          -
+  farkasdiving     :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  fracdiving       :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  guideddiving     :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  linesearchdiving :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  pscostdiving     :          0          -          -          -          -          -          -          -          -          -          -          -          -
+  veclendiving     :          0          -          -          -          -          -          -          -          -          -          -          -          -
+Neighborhoods      :      Calls  SetupTime  SolveTime SolveNodes       Sols       Best       Exp3  EpsGreedy        UCB TgtFixRate  Opt  Inf Node Stal  Sol  Usr Othr Actv
+  rens             :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    1
+  rins             :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    1
+  mutation         :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    1
+  localbranching   :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    1
+  crossover        :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    1
+  proximity        :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    1
+  zeroobjective    :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    1
+  dins             :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    1
+  trustregion      :          0       0.00       0.00          0          0          0    0.00000   -1.00000    1.00000      0.900    0    0    0    0    0    0    0    0
+LP                 :       Time      Calls Iterations  Iter/call   Iter/sec  Time-0-It Calls-0-It    ItLimit
+  primal LP        :       0.00          0          0       0.00          -       0.00          0
+  dual LP          :      11.37          1      19835   19835.00    1744.55       0.00          0
+  lex dual LP      :       0.00          0          0       0.00          -
+  barrier LP       :       0.00          0          0       0.00          -       0.00          0
+  resolve instable :       0.00          0          0       0.00          -
+  diving/probing LP:       0.03          1          8       8.00     304.61
+  strong branching :      21.38         29      28645     987.76    1340.06          -          -         57
+    (at root node) :          -         29      28645     987.76          -
+  conflict analysis:       0.00          0          0       0.00          -
+B&B Tree           :
+  number of runs   :          1
+  nodes            :          1 (1 internal, 0 leaves)
+  feasible leaves  :          0
+  infeas. leaves   :          0
+  objective leaves :          0
+  nodes (total)    :          1 (1 internal, 0 leaves)
+  nodes left       :          2
+  max depth        :          0
+  max depth (total):          0
+  backtracks       :          0 (0.0%)
+  early backtracks :          0 (0.0%)
+  nodes exc. ref.  :          0 (0.0%)
+  delayed cutoffs  :          0
+  repropagations   :          0 (0 domain reductions, 0 cutoffs)
+  avg switch length:       1.00
+  switching time   :       0.00
+Estim. Tree Size   :         -1
+Estimation Tree    : 3 nodes (1 visited, 1 internal, 0 leaves, 2 open), weight: 0.0000 completed 0.0000
+Estimations        :      estim      value      trend resolution     smooth
+  wbe              :         -1          -          -          -          -
+  tree-profile     :         -1          -          -          -          -
+  gap              :         -1    0.20924                     1           
+  tree-weight      :         -1    0.00000                     1           
+  leaf-frequency   :         -1   -0.50000                     1           
+  ssg              :         -1    1.00000                     1           
+  open-nodes       :         -1    2.00000                     1           
+Root Node          :
+  First LP value   : +2.20670087044836e+02
+  First LP Iters   :      19835 (1740.73 Iter/sec)
+  First LP Time    :      11.39
+  Final Dual Bound : +2.20751585337891e+02
+  Final Root Iters :      19835
+  Root LP Estimate : +2.22153952229134e+02
+Solution           :
+  Solutions found  :          1 (1 improvements)
+  First Solution   : +1.05500000000000e+03   (in run 1, after 1 nodes, 24.67 seconds, depth 2, found by <relaxation>)
+  Gap First Sol.   :     378.09 %
+  Gap Last Sol.    :     378.09 %
+  Primal Bound     : +1.05500000000000e+03   (in run 1, after 1 nodes, 24.67 seconds, depth 2, found by <relaxation>)
+  Dual Bound       : +2.20751585337891e+02
+  Gap              :     377.91 %
+Integrals          :      Total       Avg%
+  primal-dual      :    3147.09      94.60
+  primal-ref       :          -          - (not evaluated)
+  dual-ref         :          -          - (not evaluated)
