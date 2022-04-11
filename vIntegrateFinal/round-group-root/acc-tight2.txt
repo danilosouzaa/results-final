@@ -1,0 +1,63 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/acc-tight2.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/acc-tight2.txt -quit (default strategy 1)
+At line 1 NAME          acc-tight2
+At line 2 ROWS
+At line 2524 COLUMNS
+At line 17855 RHS
+At line 20376 BOUNDS
+At line 21997 ENDATA
+Problem acc-tight2 has 2520 rows, 1620 columns and 15327 elements
+Coin0008I acc-tight2 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0 - 0.538898 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 1427 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1371 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1361 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1334 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1282 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1121 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 456 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 275 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 274 strengthened rows, 0 substitutions
+Cgl0004I processed model has 2074 rows, 1620 columns (1620 integer (1620 of which binary)) and 20910 elements
+Coin3009W Conflict graph built in 0.015 seconds, density: 0.650%
+Cgl0015I Clique Strengthening extended 161 cliques, 899 were dominated
+After applying Clique Strengthening continuous objective value is 0
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0045I 1 integer variables out of 1620 objects (1620 integer) have cost of 1 - high priority
+Cbc0045I branch on satisfied Y create fake objective Y random cost Y
+Cbc0038I Initial state - 358 integers unsatisfied sum - 94.6628
+Cbc0038I Pass   1: suminf.   53.71053 (308) obj. 0 iterations 1003
+Cbc0038I Pass   2: suminf.   45.31371 (333) obj. 0 iterations 680
+Cbc0038I Pass   3: suminf.   40.23704 (257) obj. 0 iterations 596
+Cbc0038I Pass   4: suminf.   31.53672 (189) obj. 0 iterations 598
+Cbc0038I Pass   5: suminf.   25.00000 (103) obj. 0 iterations 991
+Cbc0038I Pass   6: suminf.   17.00000 (34) obj. 0 iterations 437
+Cbc0038I Pass   7: suminf.    0.00000 (0) obj. 0 iterations 184
+Cbc0038I Solution found of 0
+Cbc0038I Before mini branch and bound, 958 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (7.54 seconds)
+Cbc0038I After 7.54 seconds - Feasibility pump exiting with objective of 0 - took 1.47 seconds
+Cbc0012I Integer solution of 0 found by feasibility pump after 0 iterations and 0 nodes (7.55 seconds)
+Cbc0001I Search completed - best objective 0, took 0 iterations and 0 nodes (7.55 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 0 to 0
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                0
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             7.67605
+Time (Wallclock seconds):       7.6721
+Total time (CPU seconds):       7.79939   (Wallclock seconds):       7.72533

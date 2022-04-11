@@ -1,0 +1,40 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/neos-3572885-glina.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/neos-3572885-glina.txt -quit (default strategy 1)
+At line 1 NAME          neos-3572885-glina
+At line 2 ROWS
+At line 44210 COLUMNS
+At line 224317 RHS
+At line 234253 BOUNDS
+At line 291450 ENDATA
+Problem neos-3572885-glina has 44206 rows, 57196 columns and 157180 elements
+Coin0008I neos-3572885-glina read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0 - 0.855946 seconds
+Cgl0004I processed model has 11330 rows, 34252 columns (34252 integer (11348 of which binary)) and 91428 elements
+Coin3009W Conflict graph built in 10.842 seconds, density: 2.744%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I No integer variables out of 34252 objects (34252 integer) have costs
+Cbc0045I branch on satisfied N create fake objective Y random cost Y
+Cbc0012I Integer solution of 0 found by DiveCoefficient after 0 iterations and 0 nodes (65.36 seconds)
+Cbc0001I Search completed - best objective 0, took 0 iterations and 0 nodes (65.45 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 0 to 0
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                0
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             65.7815
+Time (Wallclock seconds):       65.8544
+Total time (CPU seconds):       66.2182   (Wallclock seconds):       66.2306

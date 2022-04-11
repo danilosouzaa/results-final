@@ -1,0 +1,54 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/dsbmip.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/dsbmip.txt -quit (default strategy 1)
+At line 15 NAME          dsbmip
+At line 16 ROWS
+At line 1872 COLUMNS
+At line 7165 RHS
+At line 7305 RANGES
+At line 7332 BOUNDS
+At line 8336 ENDATA
+Problem dsbmip has 1182 rows, 1886 columns and 7366 elements
+Coin0008I dsbmip read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -305.198 - 0.238145 seconds
+Cgl0003I 36 fixed, 0 tightened bounds, 22 strengthened rows, 5 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 24 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 4 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 3 strengthened rows, 0 substitutions
+Cgl0004I processed model has 1050 rows, 1673 columns (122 integer (122 of which binary)) and 6921 elements
+Coin3009W Conflict graph built in 0.001 seconds, density: 0.006%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0038I Initial state - 47 integers unsatisfied sum - 9.16757
+Cbc0038I Pass   1: suminf.    0.85708 (7) obj. 623.507 iterations 434
+Cbc0038I Pass   2: suminf.    0.42322 (5) obj. 419.038 iterations 33
+Cbc0038I Pass   3: suminf.    0.00000 (0) obj. 397.031 iterations 99
+Cbc0038I Solution found of 397.031
+Cbc0038I Relaxing continuous gives -161.042
+Cbc0038I Before mini branch and bound, 73 integers at bound fixed and 1188 continuous
+Cbc0038I Full problem 1050 rows 1673 columns, reduced to 231 rows 253 columns
+Cbc0038I Mini branch and bound improved solution from -161.042 to -286.489 (1.55 seconds)
+Cbc0038I Freeing continuous variables gives a solution of -305.198
+Cbc0038I After 1.58 seconds - Feasibility pump exiting with objective of -305.198 - took 0.60 seconds
+Cbc0012I Integer solution of -305.19818 found by feasibility pump after 0 iterations and 0 nodes (1.80 seconds)
+Cbc0001I Search completed - best objective -305.198175009482, took 0 iterations and 0 nodes (1.82 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -305.198 to -305.198
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                -305.198175009
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             2.27028
+Time (Wallclock seconds):       2.78622
+Total time (CPU seconds):       2.3288   (Wallclock seconds):       2.83766

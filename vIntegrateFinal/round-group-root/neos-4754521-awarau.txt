@@ -1,0 +1,54 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/neos-4754521-awarau.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/neos-4754521-awarau.txt -quit (default strategy 1)
+At line 1 NAME          neos-4754521-awarau
+At line 2 ROWS
+At line 255390 COLUMNS
+At line 1499874 RHS
+At line 1679090 BOUNDS
+At line 1720771 ENDATA
+Problem neos-4754521-awarau has 255386 rows, 41680 columns and 1237481 elements
+Coin0008I neos-4754521-awarau read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0 - 4.83977 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 13498 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 9113 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 496 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 270 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 294 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 313 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 252 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 281 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 352 strengthened rows, 0 substitutions
+Cgl0004I processed model has 115701 rows, 14876 columns (14876 integer (14876 of which binary)) and 567864 elements
+Coin3009W Conflict graph built in 0.048 seconds, density: 0.015%
+Cgl0015I Clique Strengthening extended 12 cliques, 29 were dominated
+After applying Clique Strengthening continuous objective value is 0
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 0 integers unsatisfied sum - 0
+Cbc0038I Solution found of 0
+Cbc0038I Before mini branch and bound, 14876 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (93.69 seconds)
+Cbc0038I After 93.70 seconds - Feasibility pump exiting with objective of 0 - took 0.49 seconds
+Cbc0012I Integer solution of -0 found by feasibility pump after 0 iterations and 0 nodes (93.76 seconds)
+Cbc0001I Search completed - best objective -0, took 0 iterations and 0 nodes (93.97 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 0 to 0
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                -0
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             94.7812
+Time (Wallclock seconds):       95.7434
+Total time (CPU seconds):       96.0876   (Wallclock seconds):       96.9891

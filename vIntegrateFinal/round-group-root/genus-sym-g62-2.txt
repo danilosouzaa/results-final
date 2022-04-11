@@ -1,0 +1,57 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/genus-sym-g62-2.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/genus-sym-g62-2.txt -quit (default strategy 1)
+At line 2 NAME          genus-sym-g62-2
+At line 3 ROWS
+At line 78477 COLUMNS
+At line 354392 RHS
+At line 420445 BOUNDS
+At line 433358 ENDATA
+Problem genus-sym-g62-2 has 78472 rows, 12912 columns and 275855 elements
+Coin0008I genus-sym-g62-2 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -54 - 176.83 seconds
+Cgl0004I processed model has 78184 rows, 12911 columns (12911 integer (12910 of which binary)) and 274823 elements
+Coin3009W Conflict graph built in 0.123 seconds, density: 0.102%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0045I 54 integer variables out of 12911 objects (12911 integer) have cost of -1 - high priority
+Cbc0045I branch on satisfied N create fake objective Y random cost Y
+Cbc0038I Initial state - 3766 integers unsatisfied sum - 345.88
+Cbc0038I Pass   1: (672.69 seconds) suminf.  270.65386 (2926) obj. -54 iterations 45932
+Cbc0038I Pass   2: (1259.88 seconds) suminf.  244.89263 (2942) obj. -51.3227 iterations 39105
+Cbc0038I Pass   3: (1912.20 seconds) suminf.  228.56244 (2501) obj. -48.3507 iterations 50947
+Cbc0038I Pass   4: (2635.85 seconds) suminf.  222.67549 (2283) obj. -48 iterations 48603
+Cbc0038I Pass   5: (3593.83 seconds) suminf.  214.01649 (2750) obj. -46.0361 iterations 64433
+Cbc0038I Pass   6: (5085.12 seconds) suminf.  210.16302 (2544) obj. -45.3211 iterations 88288
+Cbc0038I Pass   7: (6306.71 seconds) suminf.  207.88337 (2777) obj. -45.2369 iterations 72801
+Cbc0038I Pass   8: (7757.61 seconds) suminf.  202.77728 (2642) obj. -43.5078 iterations 84776
+Cbc0038I Pass   9: (8594.69 seconds) suminf.  195.52440 (2443) obj. -41.3479 iterations 67655
+Cbc0038I Pass  10: (9917.35 seconds) suminf.  191.66297 (1913) obj. -41.3769 iterations 77136
+Cbc0038I Pass  11: (10592.42 seconds) suminf.  190.03232 (1953) obj. -41.1161 iterations 37618
+Cbc0038I Pass  12: (12142.89 seconds) suminf.  185.49140 (1804) obj. -42.1536 iterations 60040
+Cbc0038I No solution found this major pass
+Cbc0038I After 12142.90 seconds - Feasibility pump exiting - took 12077.11 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible -54), took 0 iterations and 0 nodes (12143.11 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -54 to -54
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    -54
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             12258.3
+Time (Wallclock seconds):       12143.1
+Total time (CPU seconds):       12259   (Wallclock seconds):       12143.8

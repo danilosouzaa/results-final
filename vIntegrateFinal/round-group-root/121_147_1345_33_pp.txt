@@ -1,0 +1,65 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/121_147_1345_33_pp.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/121_147_1345_33_pp.txt -quit (default strategy 1)
+At line 2 NAME          121_147_1345_33_pp.lp
+At line 3 ROWS
+At line 34574 COLUMNS
+At line 1375194 RHS
+At line 1376540 BOUNDS
+At line 1442843 ENDATA
+Problem 121_147_1345_33_pp.lp has 34569 rows, 66302 columns and 1340470 elements
+Coin0008I 121_147_1345_33_pp.lp read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 120 - 870.386 seconds
+Cgl0004I processed model has 31716 rows, 66302 columns (66302 integer (66302 of which binary)) and 1233176 elements
+Coin3009W Conflict graph built in 7.065 seconds, density: 0.046%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 7429 integers unsatisfied sum - 1340.56
+Cbc0038I Pass   1: (2324.17 seconds) suminf.  591.95405 (2292) obj. 147 iterations 213752
+Cbc0038I Pass   2: (3804.82 seconds) suminf.    7.00000 (14) obj. 147 iterations 177679
+Cbc0038I Pass   3: (3842.73 seconds) suminf.    7.00000 (14) obj. 147 iterations 3307
+Cbc0038I Pass   4: (3862.52 seconds) suminf.    0.00000 (0) obj. 147 iterations 1853
+Cbc0038I Solution found of 147
+Cbc0038I Before mini branch and bound, 56578 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 31716 rows 66302 columns, reduced to 13938 rows 9697 columns
+Cbc0038I Mini branch and bound did not improve solution (4550.38 seconds)
+Cbc0038I Round again with cutoff of 143.4
+Cbc0038I Pass   5: (4603.35 seconds) suminf.  647.35243 (2520) obj. 143.4 iterations 6130
+Cbc0038I Pass   6: (6302.96 seconds) suminf.   20.40459 (51) obj. 143.4 iterations 182287
+Cbc0038I Solution found of 143
+Cbc0038I Before mini branch and bound, 56414 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 31716 rows 66302 columns, reduced to 14142 rows 9861 columns - 1178 fixed gives 1206, 790 - ok now
+Cbc0038I Full problem 31716 rows 66302 columns, reduced to 932 rows 620 columns
+Cbc0038I Mini branch and bound did not improve solution (7071.00 seconds)
+Cbc0038I Round again with cutoff of 137.6
+Cbc0038I Pass   7: (7183.11 seconds) suminf.  697.73266 (2855) obj. 137.6 iterations 11774
+Cbc0038I Pass   8: (10209.77 seconds) suminf.   80.94061 (294) obj. 137.6 iterations 330235
+Cbc0038I Pass   9: (11967.49 seconds) suminf.   20.79624 (53) obj. 137.6 iterations 146110
+Cbc0038I No solution found this major pass
+Cbc0038I After 11967.49 seconds - Feasibility pump exiting with objective of 143 - took 13519.47 seconds
+Cbc0012I Integer solution of 143 found by feasibility pump after 0 iterations and 0 nodes (11967.57 seconds)
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 143 (best possible 120), took 0 iterations and 0 nodes (11971.20 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 120 to 120
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+Objective value:                143
+Lower bound:                    120
+Gap:                            0.191667
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             14861.2
+Time (Wallclock seconds):       12162.6
+Total time (CPU seconds):       14862.8   (Wallclock seconds):       12164.1

@@ -1,0 +1,49 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/scpl4.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/scpl4.txt -quit (default strategy 1)
+At line 2 NAME          scpl4
+At line 3 ROWS
+At line 2005 COLUMNS
+At line 2202008 RHS
+At line 2204009 BOUNDS
+At line 2404010 ENDATA
+Problem scpl4 has 2000 rows, 200000 columns and 2000000 elements
+Coin0008I scpl4 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 211.742 - 119.927 seconds
+Cgl0004I processed model has 2000 rows, 200000 columns (200000 integer (200000 of which binary)) and 2000000 elements
+Coin3009W Conflict graph built in 0.886 seconds, density: 0.000%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 1149 integers unsatisfied sum - 199.805
+Cbc0038I Pass   1: suminf.  102.02181 (1662) obj. 5128.41 iterations 44867
+Cbc0038I Pass   2: suminf.   96.78922 (1481) obj. 5260.41 iterations 16329
+Cbc0038I Pass   3: suminf.   84.69840 (1078) obj. 5870.27 iterations 20852
+Cbc0038I Pass   4: suminf.   72.64588 (788) obj. 6311.32 iterations 12159
+Cbc0038I Rounding solution of 14382 is better than previous of 1e+50
+Cbc0038I After 11409.29 seconds - Feasibility pump exiting with objective of 14382 - took 14476.61 seconds
+Cbc0012I Integer solution of 14382 found by feasibility pump after 0 iterations and 0 nodes (11412.21 seconds)
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 14382 (best possible 211.74223), took 0 iterations and 0 nodes (11436.09 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 211.742 to 211.742
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+Objective value:                14382
+Lower bound:                    211.742
+Gap:                            66.9222
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             14730.1
+Time (Wallclock seconds):       11485.6
+Total time (CPU seconds):       14733   (Wallclock seconds):       11491.4

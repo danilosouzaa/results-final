@@ -1,0 +1,47 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/ds-big.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/ds-big.txt -quit (default strategy 1)
+At line 1 NAME          ds-big
+At line 2 ROWS
+At line 1046 COLUMNS
+At line 4799488 RHS
+At line 4800531 BOUNDS
+At line 4800532 ENDATA
+Problem ds-big has 1042 rows, 174997 columns and 4623442 elements
+Coin0008I ds-big read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 86.8201 - 2713.19 seconds
+Cgl0004I processed model has 1042 rows, 173029 columns (173029 integer (173029 of which binary)) and 4573582 elements
+Coin3009W Conflict graph built in 2071.510 seconds, density: 3.950%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0038I Initial state - 595 integers unsatisfied sum - 30.7436
+Cbc0038I Pass   1: suminf.   28.08404 (593) obj. 100.044 iterations 21077
+Cbc0038I Pass   2: suminf.   24.55119 (777) obj. 100.675 iterations 24510
+Cbc0038I Pass   3: suminf.   23.38770 (744) obj. 100.248 iterations 20588
+Cbc0038I Pass   4: suminf.   22.46774 (624) obj. 99.3004 iterations 20083
+Cbc0038I Pass   5: suminf.   20.31212 (926) obj. 107.731 iterations 68461
+Cbc0038I No solution found this major pass
+Cbc0038I After 14152.11 seconds - Feasibility pump exiting - took 16615.61 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 86.820069), took 0 iterations and 0 nodes (14154.99 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 86.8201 to 86.8201
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    86.8201
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             21442.1
+Time (Wallclock seconds):       14155
+Total time (CPU seconds):       21446.7   (Wallclock seconds):       14159.6

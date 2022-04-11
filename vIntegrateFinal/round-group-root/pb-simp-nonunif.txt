@@ -1,0 +1,56 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/pb-simp-nonunif.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/pb-simp-nonunif.txt -quit (default strategy 1)
+At line 1 NAME           pb-simp-nonunif
+At line 2 ROWS
+At line 1451916 COLUMNS
+At line 3647167 RHS
+At line 3647509 BOUNDS
+At line 3671358 ENDATA
+Problem pb-simp-nonunif has 1451912 rows, 23848 columns and 4366648 elements
+Coin0008I pb-simp-nonunif read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 6 - 16.4657 seconds
+Cgl0002I 7258 variables fixed
+Cgl0003I 86 fixed, 0 tightened bounds, 17198 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 12269 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 30861 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 35097 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 41191 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 29823 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 16327 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 8088 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 2919 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1085 strengthened rows, 0 substitutions
+Cgl0004I processed model has 95048 rows, 11722 columns (11722 integer (11722 of which binary)) and 387890 elements
+Coin3009W Conflict graph built in 0.088 seconds, density: 0.056%
+Cgl0015I Clique Strengthening extended 55 cliques, 109 were dominated
+After applying Clique Strengthening continuous objective value is 10
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 7284 integers unsatisfied sum - 1714.26
+Cbc0038I Pass   1: (12437.82 seconds) suminf.   29.00000 (86) obj. 89.25 iterations 153959
+Cbc0038I No solution found this major pass
+Cbc0038I After 12437.84 seconds - Feasibility pump exiting - took 1805.39 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 10), took 0 iterations and 0 nodes (12438.24 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 10 to 10
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    10
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             13470.3
+Time (Wallclock seconds):       12438.3
+Total time (CPU seconds):       13475.4   (Wallclock seconds):       12443.5

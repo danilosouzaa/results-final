@@ -1,0 +1,81 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/n3seq24.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/n3seq24.txt -quit (default strategy 1)
+At line 1 NAME          n3seq24
+At line 2 ROWS
+At line 6048 COLUMNS
+At line 3344567 RHS
+At line 3349172 BOUNDS
+At line 3469029 ENDATA
+Problem n3seq24 has 6044 rows, 119856 columns and 3232340 elements
+Coin0008I n3seq24 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 52000 - 96.9915 seconds
+Cgl0008I 4484 inequality constraints converted to equality constraints
+Cgl0003I 46 fixed, 0 tightened bounds, 0 strengthened rows, 0 substitutions
+Cgl0005I 4484 SOS with 124294 members
+Cgl0004I processed model has 5964 rows, 124294 columns (124294 integer (124294 of which binary)) and 2421024 elements
+Coin3009W Conflict graph built in 2.776 seconds, density: 0.037%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 200
+Cbc0038I Initial state - 505 integers unsatisfied sum - 79.3445
+Cbc0038I Pass   1: (1539.97 seconds) suminf.   29.68688 (5072) obj. 83992.4 iterations 56001
+Cbc0038I Pass   2: (4145.11 seconds) suminf.   13.68983 (4476) obj. 88770.5 iterations 95277
+Cbc0038I Pass   3: (4688.17 seconds) suminf.    9.00778 (40) obj. 97698.4 iterations 17815
+Cbc0038I Pass   4: (5086.39 seconds) suminf.    7.50000 (17) obj. 103900 iterations 12689
+Cbc0038I Pass   5: (5262.84 seconds) suminf.    4.00000 (9) obj. 111400 iterations 5866
+Cbc0038I Pass   6: (5290.41 seconds) suminf.    1.00000 (3) obj. 111400 iterations 891
+Cbc0038I Pass   7: (5304.32 seconds) suminf.    1.00000 (3) obj. 111400 iterations 338
+Cbc0038I Pass   8: (5310.18 seconds) suminf.    1.00000 (3) obj. 111400 iterations 101
+Cbc0038I Pass   9: (5828.18 seconds) suminf.    1.00000 (4) obj. 1.55942e+07 iterations 23349
+Cbc0038I Pass  10: (5828.50 seconds) suminf.    0.83333 (4) obj. 1.55942e+07 iterations 308
+Cbc0038I Solution found of 1.55942e+07
+Cbc0038I Before mini branch and bound, 106456 integers at bound fixed and 2399 continuous
+Cbc0038I Full problem 5964 rows 124294 columns, reduced to 1952 rows 10906 columns
+Cbc0038I Mini branch and bound did not improve solution (5856.36 seconds)
+Cbc0038I Round again with cutoff of 1.40398e+07
+Cbc0038I Pass  11: (5857.45 seconds) suminf.   29.70645 (146) obj. 83966.2 iterations 0
+Cbc0038I Pass  12: (8090.49 seconds) suminf.   13.79594 (9971) obj. 88743.3 iterations 75701
+Cbc0038I Pass  13: (8737.81 seconds) suminf.    9.00778 (40) obj. 97698.4 iterations 21157
+Cbc0038I Pass  14: (9178.92 seconds) suminf.    4.66667 (12) obj. 101733 iterations 12072
+Cbc0038I Pass  15: (9213.65 seconds) suminf.    2.00000 (6) obj. 101400 iterations 913
+Cbc0038I Pass  16: (9242.45 seconds) suminf.    1.00000 (3) obj. 101400 iterations 584
+Cbc0038I Pass  17: (9255.25 seconds) suminf.    1.00000 (3) obj. 101400 iterations 246
+Cbc0038I Pass  18: (9259.15 seconds) suminf.    1.00000 (3) obj. 101400 iterations 33
+Cbc0038I Pass  19: (10189.26 seconds) suminf.    1.66087 (7) obj. 1.40398e+07 iterations 31353
+Cbc0038I Pass  20: (10189.64 seconds) suminf.    0.99420 (5) obj. 1.40398e+07 iterations 390
+Cbc0038I Solution found of 1.40058e+07
+Cbc0038I Before mini branch and bound, 107124 integers at bound fixed and 3084 continuous
+Cbc0038I Full problem 5964 rows 124294 columns, reduced to 1288 rows 5851 columns
+Cbc0038I Mini branch and bound improved solution from 1.40058e+07 to 57200 (10206.46 seconds)
+Cbc0038I Round again with cutoff of 56000
+Cbc0038I Reduced cost fixing fixed 35696 variables on major pass 3
+Cbc0038I Pass  21: (10290.13 seconds) suminf.   30.75338 (129) obj. 56000 iterations 8696
+Cbc0038I Pass  22: (11623.66 seconds) suminf.   21.97322 (8597) obj. 56000 iterations 50383
+Cbc0038I No solution found this major pass
+Cbc0038I After 11623.67 seconds - Feasibility pump exiting with objective of 57200 - took 14439.39 seconds
+Cbc0012I Integer solution of 57200 found by feasibility pump after 0 iterations and 0 nodes (11623.83 seconds)
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 57200 (best possible 52000), took 0 iterations and 0 nodes (11624.20 seconds)
+Cbc0035I Maximum depth 0, 30491 variables fixed on reduced cost
+Cuts at root node changed objective from 52000 to 52000
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+Objective value:                57200
+Lower bound:                    52000
+Gap:                            0.1
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             14570.2
+Time (Wallclock seconds):       11633.5
+Total time (CPU seconds):       14577.4   (Wallclock seconds):       11640.7
