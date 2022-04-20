@@ -1,0 +1,53 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/neos-3025225-shelon.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/neos-3025225-shelon.txt -quit (default strategy 1)
+At line 1 NAME          neos-3025225-shelon
+At line 2 ROWS
+At line 91576 COLUMNS
+At line 9449531 RHS
+At line 9471302 BOUNDS
+At line 9541148 ENDATA
+Problem neos-3025225-shelon has 91572 rows, 69846 columns and 9357951 elements
+Coin0008I neos-3025225-shelon read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0.052574 - 6207.9 seconds
+Cgl0003I 2109 fixed, 0 tightened bounds, 4 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 4 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 4 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 4 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 3 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 3 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 3 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 3 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 3 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 3 strengthened rows, 0 substitutions
+Cgl0004I processed model has 84256 rows, 64306 columns (64305 integer (64305 of which binary)) and 8191095 elements
+Coin3009W Conflict graph built in 7.558 seconds, density: 0.187%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0038I Initial state - 9573 integers unsatisfied sum - 321.91
+Cbc0038I Pass   1: (12104.98 seconds) suminf.  185.90147 (766) obj. 11.7424 iterations 65031
+Cbc0038I No solution found this major pass
+Cbc0038I After 12105.05 seconds - Feasibility pump exiting - took 3966.62 seconds
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 0.077134986), took 0 iterations and 0 nodes (12108.37 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 0.077135 to 0.077135
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    0.077135
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             11903.3
+Time (Wallclock seconds):       12108.4
+Total time (CPU seconds):       11911   (Wallclock seconds):       12116.2

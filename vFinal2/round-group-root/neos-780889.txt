@@ -1,0 +1,59 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/neos-780889.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/neos-780889.txt -quit (default strategy 1)
+At line 1 NAME          neos-780889
+At line 2 ROWS
+At line 73914 COLUMNS
+At line 695377 RHS
+At line 696488 BOUNDS
+At line 879189 ENDATA
+Problem neos-780889 has 73910 rows, 182700 columns and 497210 elements
+Coin0008I neos-780889 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 3.4215e+06 - 31.7909 seconds
+Cgl0004I processed model has 26530 rows, 112570 columns (112570 integer (112570 of which binary)) and 337740 elements
+Coin3009W Conflict graph built in 1.272 seconds, density: 0.009%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 4.9999
+Cbc0038I Initial state - 198 integers unsatisfied sum - 53
+Cbc0038I Pass   1: (117.17 seconds) suminf.    0.00000 (0) obj. 3.43512e+06 iterations 18461
+Cbc0038I Solution found of 3.43512e+06
+Cbc0038I Before mini branch and bound, 112364 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 26530 rows 112570 columns, reduced to 36 rows 28 columns
+Cbc0038I Mini branch and bound did not improve solution (119.88 seconds)
+Cbc0038I Round again with cutoff of 3.43376e+06
+Cbc0038I Reduced cost fixing fixed 11319 variables on major pass 2
+Cbc0038I Pass   2: (121.08 seconds) suminf.    0.00000 (0) obj. 3.4245e+06 iterations 97
+Cbc0038I Solution found of 3.4245e+06
+Cbc0038I Before mini branch and bound, 112364 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 26530 rows 112570 columns, reduced to 36 rows 28 columns
+Cbc0038I Mini branch and bound did not improve solution (123.92 seconds)
+Cbc0038I Round again with cutoff of 3.4239e+06
+Cbc0038I Reduced cost fixing fixed 59890 variables on major pass 3
+Cbc0038I Pass   3: (126.07 seconds) suminf.    0.00000 (0) obj. 3.4215e+06 iterations 931
+Cbc0038I Solution found of 3.4215e+06
+Cbc0038I Before mini branch and bound, 112364 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (126.56 seconds)
+Cbc0038I After 126.57 seconds - Feasibility pump exiting with objective of 3.4215e+06 - took 79.76 seconds
+Cbc0012I Integer solution of 3421500 found by feasibility pump after 0 iterations and 0 nodes (126.66 seconds)
+Cbc0001I Search completed - best objective 3421500, took 0 iterations and 0 nodes (126.98 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 3.4215e+06 to 3.4215e+06
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                3421500
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             133.371
+Time (Wallclock seconds):       128.265
+Total time (CPU seconds):       134.466   (Wallclock seconds):       129.276

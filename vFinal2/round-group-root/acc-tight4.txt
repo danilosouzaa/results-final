@@ -1,0 +1,365 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/acc-tight4.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/acc-tight4.txt -quit (default strategy 1)
+At line 1 NAME          acc-tight4
+At line 2 ROWS
+At line 3289 COLUMNS
+At line 20366 RHS
+At line 23652 BOUNDS
+At line 25273 ENDATA
+Problem acc-tight4 has 3285 rows, 1620 columns and 17073 elements
+Coin0008I acc-tight4 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0 - 1.19951 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 1449 strengthened rows, 162 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1391 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1350 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1343 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1325 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1232 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 1022 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 234 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 128 strengthened rows, 0 substitutions
+Cgl0004I processed model has 2976 rows, 1539 columns (1539 integer (1539 of which binary)) and 24560 elements
+Coin3009W Conflict graph built in 0.018 seconds, density: 0.809%
+Cgl0015I Clique Strengthening extended 43 cliques, 191 were dominated
+After applying Clique Strengthening continuous objective value is 0
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0045I 1 integer variables out of 1539 objects (1539 integer) have cost of 1 - high priority
+Cbc0045I branch on satisfied Y create fake objective Y random cost Y
+Cbc0038I Initial state - 353 integers unsatisfied sum - 94.8489
+Cbc0038I Pass   1: suminf.   59.75156 (388) obj. 0.0951297 iterations 5747
+Cbc0038I Pass   2: suminf.   53.70169 (342) obj. 0.0982672 iterations 2573
+Cbc0038I Pass   3: suminf.   51.46845 (309) obj. 0.0360059 iterations 3077
+Cbc0038I Pass   4: suminf.   51.45890 (312) obj. 0.0165525 iterations 256
+Cbc0038I Pass   5: suminf.   50.01622 (284) obj. 0 iterations 2621
+Cbc0038I Pass   6: suminf.   47.54930 (277) obj. 0 iterations 2538
+Cbc0038I Pass   7: suminf.   44.25000 (210) obj. 0.125 iterations 2735
+Cbc0038I Pass   8: suminf.   44.00000 (212) obj. 0.166667 iterations 529
+Cbc0038I Pass   9: suminf.   43.77391 (223) obj. 0.121739 iterations 429
+Cbc0038I Pass  10: suminf.   43.61240 (264) obj. 0.139535 iterations 932
+Cbc0038I Pass  11: suminf.   41.71429 (267) obj. 0.142857 iterations 3175
+Cbc0038I Pass  12: suminf.   40.05610 (301) obj. 0.0853659 iterations 1650
+Cbc0038I Pass  13: suminf.   39.53553 (322) obj. 0.0484566 iterations 871
+Cbc0038I Pass  14: suminf.   37.66432 (309) obj. 0.0421793 iterations 3025
+Cbc0038I Pass  15: suminf.   35.42532 (390) obj. 0.00204596 iterations 2313
+Cbc0038I Pass  16: suminf.   35.40497 (388) obj. 0 iterations 268
+Cbc0038I Pass  17: suminf.   33.75802 (400) obj. 0 iterations 3094
+Cbc0038I Pass  18: suminf.   33.62696 (406) obj. 0 iterations 509
+Cbc0038I Pass  19: suminf.   33.17733 (363) obj. 0 iterations 334
+Cbc0038I Pass  20: suminf.   31.99725 (328) obj. 0 iterations 2275
+Cbc0038I Pass  21: suminf.   31.13598 (341) obj. 0 iterations 1523
+Cbc0038I Pass  22: suminf.   32.89137 (314) obj. 4.56302e-14 iterations 4625
+Cbc0038I Pass  23: suminf.   31.46018 (320) obj. -3.93926e-14 iterations 1919
+Cbc0038I Pass  24: suminf.   31.38860 (331) obj. 0.00851221 iterations 607
+Cbc0038I Pass  25: suminf.   31.90749 (322) obj. 0 iterations 2922
+Cbc0038I Pass  26: suminf.   31.62858 (347) obj. 0 iterations 1231
+Cbc0038I Pass  27: suminf.   32.16974 (351) obj. 0 iterations 2660
+Cbc0038I Pass  28: suminf.   31.57459 (332) obj. 0.0296686 iterations 1547
+Cbc0038I Pass  29: suminf.   31.48612 (351) obj. 0.0404441 iterations 602
+Cbc0038I Pass  30: suminf.   32.03297 (317) obj. 0.021978 iterations 2262
+Cbc0038I Pass  31: suminf.   31.62858 (347) obj. 0 iterations 1372
+Cbc0038I Pass  32: suminf.   31.83244 (373) obj. 0.0131658 iterations 2145
+Cbc0038I Pass  33: suminf.   31.72516 (342) obj. 0.0241591 iterations 691
+Cbc0038I Pass  34: suminf.   32.15088 (376) obj. 0.0116863 iterations 2148
+Cbc0038I Pass  35: suminf.   37.57143 (123) obj. -6.15064e-14 iterations 4461
+Cbc0038I Pass  36: suminf.   31.26156 (339) obj. 0 iterations 4686
+Cbc0038I Pass  37: suminf.   27.34160 (346) obj. 0 iterations 2803
+Cbc0038I Pass  38: suminf.   27.31749 (345) obj. 0.00300225 iterations 397
+Cbc0038I Pass  39: suminf.   28.48619 (263) obj. 0 iterations 3391
+Cbc0038I Pass  40: suminf.   27.37619 (354) obj. 0 iterations 2728
+Cbc0038I Pass  41: suminf.   27.35662 (393) obj. 0 iterations 470
+Cbc0038I Pass  42: suminf.   27.79916 (283) obj. -1.29008e-13 iterations 1298
+Cbc0038I Pass  43: suminf.   30.75000 (225) obj. 0 iterations 4328
+Cbc0038I Pass  44: suminf.   27.39632 (370) obj. 0 iterations 4993
+Cbc0038I Pass  45: suminf.   42.02241 (361) obj. 0.0606161 iterations 5300
+Cbc0038I Pass  46: suminf.   27.76311 (381) obj. 0 iterations 5653
+Cbc0038I Pass  47: suminf.   43.33333 (169) obj. 2.73972e-14 iterations 5975
+Cbc0038I Pass  48: suminf.   26.44828 (267) obj. 0.0344828 iterations 3915
+Cbc0038I Pass  49: suminf.   25.70351 (304) obj. 0.0105263 iterations 1549
+Cbc0038I Pass  50: suminf.   25.66242 (233) obj. 0.0127389 iterations 662
+Cbc0038I Pass  51: suminf.   24.71429 (158) obj. 0 iterations 966
+Cbc0038I Pass  52: suminf.   24.00885 (262) obj. 0.0176991 iterations 1177
+Cbc0038I Pass  53: suminf.   23.94118 (271) obj. 0.00619195 iterations 513
+Cbc0038I Pass  54: suminf.   23.88943 (275) obj. 0.019656 iterations 290
+Cbc0038I Pass  55: suminf.   23.58621 (215) obj. 0.0344828 iterations 1649
+Cbc0038I Pass  56: suminf.   23.53684 (232) obj. 0.0105263 iterations 350
+Cbc0038I Pass  57: suminf.   26.96901 (201) obj. -2.13163e-14 iterations 2322
+Cbc0038I Pass  58: suminf.   23.55303 (319) obj. 0.0521466 iterations 3820
+Cbc0038I Pass  59: suminf.   23.46603 (309) obj. 0.0763878 iterations 740
+Cbc0038I Pass  60: suminf.   23.81027 (405) obj. 0 iterations 1728
+Cbc0038I Pass  61: suminf.   23.49220 (236) obj. 0 iterations 1315
+Cbc0038I Pass  62: suminf.   23.66667 (71) obj. -1.08247e-13 iterations 3571
+Cbc0038I Pass  63: suminf.   23.66667 (71) obj. -3.52607e-13 iterations 673
+Cbc0038I Pass  64: suminf.   23.66667 (71) obj. 0 iterations 517
+Cbc0038I Pass  65: suminf.   23.66667 (71) obj. 0 iterations 1259
+Cbc0038I Pass  66: suminf.   23.66667 (71) obj. 0 iterations 1245
+Cbc0038I Pass  67: suminf.   25.20000 (77) obj. -3.08642e-14 iterations 1497
+Cbc0038I Pass  68: suminf.   22.63737 (368) obj. 0.00865042 iterations 5082
+Cbc0038I Pass  69: suminf.   20.50556 (339) obj. 0.00953029 iterations 4100
+Cbc0038I Pass  70: suminf.   20.32913 (349) obj. 0.00895773 iterations 885
+Cbc0038I Pass  71: suminf.   23.26369 (317) obj. 3.53738e-15 iterations 5053
+Cbc0038I Pass  72: suminf.   27.02994 (260) obj. 5.67324e-14 iterations 3373
+Cbc0038I Pass  73: suminf.   20.43359 (351) obj. 0.0027791 iterations 7261
+Cbc0038I Pass  74: suminf.   21.41834 (333) obj. 0.0015572 iterations 2272
+Cbc0038I Pass  75: suminf.   27.57494 (398) obj. 0 iterations 5838
+Cbc0038I Pass  76: suminf.   20.34988 (329) obj. 0.00355452 iterations 4849
+Cbc0038I Pass  77: suminf.   20.32913 (349) obj. 0.00895773 iterations 572
+Cbc0038I Pass  78: suminf.   20.96860 (321) obj. 0.00132685 iterations 2867
+Cbc0038I Pass  79: suminf.   20.43359 (351) obj. 0.0027791 iterations 2474
+Cbc0038I Pass  80: suminf.   22.54497 (308) obj. 0.00986717 iterations 3897
+Cbc0038I Pass  81: suminf.   27.88681 (280) obj. 0 iterations 6583
+Cbc0038I Pass  82: suminf.   23.68553 (289) obj. 3.1545e-14 iterations 5513
+Cbc0038I Pass  83: suminf.   23.39726 (216) obj. 1.63092e-13 iterations 7314
+Cbc0038I Pass  84: suminf.   35.40914 (345) obj. 0 iterations 5574
+Cbc0038I Pass  85: suminf.   22.34030 (323) obj. 0 iterations 5561
+Cbc0038I Pass  86: suminf.   20.32913 (349) obj. 0.00895773 iterations 4979
+Cbc0038I Pass  87: suminf.   22.99760 (307) obj. 1.13243e-14 iterations 4947
+Cbc0038I Pass  88: suminf.   20.43359 (351) obj. 0.0027791 iterations 5429
+Cbc0038I Pass  89: suminf.   21.38745 (305) obj. 0.000283849 iterations 2657
+Cbc0038I Pass  90: suminf.   29.02000 (391) obj. 0.0245055 iterations 4906
+Cbc0038I Pass  91: suminf.   22.63737 (368) obj. 0.00865042 iterations 3854
+Cbc0038I Pass  92: suminf.   20.43474 (339) obj. 0.00747977 iterations 3784
+Cbc0038I Pass  93: suminf.   20.32913 (349) obj. 0.00895773 iterations 1130
+Cbc0038I Pass  94: suminf.   20.74103 (307) obj. 0.00326158 iterations 2704
+Cbc0038I Pass  95: suminf.   20.43359 (351) obj. 0.0027791 iterations 1835
+Cbc0038I Pass  96: suminf.   21.10726 (328) obj. 0.0007103 iterations 2489
+Cbc0038I Pass  97: suminf.   24.32794 (370) obj. 0 iterations 5313
+Cbc0038I Pass  98: suminf.   22.80049 (339) obj. 0.00691847 iterations 4599
+Cbc0038I Pass  99: suminf.   26.70023 (322) obj. 0 iterations 4848
+Cbc0038I Pass 100: suminf.   23.38825 (292) obj. 0.00325574 iterations 3640
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 133 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 2828 rows 1539 columns, reduced to 2656 rows 1389 columns - too large
+Cbc0038I Mini branch and bound did not improve solution (222.71 seconds)
+Cbc0038I After 222.71 seconds - Feasibility pump exiting - took 212.53 seconds
+Cbc0031I 2 added rows had average density of 34.5
+Cbc0013I At root node, 2 cuts changed objective from 0 to 0 in 3 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.255 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.195 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (liftKnapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.590 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 2 row cuts average 4.0 elements, 0 column cuts (0 active)  in 0.048 seconds - new frequency is 1
+Cbc0014I Cut generator 4 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.663 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.019 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.002 seconds - new frequency is -100
+Cbc0014I Cut generator 8 (ZeroHalf) - 8 row cuts average 42.0 elements, 0 column cuts (0 active)  in 0.236 seconds - new frequency is -100
+Cbc0010I After 0 nodes, 1 on tree, 1e+50 best solution, best possible 0 (229.12 seconds)
+Cbc0010I After 1 nodes, 2 on tree, 1e+50 best solution, best possible 0 (234.65 seconds)
+Cbc0010I After 2 nodes, 3 on tree, 1e+50 best solution, best possible 0 (238.37 seconds)
+Cbc0010I After 3 nodes, 4 on tree, 1e+50 best solution, best possible 0 (241.35 seconds)
+Cbc0010I After 4 nodes, 5 on tree, 1e+50 best solution, best possible 0 (243.91 seconds)
+Cbc0010I After 5 nodes, 6 on tree, 1e+50 best solution, best possible 0 (246.40 seconds)
+Cbc0010I After 6 nodes, 7 on tree, 1e+50 best solution, best possible 0 (248.92 seconds)
+Cbc0010I After 7 nodes, 8 on tree, 1e+50 best solution, best possible 0 (251.25 seconds)
+Cbc0010I After 8 nodes, 9 on tree, 1e+50 best solution, best possible 0 (253.45 seconds)
+Cbc0010I After 9 nodes, 9 on tree, 1e+50 best solution, best possible 0 (255.88 seconds)
+Cbc0010I After 10 nodes, 10 on tree, 1e+50 best solution, best possible 0 (258.91 seconds)
+Cbc0010I After 12 nodes, 11 on tree, 1e+50 best solution, best possible 0 (260.22 seconds)
+Cbc0010I After 13 nodes, 11 on tree, 1e+50 best solution, best possible 0 (263.01 seconds)
+Cbc0010I After 14 nodes, 12 on tree, 1e+50 best solution, best possible 0 (264.08 seconds)
+Cbc0010I After 15 nodes, 12 on tree, 1e+50 best solution, best possible 0 (267.15 seconds)
+Cbc0010I After 17 nodes, 13 on tree, 1e+50 best solution, best possible 0 (268.45 seconds)
+Cbc0010I After 18 nodes, 14 on tree, 1e+50 best solution, best possible 0 (269.33 seconds)
+Cbc0010I After 19 nodes, 14 on tree, 1e+50 best solution, best possible 0 (270.19 seconds)
+Cbc0010I After 20 nodes, 15 on tree, 1e+50 best solution, best possible 0 (272.55 seconds)
+Cbc0010I After 22 nodes, 17 on tree, 1e+50 best solution, best possible 0 (273.75 seconds)
+Cbc0010I After 23 nodes, 17 on tree, 1e+50 best solution, best possible 0 (274.49 seconds)
+Cbc0010I After 24 nodes, 17 on tree, 1e+50 best solution, best possible 0 (275.19 seconds)
+Cbc0010I After 25 nodes, 18 on tree, 1e+50 best solution, best possible 0 (277.80 seconds)
+Cbc0010I After 27 nodes, 20 on tree, 1e+50 best solution, best possible 0 (278.94 seconds)
+Cbc0010I After 28 nodes, 20 on tree, 1e+50 best solution, best possible 0 (279.79 seconds)
+Cbc0010I After 30 nodes, 21 on tree, 1e+50 best solution, best possible 0 (280.79 seconds)
+Cbc0010I After 31 nodes, 21 on tree, 1e+50 best solution, best possible 0 (282.43 seconds)
+Cbc0010I After 33 nodes, 22 on tree, 1e+50 best solution, best possible 0 (283.38 seconds)
+Cbc0010I After 35 nodes, 23 on tree, 1e+50 best solution, best possible 0 (284.22 seconds)
+Cbc0010I After 37 nodes, 25 on tree, 1e+50 best solution, best possible 0 (284.95 seconds)
+Cbc0010I After 39 nodes, 26 on tree, 1e+50 best solution, best possible 0 (285.83 seconds)
+Cbc0010I After 41 nodes, 27 on tree, 1e+50 best solution, best possible 0 (286.59 seconds)
+Cbc0010I After 44 nodes, 28 on tree, 1e+50 best solution, best possible 0 (289.01 seconds)
+Cbc0010I After 47 nodes, 30 on tree, 1e+50 best solution, best possible 0 (290.06 seconds)
+Cbc0010I After 48 nodes, 30 on tree, 1e+50 best solution, best possible 0 (290.91 seconds)
+Cbc0010I After 50 nodes, 31 on tree, 1e+50 best solution, best possible 0 (291.80 seconds)
+Cbc0010I After 52 nodes, 31 on tree, 1e+50 best solution, best possible 0 (293.80 seconds)
+Cbc0010I After 56 nodes, 32 on tree, 1e+50 best solution, best possible 0 (294.66 seconds)
+Cbc0010I After 59 nodes, 31 on tree, 1e+50 best solution, best possible 0 (296.55 seconds)
+Cbc0010I After 63 nodes, 35 on tree, 1e+50 best solution, best possible 0 (297.49 seconds)
+Cbc0010I After 66 nodes, 34 on tree, 1e+50 best solution, best possible 0 (298.54 seconds)
+Cbc0010I After 69 nodes, 33 on tree, 1e+50 best solution, best possible 0 (300.36 seconds)
+Cbc0010I After 74 nodes, 31 on tree, 1e+50 best solution, best possible 0 (301.10 seconds)
+Cbc0010I After 75 nodes, 31 on tree, 1e+50 best solution, best possible 0 (302.68 seconds)
+Cbc0010I After 78 nodes, 34 on tree, 1e+50 best solution, best possible 0 (303.57 seconds)
+Cbc0010I After 82 nodes, 34 on tree, 1e+50 best solution, best possible 0 (304.32 seconds)
+Cbc0010I After 86 nodes, 34 on tree, 1e+50 best solution, best possible 0 (305.17 seconds)
+Cbc0010I After 90 nodes, 34 on tree, 1e+50 best solution, best possible 0 (305.93 seconds)
+Cbc0010I After 94 nodes, 33 on tree, 1e+50 best solution, best possible 0 (307.52 seconds)
+Cbc0010I After 99 nodes, 34 on tree, 1e+50 best solution, best possible 0 (308.25 seconds)
+Cbc0010I After 106 nodes, 34 on tree, 1e+50 best solution, best possible 0 (309.03 seconds)
+Cbc0010I After 113 nodes, 32 on tree, 1e+50 best solution, best possible 0 (309.75 seconds)
+Cbc0010I After 119 nodes, 32 on tree, 1e+50 best solution, best possible 0 (310.64 seconds)
+Cbc0010I After 125 nodes, 32 on tree, 1e+50 best solution, best possible 0 (311.37 seconds)
+Cbc0010I After 128 nodes, 30 on tree, 1e+50 best solution, best possible 0 (312.08 seconds)
+Cbc0010I After 134 nodes, 31 on tree, 1e+50 best solution, best possible 0 (312.85 seconds)
+Cbc0010I After 141 nodes, 30 on tree, 1e+50 best solution, best possible 0 (313.66 seconds)
+Cbc0010I After 145 nodes, 31 on tree, 1e+50 best solution, best possible 0 (314.42 seconds)
+Cbc0010I After 148 nodes, 32 on tree, 1e+50 best solution, best possible 0 (316.63 seconds)
+Cbc0010I After 150 nodes, 34 on tree, 1e+50 best solution, best possible 0 (317.42 seconds)
+Cbc0010I After 153 nodes, 34 on tree, 1e+50 best solution, best possible 0 (319.13 seconds)
+Cbc0010I After 154 nodes, 35 on tree, 1e+50 best solution, best possible 0 (320.88 seconds)
+Cbc0010I After 158 nodes, 37 on tree, 1e+50 best solution, best possible 0 (321.61 seconds)
+Cbc0010I After 161 nodes, 38 on tree, 1e+50 best solution, best possible 0 (323.58 seconds)
+Cbc0010I After 162 nodes, 37 on tree, 1e+50 best solution, best possible 0 (324.40 seconds)
+Cbc0010I After 164 nodes, 36 on tree, 1e+50 best solution, best possible 0 (327.19 seconds)
+Cbc0010I After 169 nodes, 37 on tree, 1e+50 best solution, best possible 0 (328.55 seconds)
+Cbc0010I After 170 nodes, 37 on tree, 1e+50 best solution, best possible 0 (330.29 seconds)
+Cbc0010I After 172 nodes, 38 on tree, 1e+50 best solution, best possible 0 (331.74 seconds)
+Cbc0010I After 177 nodes, 40 on tree, 1e+50 best solution, best possible 0 (332.52 seconds)
+Cbc0010I After 180 nodes, 41 on tree, 1e+50 best solution, best possible 0 (334.00 seconds)
+Cbc0010I After 187 nodes, 42 on tree, 1e+50 best solution, best possible 0 (334.75 seconds)
+Cbc0010I After 189 nodes, 42 on tree, 1e+50 best solution, best possible 0 (335.92 seconds)
+Cbc0010I After 194 nodes, 42 on tree, 1e+50 best solution, best possible 0 (336.75 seconds)
+Cbc0010I After 196 nodes, 41 on tree, 1e+50 best solution, best possible 0 (337.96 seconds)
+Cbc0010I After 201 nodes, 42 on tree, 1e+50 best solution, best possible 0 (339.76 seconds)
+Cbc0010I After 206 nodes, 40 on tree, 1e+50 best solution, best possible 0 (340.58 seconds)
+Cbc0010I After 208 nodes, 38 on tree, 1e+50 best solution, best possible 0 (341.40 seconds)
+Cbc0010I After 209 nodes, 39 on tree, 1e+50 best solution, best possible 0 (342.89 seconds)
+Cbc0010I After 212 nodes, 40 on tree, 1e+50 best solution, best possible 0 (344.76 seconds)
+Cbc0010I After 217 nodes, 43 on tree, 1e+50 best solution, best possible 0 (345.74 seconds)
+Cbc0010I After 219 nodes, 44 on tree, 1e+50 best solution, best possible 0 (347.33 seconds)
+Cbc0010I After 222 nodes, 46 on tree, 1e+50 best solution, best possible 0 (348.07 seconds)
+Cbc0010I After 225 nodes, 45 on tree, 1e+50 best solution, best possible 0 (349.82 seconds)
+Cbc0010I After 230 nodes, 45 on tree, 1e+50 best solution, best possible 0 (350.91 seconds)
+Cbc0010I After 232 nodes, 44 on tree, 1e+50 best solution, best possible 0 (352.64 seconds)
+Cbc0010I After 235 nodes, 44 on tree, 1e+50 best solution, best possible 0 (354.24 seconds)
+Cbc0010I After 237 nodes, 45 on tree, 1e+50 best solution, best possible 0 (355.64 seconds)
+Cbc0010I After 242 nodes, 47 on tree, 1e+50 best solution, best possible 0 (357.84 seconds)
+Cbc0010I After 249 nodes, 51 on tree, 1e+50 best solution, best possible 0 (358.55 seconds)
+Cbc0010I After 254 nodes, 48 on tree, 1e+50 best solution, best possible 0 (359.46 seconds)
+Cbc0010I After 256 nodes, 47 on tree, 1e+50 best solution, best possible 0 (360.84 seconds)
+Cbc0010I After 258 nodes, 48 on tree, 1e+50 best solution, best possible 0 (362.62 seconds)
+Cbc0010I After 261 nodes, 49 on tree, 1e+50 best solution, best possible 0 (363.44 seconds)
+Cbc0010I After 265 nodes, 50 on tree, 1e+50 best solution, best possible 0 (364.32 seconds)
+Cbc0010I After 266 nodes, 50 on tree, 1e+50 best solution, best possible 0 (365.19 seconds)
+Cbc0010I After 268 nodes, 50 on tree, 1e+50 best solution, best possible 0 (366.53 seconds)
+Cbc0010I After 271 nodes, 51 on tree, 1e+50 best solution, best possible 0 (368.09 seconds)
+Cbc0010I After 276 nodes, 49 on tree, 1e+50 best solution, best possible 0 (369.01 seconds)
+Cbc0010I After 278 nodes, 47 on tree, 1e+50 best solution, best possible 0 (369.86 seconds)
+Cbc0010I After 279 nodes, 48 on tree, 1e+50 best solution, best possible 0 (371.28 seconds)
+Cbc0010I After 282 nodes, 50 on tree, 1e+50 best solution, best possible 0 (373.02 seconds)
+Cbc0010I After 285 nodes, 51 on tree, 1e+50 best solution, best possible 0 (373.77 seconds)
+Cbc0010I After 287 nodes, 52 on tree, 1e+50 best solution, best possible 0 (375.58 seconds)
+Cbc0010I After 289 nodes, 53 on tree, 1e+50 best solution, best possible 0 (376.34 seconds)
+Cbc0010I After 292 nodes, 52 on tree, 1e+50 best solution, best possible 0 (377.66 seconds)
+Cbc0010I After 293 nodes, 53 on tree, 1e+50 best solution, best possible 0 (378.85 seconds)
+Cbc0010I After 296 nodes, 52 on tree, 1e+50 best solution, best possible 0 (379.94 seconds)
+Cbc0010I After 301 nodes, 52 on tree, 1e+50 best solution, best possible 0 (381.41 seconds)
+Cbc0010I After 306 nodes, 53 on tree, 1e+50 best solution, best possible 0 (382.27 seconds)
+Cbc0010I After 307 nodes, 54 on tree, 1e+50 best solution, best possible 0 (383.64 seconds)
+Cbc0010I After 310 nodes, 53 on tree, 1e+50 best solution, best possible 0 (384.47 seconds)
+Cbc0010I After 311 nodes, 54 on tree, 1e+50 best solution, best possible 0 (385.85 seconds)
+Cbc0010I After 317 nodes, 56 on tree, 1e+50 best solution, best possible 0 (386.67 seconds)
+Cbc0010I After 318 nodes, 56 on tree, 1e+50 best solution, best possible 0 (388.37 seconds)
+Cbc0010I After 323 nodes, 57 on tree, 1e+50 best solution, best possible 0 (389.11 seconds)
+Cbc0010I After 325 nodes, 57 on tree, 1e+50 best solution, best possible 0 (390.77 seconds)
+Cbc0010I After 327 nodes, 56 on tree, 1e+50 best solution, best possible 0 (391.51 seconds)
+Cbc0010I After 329 nodes, 56 on tree, 1e+50 best solution, best possible 0 (392.91 seconds)
+Cbc0010I After 332 nodes, 57 on tree, 1e+50 best solution, best possible 0 (393.66 seconds)
+Cbc0010I After 335 nodes, 58 on tree, 1e+50 best solution, best possible 0 (394.86 seconds)
+Cbc0010I After 338 nodes, 61 on tree, 1e+50 best solution, best possible 0 (396.19 seconds)
+Cbc0010I After 341 nodes, 58 on tree, 1e+50 best solution, best possible 0 (396.97 seconds)
+Cbc0010I After 343 nodes, 57 on tree, 1e+50 best solution, best possible 0 (398.71 seconds)
+Cbc0010I After 345 nodes, 57 on tree, 1e+50 best solution, best possible 0 (399.45 seconds)
+Cbc0010I After 349 nodes, 58 on tree, 1e+50 best solution, best possible 0 (401.22 seconds)
+Cbc0010I After 353 nodes, 59 on tree, 1e+50 best solution, best possible 0 (402.03 seconds)
+Cbc0010I After 355 nodes, 58 on tree, 1e+50 best solution, best possible 0 (403.60 seconds)
+Cbc0010I After 359 nodes, 57 on tree, 1e+50 best solution, best possible 0 (404.39 seconds)
+Cbc0010I After 361 nodes, 57 on tree, 1e+50 best solution, best possible 0 (406.28 seconds)
+Cbc0010I After 365 nodes, 59 on tree, 1e+50 best solution, best possible 0 (408.54 seconds)
+Cbc0010I After 369 nodes, 60 on tree, 1e+50 best solution, best possible 0 (409.25 seconds)
+Cbc0010I After 375 nodes, 62 on tree, 1e+50 best solution, best possible 0 (410.09 seconds)
+Cbc0010I After 377 nodes, 62 on tree, 1e+50 best solution, best possible 0 (411.18 seconds)
+Cbc0010I After 378 nodes, 63 on tree, 1e+50 best solution, best possible 0 (411.98 seconds)
+Cbc0010I After 381 nodes, 61 on tree, 1e+50 best solution, best possible 0 (412.92 seconds)
+Cbc0010I After 383 nodes, 60 on tree, 1e+50 best solution, best possible 0 (414.59 seconds)
+Cbc0010I After 388 nodes, 60 on tree, 1e+50 best solution, best possible 0 (416.25 seconds)
+Cbc0010I After 392 nodes, 58 on tree, 1e+50 best solution, best possible 0 (418.47 seconds)
+Cbc0010I After 398 nodes, 58 on tree, 1e+50 best solution, best possible 0 (420.38 seconds)
+Cbc0010I After 404 nodes, 58 on tree, 1e+50 best solution, best possible 0 (421.35 seconds)
+Cbc0010I After 405 nodes, 59 on tree, 1e+50 best solution, best possible 0 (422.55 seconds)
+Cbc0010I After 408 nodes, 57 on tree, 1e+50 best solution, best possible 0 (423.48 seconds)
+Cbc0010I After 410 nodes, 58 on tree, 1e+50 best solution, best possible 0 (424.99 seconds)
+Cbc0010I After 414 nodes, 59 on tree, 1e+50 best solution, best possible 0 (425.84 seconds)
+Cbc0010I After 416 nodes, 61 on tree, 1e+50 best solution, best possible 0 (427.14 seconds)
+Cbc0010I After 420 nodes, 58 on tree, 1e+50 best solution, best possible 0 (427.92 seconds)
+Cbc0010I After 422 nodes, 58 on tree, 1e+50 best solution, best possible 0 (429.83 seconds)
+Cbc0010I After 429 nodes, 60 on tree, 1e+50 best solution, best possible 0 (431.72 seconds)
+Cbc0010I After 431 nodes, 59 on tree, 1e+50 best solution, best possible 0 (432.79 seconds)
+Cbc0010I After 433 nodes, 57 on tree, 1e+50 best solution, best possible 0 (434.56 seconds)
+Cbc0010I After 434 nodes, 57 on tree, 1e+50 best solution, best possible 0 (436.10 seconds)
+Cbc0010I After 439 nodes, 58 on tree, 1e+50 best solution, best possible 0 (436.92 seconds)
+Cbc0010I After 441 nodes, 58 on tree, 1e+50 best solution, best possible 0 (439.31 seconds)
+Cbc0010I After 446 nodes, 61 on tree, 1e+50 best solution, best possible 0 (440.08 seconds)
+Cbc0010I After 448 nodes, 60 on tree, 1e+50 best solution, best possible 0 (441.87 seconds)
+Cbc0010I After 452 nodes, 60 on tree, 1e+50 best solution, best possible 0 (442.67 seconds)
+Cbc0010I After 458 nodes, 61 on tree, 1e+50 best solution, best possible 0 (443.63 seconds)
+Cbc0010I After 460 nodes, 60 on tree, 1e+50 best solution, best possible 0 (445.38 seconds)
+Cbc0010I After 462 nodes, 60 on tree, 1e+50 best solution, best possible 0 (447.02 seconds)
+Cbc0010I After 468 nodes, 61 on tree, 1e+50 best solution, best possible 0 (447.97 seconds)
+Cbc0010I After 470 nodes, 61 on tree, 1e+50 best solution, best possible 0 (449.47 seconds)
+Cbc0010I After 474 nodes, 58 on tree, 1e+50 best solution, best possible 0 (450.42 seconds)
+Cbc0010I After 475 nodes, 57 on tree, 1e+50 best solution, best possible 0 (452.02 seconds)
+Cbc0010I After 479 nodes, 59 on tree, 1e+50 best solution, best possible 0 (454.41 seconds)
+Cbc0010I After 483 nodes, 61 on tree, 1e+50 best solution, best possible 0 (455.42 seconds)
+Cbc0010I After 485 nodes, 62 on tree, 1e+50 best solution, best possible 0 (456.63 seconds)
+Cbc0010I After 489 nodes, 64 on tree, 1e+50 best solution, best possible 0 (459.20 seconds)
+Cbc0010I After 494 nodes, 67 on tree, 1e+50 best solution, best possible 0 (459.95 seconds)
+Cbc0010I After 495 nodes, 67 on tree, 1e+50 best solution, best possible 0 (461.74 seconds)
+Cbc0010I After 498 nodes, 69 on tree, 1e+50 best solution, best possible 0 (462.48 seconds)
+Cbc0010I After 499 nodes, 69 on tree, 1e+50 best solution, best possible 0 (463.84 seconds)
+Cbc0010I After 505 nodes, 68 on tree, 1e+50 best solution, best possible 0 (464.68 seconds)
+Cbc0010I After 509 nodes, 70 on tree, 1e+50 best solution, best possible 0 (466.55 seconds)
+Cbc0010I After 512 nodes, 70 on tree, 1e+50 best solution, best possible 0 (467.49 seconds)
+Cbc0010I After 514 nodes, 70 on tree, 1e+50 best solution, best possible 0 (469.10 seconds)
+Cbc0010I After 519 nodes, 70 on tree, 1e+50 best solution, best possible 0 (470.05 seconds)
+Cbc0010I After 520 nodes, 70 on tree, 1e+50 best solution, best possible 0 (471.36 seconds)
+Cbc0010I After 524 nodes, 70 on tree, 1e+50 best solution, best possible 0 (472.25 seconds)
+Cbc0010I After 527 nodes, 70 on tree, 1e+50 best solution, best possible 0 (473.08 seconds)
+Cbc0010I After 531 nodes, 71 on tree, 1e+50 best solution, best possible 0 (474.76 seconds)
+Cbc0010I After 536 nodes, 69 on tree, 1e+50 best solution, best possible 0 (475.59 seconds)
+Cbc0010I After 539 nodes, 70 on tree, 1e+50 best solution, best possible 0 (477.36 seconds)
+Cbc0010I After 545 nodes, 72 on tree, 1e+50 best solution, best possible 0 (478.57 seconds)
+Cbc0010I After 546 nodes, 72 on tree, 1e+50 best solution, best possible 0 (479.87 seconds)
+Cbc0010I After 549 nodes, 72 on tree, 1e+50 best solution, best possible 0 (480.93 seconds)
+Cbc0010I After 550 nodes, 73 on tree, 1e+50 best solution, best possible 0 (482.37 seconds)
+Cbc0010I After 553 nodes, 74 on tree, 1e+50 best solution, best possible 0 (483.24 seconds)
+Cbc0010I After 554 nodes, 75 on tree, 1e+50 best solution, best possible 0 (484.69 seconds)
+Cbc0010I After 556 nodes, 74 on tree, 1e+50 best solution, best possible 0 (485.68 seconds)
+Cbc0010I After 557 nodes, 74 on tree, 1e+50 best solution, best possible 0 (487.24 seconds)
+Cbc0010I After 558 nodes, 73 on tree, 1e+50 best solution, best possible 0 (488.03 seconds)
+Cbc0010I After 560 nodes, 72 on tree, 1e+50 best solution, best possible 0 (490.30 seconds)
+Cbc0010I After 561 nodes, 71 on tree, 1e+50 best solution, best possible 0 (491.03 seconds)
+Cbc0010I After 562 nodes, 71 on tree, 1e+50 best solution, best possible 0 (493.17 seconds)
+Cbc0010I After 565 nodes, 73 on tree, 1e+50 best solution, best possible 0 (494.04 seconds)
+Cbc0010I After 566 nodes, 73 on tree, 1e+50 best solution, best possible 0 (495.76 seconds)
+Cbc0004I Integer solution of 0 found after 206063 iterations and 568 nodes (496.05 seconds)
+Cbc0001I Search completed - best objective 0, took 206063 iterations and 568 nodes (496.06 seconds)
+Cbc0032I Strong branching done 3348 times (207320 iterations), fathomed 3 nodes and fixed 3 variables
+Cbc0035I Maximum depth 46, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 0 to 0
+Probing was tried 3 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.254996 seconds)
+Gomory was tried 3 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.194582 seconds)
+liftKnapsack was tried 3 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.589659 seconds)
+Clique was tried 88 times and created 463 cuts of which 0 were active after adding rounds of cuts (0.868862 seconds)
+OddWheel was tried 3 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.663143 seconds)
+MixedIntegerRounding2 was tried 3 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.019021 seconds)
+FlowCover was tried 3 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.00154 seconds)
+TwoMirCuts was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.069261 seconds)
+ZeroHalf was tried 3 times and created 8 cuts of which 0 were active after adding rounds of cuts (0.236251 seconds)
+
+Result - Optimal solution found
+Objective value:                0
+Enumerated nodes:               568
+Total iterations:               206063
+Time (CPU seconds):             513.383
+Time (Wallclock seconds):       496.321
+Total time (CPU seconds):       513.484   (Wallclock seconds):       496.358

@@ -1,0 +1,42 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/savsched1.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/savsched1.txt -quit (default strategy 1)
+At line 7 NAME          savsched1
+At line 8 ROWS
+At line 295999 COLUMNS
+At line 1404847 RHS
+At line 1552843 BOUNDS
+At line 1805589 ENDATA
+Problem savsched1 has 295989 rows, 328575 columns and 1770507 elements
+Coin0008I savsched1 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 217.404 - 2627.67 seconds
+Cgl0011I 32185 variables made integer
+Cgl0003I 0 fixed, 32185 tightened bounds, 204036 strengthened rows, 0 substitutions
+Cgl0004I processed model has 289081 rows, 280155 columns (280149 integer (247964 of which binary)) and 1919516 elements
+Coin3009W Conflict graph built in 4.036 seconds, density: 0.001%
+Cgl0015I Clique Strengthening extended 56059 cliques, 176947 were dominated
+After applying Clique Strengthening continuous objective value is 2290.8
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 2290.8), took 0 iterations and 0 nodes (12768.35 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 2290.8 to 2290.8
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    2290.8
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             6815.67
+Time (Wallclock seconds):       12769.2
+Total time (CPU seconds):       6818.18   (Wallclock seconds):       12773.3

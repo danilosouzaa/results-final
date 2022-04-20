@@ -1,0 +1,50 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/da_BPWC_3_8_4.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/da_BPWC_3_8_4.txt -quit (default strategy 1)
+At line 2 NAME          da_BPWC_3_8_4.lp
+At line 3 ROWS
+At line 662619 COLUMNS
+At line 2037251 RHS
+At line 2699367 BOUNDS
+At line 2724818 ENDATA
+Problem da_BPWC_3_8_4.lp has 662614 rows, 25450 columns and 1374129 elements
+Coin0008I da_BPWC_3_8_4.lp read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 76.5673 - 1223.65 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 10000 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 5567 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 8332 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 11034 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 11092 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 10433 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 12413 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 13044 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 12350 strengthened rows, 0 substitutions
+Cgl0004I processed model has 661512 rows, 25439 columns (25439 integer (25439 of which binary)) and 1462570 elements
+Coin3009W Conflict graph built in 1.201 seconds, density: 0.122%
+Cgl0015I Clique Strengthening extended 150646 cliques, 660495 were dominated
+After applying Clique Strengthening continuous objective value is 76.5673
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 76.5673), took 0 iterations and 0 nodes (12948.89 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 76.5673 to 76.5673
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    76.5673
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             13735.5
+Time (Wallclock seconds):       12948.9
+Total time (CPU seconds):       13739.7   (Wallclock seconds):       12953.1

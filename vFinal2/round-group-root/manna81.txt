@@ -1,0 +1,52 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/manna81.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/manna81.txt -quit (default strategy 1)
+At line 1 NAME           manna81
+At line 2 ROWS
+At line 6484 COLUMNS
+At line 14668 RHS
+At line 17909 BOUNDS
+At line 21231 ENDATA
+Problem manna81 has 6480 rows, 3321 columns and 12960 elements
+Coin0008I manna81 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -13297 - 0.220547 seconds
+Cgl0004I processed model has 6480 rows, 3321 columns (3321 integer (18 of which binary)) and 12960 elements
+Coin3009W Conflict graph built in 0.002 seconds, density: 0.000%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0012I Integer solution of -12865 found by DiveCoefficient after 0 iterations and 0 nodes (0.58 seconds)
+Cbc0038I Full problem 6480 rows 3321 columns, reduced to 886 rows 864 columns
+Cbc0012I Integer solution of -13163 found by RINS after 0 iterations and 0 nodes (5.14 seconds)
+Cbc0012I Integer solution of -13164 found by DiveCoefficient after 280 iterations and 0 nodes (9.76 seconds)
+Cbc0031I 280 added rows had average density of 3
+Cbc0013I At root node, 280 cuts changed objective from -13297 to -13164 in 2 passes
+Cbc0014I Cut generator 0 (Probing) - 149 row cuts average 3.0 elements, 0 column cuts (0 active)  in 0.199 seconds - new frequency is 1
+Cbc0014I Cut generator 1 (Gomory) - 131 row cuts average 3.0 elements, 0 column cuts (0 active)  in 0.114 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (liftKnapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.061 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.028 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.018 seconds - new frequency is -100
+Cbc0014I Cut generator 7 (TwoMirCuts) - 280 row cuts average 3.0 elements, 0 column cuts (0 active)  in 0.297 seconds - new frequency is 1
+Cbc0001I Search completed - best objective -13164, took 280 iterations and 0 nodes (9.80 seconds)
+Cbc0035I Maximum depth 0, 16 variables fixed on reduced cost
+Cuts at root node changed objective from -13297 to -13164
+Probing was tried 2 times and created 149 cuts of which 0 were active after adding rounds of cuts (0.199283 seconds)
+Gomory was tried 2 times and created 131 cuts of which 0 were active after adding rounds of cuts (0.113827 seconds)
+liftKnapsack was tried 2 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.060846 seconds)
+Clique was tried 2 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000127 seconds)
+OddWheel was tried 2 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000197 seconds)
+MixedIntegerRounding2 was tried 2 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.027566 seconds)
+FlowCover was tried 2 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.018449 seconds)
+TwoMirCuts was tried 2 times and created 280 cuts of which 0 were active after adding rounds of cuts (0.296799 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (2.94866 seconds)
+
+Result - Optimal solution found
+Objective value:                -13164
+Enumerated nodes:               0
+Total iterations:               280
+Time (CPU seconds):             8.31041
+Time (Wallclock seconds):       9.9327
+Total time (CPU seconds):       8.40748   (Wallclock seconds):       10.056

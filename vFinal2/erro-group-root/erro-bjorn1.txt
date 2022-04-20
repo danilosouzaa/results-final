@@ -1,0 +1,33 @@
+
+=================================================================
+==14521==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 584112 byte(s) in 1406 object(s) allocated from:
+    #0 0x7fd890a09608 in operator new[](unsigned long) (/usr/lib/x86_64-linux-gnu/libasan.so.4+0xe0608)
+    #1 0x7fd88df0b576 in CglLiftKnapsack::generateCuts(OsiSolverInterface const&, OsiCuts&, CglTreeInfo) /home/danilo/vFinalIntegrate/Cgl/src/CglLiftKnapsack/CglLiftKnapsack.cpp:5400
+    #2 0x7fd8901bf8b3 in CbcCutGenerator::generateCuts(OsiCuts&, int, OsiSolverInterface*, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcCutGenerator.cpp:352
+    #3 0x7fd89032115e in CbcModel::serialCuts(OsiCuts&, CbcNode*, OsiCuts&, int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:10684
+    #4 0x7fd890315a78 in CbcModel::solveWithCuts(OsiCuts&, int, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:9158
+    #5 0x7fd8903591b4 in CbcModel::doOneNode(CbcModel*, CbcNode*&, CbcNode*&) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:17746
+    #6 0x7fd8902e4381 in CbcModel::branchAndBound(int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:5527
+    #7 0x7fd8901fd15b in CbcHeuristic::smallBranchAndBound(OsiSolverInterface*, int, double*, double&, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) const /home/danilo/vFinalIntegrate/Cbc/src/CbcHeuristic.cpp:1491
+    #8 0x7fd8902e1212 in CbcModel::branchAndBound(int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:5208
+    #9 0x7fd890430706 in CbcMain1(std::deque<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, CbcModel&, CbcParameters&, int (*)(CbcModel*, int), ampl_info*) /home/danilo/vFinalIntegrate/Cbc/src/CbcSolver.cpp:8082
+    #10 0x55adb3270cfe in main /home/danilo/vFinalIntegrate/Cbc/src/CoinSolve.cpp:228
+    #11 0x7fd88ed54c86 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c86)
+
+Direct leak of 292056 byte(s) in 1406 object(s) allocated from:
+    #0 0x7fd890a09608 in operator new[](unsigned long) (/usr/lib/x86_64-linux-gnu/libasan.so.4+0xe0608)
+    #1 0x7fd88df0bb62 in CglLiftKnapsack::generateCuts(OsiSolverInterface const&, OsiCuts&, CglTreeInfo) /home/danilo/vFinalIntegrate/Cgl/src/CglLiftKnapsack/CglLiftKnapsack.cpp:5440
+    #2 0x7fd8901bf8b3 in CbcCutGenerator::generateCuts(OsiCuts&, int, OsiSolverInterface*, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcCutGenerator.cpp:352
+    #3 0x7fd89032115e in CbcModel::serialCuts(OsiCuts&, CbcNode*, OsiCuts&, int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:10684
+    #4 0x7fd890315a78 in CbcModel::solveWithCuts(OsiCuts&, int, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:9158
+    #5 0x7fd8903591b4 in CbcModel::doOneNode(CbcModel*, CbcNode*&, CbcNode*&) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:17746
+    #6 0x7fd8902e4381 in CbcModel::branchAndBound(int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:5527
+    #7 0x7fd8901fd15b in CbcHeuristic::smallBranchAndBound(OsiSolverInterface*, int, double*, double&, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) const /home/danilo/vFinalIntegrate/Cbc/src/CbcHeuristic.cpp:1491
+    #8 0x7fd8902e1212 in CbcModel::branchAndBound(int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:5208
+    #9 0x7fd890430706 in CbcMain1(std::deque<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, CbcModel&, CbcParameters&, int (*)(CbcModel*, int), ampl_info*) /home/danilo/vFinalIntegrate/Cbc/src/CbcSolver.cpp:8082
+    #10 0x55adb3270cfe in main /home/danilo/vFinalIntegrate/Cbc/src/CoinSolve.cpp:228
+    #11 0x7fd88ed54c86 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c86)
+
+SUMMARY: AddressSanitizer: 876168 byte(s) leaked in 2812 allocation(s).

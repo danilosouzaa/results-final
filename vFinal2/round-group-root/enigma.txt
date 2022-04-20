@@ -1,0 +1,134 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/enigma.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/enigma.txt -quit (default strategy 1)
+At line 15 NAME          ENIGMA
+At line 16 ROWS
+At line 39 COLUMNS
+At line 232 RHS
+At line 243 BOUNDS
+At line 344 ENDATA
+Problem ENIGMA has 21 rows, 100 columns and 289 elements
+Coin0008I ENIGMA read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0 - 0.000116 seconds
+Cgl0004I processed model has 21 rows, 100 columns (100 integer (100 of which binary)) and 289 elements
+Coin3009W Conflict graph built in 0.001 seconds, density: 4.930%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 8 integers unsatisfied sum - 2.08365
+Cbc0038I Pass   1: suminf.    0.41681 (4) obj. 0 iterations 24
+Cbc0038I Pass   2: suminf.    1.84446 (4) obj. 0 iterations 18
+Cbc0038I Pass   3: suminf.    1.84446 (4) obj. 0 iterations 10
+Cbc0038I Pass   4: suminf.    1.84446 (4) obj. 0 iterations 9
+Cbc0038I Pass   5: suminf.    1.84446 (4) obj. 0 iterations 8
+Cbc0038I Pass   6: suminf.    0.10359 (4) obj. 7 iterations 38
+Cbc0038I Pass   7: suminf.    0.10359 (4) obj. 7 iterations 27
+Cbc0038I Pass   8: suminf.    1.92801 (4) obj. 7 iterations 17
+Cbc0038I Pass   9: suminf.    1.92801 (4) obj. 7 iterations 7
+Cbc0038I Pass  10: suminf.    1.87784 (6) obj. 8 iterations 25
+Cbc0038I Pass  11: suminf.    1.25091 (4) obj. 8 iterations 18
+Cbc0038I Pass  12: suminf.    1.82723 (4) obj. 8 iterations 19
+Cbc0038I Pass  13: suminf.    1.82723 (4) obj. 8 iterations 12
+Cbc0038I Pass  14: suminf.    1.65096 (4) obj. 8 iterations 21
+Cbc0038I Pass  15: suminf.    1.65096 (4) obj. 8 iterations 14
+Cbc0038I Pass  16: suminf.    1.72910 (4) obj. 8 iterations 20
+Cbc0038I Pass  17: suminf.    1.72910 (4) obj. 8 iterations 14
+Cbc0038I Pass  18: suminf.    2.44783 (12) obj. 7.20399 iterations 18
+Cbc0038I Pass  19: suminf.    0.89702 (4) obj. 7 iterations 27
+Cbc0038I Pass  20: suminf.    1.96197 (4) obj. 7 iterations 22
+Cbc0038I Pass  21: suminf.    1.96197 (4) obj. 7 iterations 18
+Cbc0038I Pass  22: suminf.    2.47815 (6) obj. 7 iterations 30
+Cbc0038I Pass  23: suminf.    1.91264 (4) obj. 7 iterations 18
+Cbc0038I Pass  24: suminf.    1.91264 (4) obj. 7 iterations 19
+Cbc0038I Pass  25: suminf.    3.07558 (14) obj. 3.87874 iterations 29
+Cbc0038I Pass  26: suminf.    0.87681 (4) obj. 3 iterations 24
+Cbc0038I Pass  27: suminf.    1.91796 (4) obj. 3 iterations 13
+Cbc0038I Pass  28: suminf.    1.91796 (4) obj. 3 iterations 11
+Cbc0038I Pass  29: suminf.    1.44837 (6) obj. 3 iterations 18
+Cbc0038I Pass  30: suminf.    0.96387 (4) obj. 3 iterations 23
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 37 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 21 rows 100 columns, reduced to 21 rows 63 columns
+Cbc0038I Mini branch and bound did not improve solution (7.20 seconds)
+Cbc0038I Full problem 22 rows 100 columns, reduced to 22 rows 100 columns
+Cbc0038I After 14.68 seconds - Feasibility pump exiting - took 41.96 seconds
+Cbc0031I 4 added rows had average density of 56
+Cbc0013I At root node, 4 cuts changed objective from 0 to 0 in 100 passes
+Cbc0014I Cut generator 0 (Probing) - 45 row cuts average 68.0 elements, 0 column cuts (0 active)  in 0.659 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 277 row cuts average 97.5 elements, 0 column cuts (0 active)  in 0.372 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (liftKnapsack) - 162 row cuts average 31.8 elements, 0 column cuts (0 active)  in 3.933 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.020 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.088 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (MixedIntegerRounding2) - 77 row cuts average 83.9 elements, 0 column cuts (0 active)  in 0.133 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.006 seconds - new frequency is -100
+Cbc0014I Cut generator 7 (TwoMirCuts) - 73 row cuts average 71.0 elements, 0 column cuts (0 active)  in 0.129 seconds - new frequency is -100
+Cbc0010I After 0 nodes, 1 on tree, 1e+50 best solution, best possible 0 (30.70 seconds)
+Cbc0010I After 9 nodes, 6 on tree, 1e+50 best solution, best possible 0 (31.43 seconds)
+Cbc0010I After 17 nodes, 7 on tree, 1e+50 best solution, best possible 0 (32.13 seconds)
+Cbc0010I After 30 nodes, 9 on tree, 1e+50 best solution, best possible 0 (32.86 seconds)
+Cbc0010I After 53 nodes, 8 on tree, 1e+50 best solution, best possible 0 (33.59 seconds)
+Cbc0010I After 68 nodes, 11 on tree, 1e+50 best solution, best possible 0 (34.30 seconds)
+Cbc0010I After 98 nodes, 3 on tree, 1e+50 best solution, best possible 0 (35.01 seconds)
+Cbc0010I After 114 nodes, 11 on tree, 1e+50 best solution, best possible 0 (35.74 seconds)
+Cbc0010I After 145 nodes, 9 on tree, 1e+50 best solution, best possible 0 (36.46 seconds)
+Cbc0010I After 171 nodes, 11 on tree, 1e+50 best solution, best possible 0 (37.18 seconds)
+Cbc0010I After 208 nodes, 8 on tree, 1e+50 best solution, best possible 0 (37.99 seconds)
+Cbc0010I After 243 nodes, 14 on tree, 1e+50 best solution, best possible 0 (38.69 seconds)
+Cbc0010I After 283 nodes, 15 on tree, 1e+50 best solution, best possible 0 (39.40 seconds)
+Cbc0010I After 339 nodes, 11 on tree, 1e+50 best solution, best possible 0 (40.12 seconds)
+Cbc0010I After 373 nodes, 11 on tree, 1e+50 best solution, best possible 0 (40.82 seconds)
+Cbc0010I After 405 nodes, 12 on tree, 1e+50 best solution, best possible 0 (41.61 seconds)
+Cbc0010I After 460 nodes, 13 on tree, 1e+50 best solution, best possible 0 (42.37 seconds)
+Cbc0010I After 498 nodes, 12 on tree, 1e+50 best solution, best possible 0 (43.09 seconds)
+Cbc0010I After 515 nodes, 8 on tree, 1e+50 best solution, best possible 0 (43.83 seconds)
+Cbc0010I After 528 nodes, 5 on tree, 1e+50 best solution, best possible 0 (44.54 seconds)
+Cbc0010I After 556 nodes, 9 on tree, 1e+50 best solution, best possible 0 (45.33 seconds)
+Cbc0010I After 591 nodes, 5 on tree, 1e+50 best solution, best possible 0 (46.06 seconds)
+Cbc0010I After 611 nodes, 4 on tree, 1e+50 best solution, best possible 0 (46.79 seconds)
+Cbc0010I After 617 nodes, 9 on tree, 1e+50 best solution, best possible 0 (47.55 seconds)
+Cbc0010I After 636 nodes, 5 on tree, 1e+50 best solution, best possible 0 (48.41 seconds)
+Cbc0010I After 651 nodes, 7 on tree, 1e+50 best solution, best possible 0 (49.12 seconds)
+Cbc0010I After 658 nodes, 7 on tree, 1e+50 best solution, best possible 0 (49.87 seconds)
+Cbc0010I After 665 nodes, 8 on tree, 1e+50 best solution, best possible 0 (67.00 seconds)
+Cbc0010I After 668 nodes, 10 on tree, 1e+50 best solution, best possible 0 (76.56 seconds)
+Cbc0010I After 676 nodes, 11 on tree, 1e+50 best solution, best possible 0 (77.47 seconds)
+Cbc0010I After 678 nodes, 10 on tree, 1e+50 best solution, best possible 0 (78.21 seconds)
+Cbc0010I After 679 nodes, 9 on tree, 1e+50 best solution, best possible 0 (80.33 seconds)
+Cbc0010I After 687 nodes, 8 on tree, 1e+50 best solution, best possible 0 (81.27 seconds)
+Cbc0010I After 695 nodes, 7 on tree, 1e+50 best solution, best possible 0 (81.97 seconds)
+Cbc0010I After 709 nodes, 8 on tree, 1e+50 best solution, best possible 0 (82.69 seconds)
+Cbc0010I After 727 nodes, 9 on tree, 1e+50 best solution, best possible 0 (83.42 seconds)
+Cbc0016I Integer solution of 1 found by strong branching after 11671 iterations and 736 nodes (84.23 seconds)
+Cbc0010I After 736 nodes, 6 on tree, 1 best solution, best possible 0 (84.23 seconds)
+Cbc0010I After 775 nodes, 8 on tree, 1 best solution, best possible 0 (84.94 seconds)
+Cbc0010I After 811 nodes, 4 on tree, 1 best solution, best possible 0 (85.65 seconds)
+Cbc0010I After 866 nodes, 7 on tree, 1 best solution, best possible 0 (86.36 seconds)
+Cbc0010I After 912 nodes, 1 on tree, 1 best solution, best possible 0 (87.15 seconds)
+Cbc0010I After 948 nodes, 11 on tree, 1 best solution, best possible 0 (87.86 seconds)
+Cbc0010I After 1001 nodes, 7 on tree, 1 best solution, best possible 0 (88.56 seconds)
+Cbc0010I After 1025 nodes, 2 on tree, 1 best solution, best possible 0 (89.31 seconds)
+Cbc0010I After 1039 nodes, 12 on tree, 1 best solution, best possible 0 (90.03 seconds)
+Cbc0010I After 1059 nodes, 9 on tree, 1 best solution, best possible 0 (90.75 seconds)
+Cbc0004I Integer solution of 0 found after 14421 iterations and 1067 nodes (91.32 seconds)
+Cbc0001I Search completed - best objective 0, took 535823 iterations and 42916 nodes (91.32 seconds)
+Cbc0032I Strong branching done 3046 times (23400 iterations), fathomed 185 nodes and fixed 307 variables
+Cbc0041I Maximum depth 22, 32 variables fixed on reduced cost (complete fathoming 120 times, 41849 nodes taking 521402 iterations)
+Cuts at root node changed objective from 0 to 0
+Probing was tried 100 times and created 45 cuts of which 0 were active after adding rounds of cuts (0.658819 seconds)
+Gomory was tried 100 times and created 277 cuts of which 0 were active after adding rounds of cuts (0.371593 seconds)
+liftKnapsack was tried 100 times and created 162 cuts of which 0 were active after adding rounds of cuts (3.93298 seconds)
+Clique was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.020055 seconds)
+OddWheel was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.088322 seconds)
+MixedIntegerRounding2 was tried 100 times and created 77 cuts of which 0 were active after adding rounds of cuts (0.133164 seconds)
+FlowCover was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.006177 seconds)
+TwoMirCuts was tried 100 times and created 73 cuts of which 0 were active after adding rounds of cuts (0.129162 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                0
+Enumerated nodes:               42916
+Total iterations:               535823
+Time (CPU seconds):             232.472
+Time (Wallclock seconds):       91.3852
+Total time (CPU seconds):       232.559   (Wallclock seconds):       91.4319

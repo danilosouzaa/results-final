@@ -1,0 +1,58 @@
+cbc: /home/danilo/vFinalIntegrate/Clp/src/ClpPrimalColumnSteepest.cpp:728: virtual int ClpPrimalColumnSteepest::pivotColumn(CoinIndexedVector*, CoinIndexedVector*, CoinIndexedVector*, CoinIndexedVector*, CoinIndexedVector*): Assertion `model_->reducedCost(bestSequence) > 0.0' failed.
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/usr/lib/x86_64-linux-gnu/libasan.so.4(+0x558c0) [0x7f84c2fa08c0]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x349) [0x7f84c2a0bd41]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f84c1393f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f84c1393e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f84c13957f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7f84c13853fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7f84c1385472]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN23ClpPrimalColumnSteepest11pivotColumnEP17CoinIndexedVectorS1_S1_S1_S1_+0x385f) [0x7f84bfd2a13f]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN16ClpSimplexPrimal12primalColumnEP17CoinIndexedVectorS1_S1_S1_S1_+0x182) [0x7f84bfecfb66]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN16ClpSimplexPrimal14whileIteratingEi+0x263) [0x7f84bfebf697]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN16ClpSimplexPrimal6primalEii+0x2f9a) [0x7f84bfebecd4]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN10ClpSimplex6primalEii+0x2ead) [0x7f84bfd99189]
+/home/danilo/vFinalIntegrate/executavel/lib/libOsiClp.so.0(_ZN21OsiClpSolverInterface7resolveEv+0x4c1d) [0x7f84c23ba5f7]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN17CbcHeuristicFPump16solutionInternalERdPd+0xa0b8) [0x7f84c285e23c]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN17CbcHeuristicFPump8solutionERdPd+0x18ca) [0x7f84c2869ef0]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel18doHeuristicsAtRootEi+0x1f7d) [0x7f84c29725af]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel14branchAndBoundEi+0xe539) [0x7f84c28f3141]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x3e06b) [0x7f84c2a52707]
+./cbc(+0x5cff) [0x5556aab3ccff]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f84c1376c87]
+./cbc(+0x552a) [0x5556aab3c52a]
+
+
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/usr/lib/x86_64-linux-gnu/libasan.so.4(+0x558c0) [0x7f84c2fa08c0]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x349) [0x7f84c2a0bd41]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f84c1393f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f84c1393e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f84c13957f1]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x4fc) [0x7f84c2a0bef4]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f84c1393f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f84c1393e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f84c13957f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7f84c13853fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7f84c1385472]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN23ClpPrimalColumnSteepest11pivotColumnEP17CoinIndexedVectorS1_S1_S1_S1_+0x385f) [0x7f84bfd2a13f]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN16ClpSimplexPrimal12primalColumnEP17CoinIndexedVectorS1_S1_S1_S1_+0x182) [0x7f84bfecfb66]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN16ClpSimplexPrimal14whileIteratingEi+0x263) [0x7f84bfebf697]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN16ClpSimplexPrimal6primalEii+0x2f9a) [0x7f84bfebecd4]
+/home/danilo/vFinalIntegrate/executavel/lib/libClp.so.0(_ZN10ClpSimplex6primalEii+0x2ead) [0x7f84bfd99189]
+/home/danilo/vFinalIntegrate/executavel/lib/libOsiClp.so.0(_ZN21OsiClpSolverInterface7resolveEv+0x4c1d) [0x7f84c23ba5f7]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN17CbcHeuristicFPump16solutionInternalERdPd+0xa0b8) [0x7f84c285e23c]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN17CbcHeuristicFPump8solutionERdPd+0x18ca) [0x7f84c2869ef0]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel18doHeuristicsAtRootEi+0x1f7d) [0x7f84c29725af]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel14branchAndBoundEi+0xe539) [0x7f84c28f3141]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x3e06b) [0x7f84c2a52707]
+./cbc(+0x5cff) [0x5556aab3ccff]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f84c1376c87]
+./cbc(+0x552a) [0x5556aab3c52a]
+
+
+timeout: the monitored command dumped core

@@ -1,0 +1,59 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/neos-3226448-wkra.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/neos-3226448-wkra.txt -quit (default strategy 1)
+At line 1 NAME          neos-3226448-wkra
+At line 2 ROWS
+At line 2212 COLUMNS
+At line 42263 RHS
+At line 44472 BOUNDS
+At line 54485 ENDATA
+Problem neos-3226448-wkra has 2208 rows, 10012 columns and 40048 elements
+Coin0008I neos-3226448-wkra read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0 - 120.003 seconds
+Cgl0004I processed model has 2208 rows, 10012 columns (10012 integer (10012 of which binary)) and 40048 elements
+Coin3009W Conflict graph built in 0.238 seconds, density: 0.165%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I No integer variables out of 10012 objects (10012 integer) have costs
+Cbc0045I branch on satisfied N create fake objective Y random cost Y
+Cbc0038I Initial state - 1881 integers unsatisfied sum - 508.326
+Cbc0038I Pass   1: suminf.  221.66126 (1143) obj. 0 iterations 11811
+Cbc0038I Pass   2: suminf.  152.32062 (1085) obj. 0 iterations 10670
+Cbc0038I Pass   3: suminf.  128.03020 (1199) obj. 0 iterations 6544
+Cbc0038I Pass   4: suminf.  120.17793 (1140) obj. 0 iterations 5187
+Cbc0038I Pass   5: suminf.  115.64012 (1103) obj. 0 iterations 4602
+Cbc0038I Pass   6: suminf.  111.08366 (1063) obj. 0 iterations 4331
+Cbc0038I Pass   7: suminf.   99.61941 (1158) obj. 0 iterations 8013
+Cbc0038I Pass   8: suminf.   92.80204 (1266) obj. 0 iterations 5962
+Cbc0038I Pass   9: suminf.   82.79071 (1093) obj. 0 iterations 7059
+Cbc0038I Pass  10: suminf.   79.40749 (1108) obj. 0 iterations 9411
+Cbc0038I Pass  11: suminf.   74.16659 (1105) obj. 0 iterations 10733
+Cbc0038I Pass  12: suminf.   65.72173 (1202) obj. 0 iterations 7149
+Cbc0038I Pass  13: suminf.   58.81547 (1254) obj. 0 iterations 9386
+Cbc0038I Pass  14: suminf.    0.00000 (0) obj. 0 iterations 23183
+Cbc0038I Solution found of 0
+Cbc0038I Before mini branch and bound, 5186 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (484.44 seconds)
+Cbc0038I After 484.44 seconds - Feasibility pump exiting with objective of 0 - took 992.15 seconds
+Cbc0012I Integer solution of 0 found by feasibility pump after 0 iterations and 0 nodes (484.47 seconds)
+Cbc0001I Search completed - best objective 0, took 0 iterations and 0 nodes (485.74 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 0 to 0
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                0
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             1142.21
+Time (Wallclock seconds):       488.156
+Total time (CPU seconds):       1142.38   (Wallclock seconds):       488.25

@@ -1,0 +1,56 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/triptim1.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/triptim1.txt -quit (default strategy 1)
+At line 1 NAME          triptim1
+At line 2 ROWS
+At line 15710 COLUMNS
+At line 531152 RHS
+At line 535224 BOUNDS
+At line 565275 ENDATA
+Problem triptim1 has 15706 rows, 30055 columns and 515436 elements
+Coin0008I triptim1 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 22.8681 - 308.325 seconds
+Cgl0002I 4360 variables fixed
+Cgl0003I 140 fixed, 0 tightened bounds, 16 strengthened rows, 0 substitutions
+Cgl0003I 48 fixed, 0 tightened bounds, 16 strengthened rows, 0 substitutions
+Cgl0003I 16 fixed, 0 tightened bounds, 25 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 26 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 22 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 21 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 18 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 17 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 13 strengthened rows, 0 substitutions
+Cgl0004I processed model has 14422 rows, 19527 columns (19527 integer (11112 of which binary)) and 456054 elements
+Coin3009W Conflict graph built in 0.361 seconds, density: 0.064%
+Cgl0015I Clique Strengthening extended 5 cliques, 14 were dominated
+After applying Clique Strengthening continuous objective value is 22.8681
+Cbc0038I Initial state - 3810 integers unsatisfied sum - 992.166
+Cbc0038I Pass   1: (398.00 seconds) suminf.    0.00000 (0) obj. 22.8681 iterations 13645
+Cbc0038I Solution found of 22.8681
+Cbc0038I Cleaned solution of 22.8681
+Cbc0038I Before mini branch and bound, 15135 integers at bound fixed and 0 continuous of which 171 were internal integer and 0 internal continuous
+Cbc0038I Mini branch and bound did not improve solution (398.19 seconds)
+Cbc0038I After 398.20 seconds - Feasibility pump exiting with objective of 22.8681 - took 41.73 seconds
+Cbc0012I Integer solution of 22.8681 found by feasibility pump after 0 iterations and 0 nodes (398.24 seconds)
+Cbc0001I Search completed - best objective 22.86809999999768, took 0 iterations and 0 nodes (399.75 seconds)
+Cbc0035I Maximum depth 0, 2640 variables fixed on reduced cost
+Cuts at root node changed objective from 22.8681 to 22.8681
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                22.8681
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             403.26
+Time (Wallclock seconds):       404.497
+Total time (CPU seconds):       404.131   (Wallclock seconds):       405.331

@@ -1,0 +1,76 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/blend2.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/blend2.txt -quit (default strategy 1)
+At line 15 NAME          blend2
+At line 16 ROWS
+At line 292 COLUMNS
+At line 1094 RHS
+At line 1135 BOUNDS
+At line 1402 ENDATA
+Problem blend2 has 274 rows, 353 columns and 1409 elements
+Coin0008I blend2 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 6.91568 - 0.008243 seconds
+Cgl0002I 9 variables fixed
+Cgl0011I 72 variables made integer
+Cgl0003I 0 fixed, 2 tightened bounds, 2 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 2 strengthened rows, 0 substitutions
+Cgl0004I processed model has 169 rows, 319 columns (319 integer (227 of which binary)) and 1281 elements
+Coin3009W Conflict graph built in 0.000 seconds, density: 0.118%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0038I Initial state - 6 integers unsatisfied sum - 1.22479
+Cbc0038I Pass   1: suminf.    0.55174 (3) obj. 7.10131 iterations 34
+Cbc0038I Solution found of 10.0767
+Cbc0038I Branch and bound needed to clear up 2 general integers
+Cbc0038I Mini branch and bound could not fix general integers
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 239 integers at bound fixed and 68 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.14 seconds)
+Cbc0038I After 0.14 seconds - Feasibility pump exiting - took 0.02 seconds
+Cbc0031I 16 added rows had average density of 52.75
+Cbc0013I At root node, 16 cuts changed objective from 6.9156751 to 7.109748 in 100 passes
+Cbc0014I Cut generator 0 (Probing) - 97 row cuts average 2.0 elements, 0 column cuts (0 active)  in 0.313 seconds - new frequency is 1
+Cbc0014I Cut generator 1 (Gomory) - 1194 row cuts average 118.7 elements, 0 column cuts (0 active)  in 0.465 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (liftKnapsack) - 6 row cuts average 26.2 elements, 0 column cuts (0 active)  in 0.978 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.005 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.007 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.054 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (FlowCover) - 21 row cuts average 3.0 elements, 0 column cuts (0 active)  in 0.064 seconds - new frequency is -100
+Cbc0014I Cut generator 7 (TwoMirCuts) - 120 row cuts average 99.7 elements, 0 column cuts (0 active)  in 0.070 seconds - new frequency is 1
+Cbc0010I After 0 nodes, 1 on tree, 1e+50 best solution, best possible 7.109748 (3.09 seconds)
+Cbc0016I Integer solution of 11.483629 found by strong branching after 1844 iterations and 57 nodes (3.70 seconds)
+Cbc0010I After 71 nodes, 44 on tree, 11.483629 best solution, best possible 7.109748 (3.80 seconds)
+Cbc0004I Integer solution of 8.128034 found after 2348 iterations and 127 nodes (4.16 seconds)
+Cbc0010I After 204 nodes, 63 on tree, 8.128034 best solution, best possible 7.109748 (4.50 seconds)
+Cbc0004I Integer solution of 7.716814 found after 2929 iterations and 217 nodes (4.55 seconds)
+Cbc0010I After 339 nodes, 38 on tree, 7.716814 best solution, best possible 7.109748 (5.20 seconds)
+Cbc0010I After 513 nodes, 24 on tree, 7.716814 best solution, best possible 7.109748 (5.90 seconds)
+Cbc0010I After 570 nodes, 9 on tree, 7.716814 best solution, best possible 7.109748 (6.61 seconds)
+Cbc0010I After 652 nodes, 9 on tree, 7.716814 best solution, best possible 7.109748 (7.31 seconds)
+Cbc0010I After 760 nodes, 8 on tree, 7.716814 best solution, best possible 7.109748 (8.01 seconds)
+Cbc0010I After 863 nodes, 8 on tree, 7.716814 best solution, best possible 7.109748 (8.71 seconds)
+Cbc0016I Integer solution of 7.598985 found by strong branching after 7516 iterations and 984 nodes (9.39 seconds)
+Cbc0010I After 988 nodes, 9 on tree, 7.598985 best solution, best possible 7.109748 (9.41 seconds)
+Cbc0010I After 1118 nodes, 5 on tree, 7.598985 best solution, best possible 7.109748 (10.11 seconds)
+Cbc0001I Search completed - best objective 7.598985, took 44585 iterations and 8562 nodes (10.23 seconds)
+Cbc0032I Strong branching done 4472 times (17864 iterations), fathomed 89 nodes and fixed 495 variables
+Cbc0041I Maximum depth 43, 1011 variables fixed on reduced cost (complete fathoming 208 times, 7418 nodes taking 35906 iterations)
+Cuts at root node changed objective from 6.91568 to 7.10975
+Probing was tried 317 times and created 492 cuts of which 0 were active after adding rounds of cuts (0.387541 seconds)
+Gomory was tried 100 times and created 1194 cuts of which 0 were active after adding rounds of cuts (0.46459 seconds)
+liftKnapsack was tried 100 times and created 6 cuts of which 0 were active after adding rounds of cuts (0.978029 seconds)
+Clique was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.005472 seconds)
+OddWheel was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.006545 seconds)
+MixedIntegerRounding2 was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.054493 seconds)
+FlowCover was tried 100 times and created 21 cuts of which 0 were active after adding rounds of cuts (0.064202 seconds)
+TwoMirCuts was tried 311 times and created 211 cuts of which 0 were active after adding rounds of cuts (0.171934 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000448 seconds)
+
+Result - Optimal solution found
+Objective value:                7.598985
+Enumerated nodes:               8562
+Total iterations:               44585
+Time (CPU seconds):             10.9065
+Time (Wallclock seconds):       10.2645
+Total time (CPU seconds):       10.911   (Wallclock seconds):       10.3072

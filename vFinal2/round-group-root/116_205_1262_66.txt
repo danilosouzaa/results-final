@@ -1,0 +1,42 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Apr 12 2022
+command line - -import /home/danilo/cbc-test-set/116_205_1262_66.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/116_205_1262_66.txt -quit (default strategy 1)
+At line 1 NAME
+At line 2 ROWS
+At line 106431 COLUMNS
+At line 11925817 RHS
+At line 11927080 BOUNDS
+At line 12185996 ENDATA
+Problem no_name has 106427 rows, 258915 columns and 11731883 elements
+Coin0008I no_name read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 176 - 7587.8 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 1627 strengthened rows, 0 substitutions
+Cgl0004I processed model has 102594 rows, 171620 columns (171620 integer (171620 of which binary)) and 11315414 elements
+Coin3009W Conflict graph built in 70.101 seconds, density: 0.050%
+Cgl0015I Clique Strengthening extended 21949 cliques, 50582 were dominated
+After applying Clique Strengthening continuous objective value is 176
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible 176), took 0 iterations and 0 nodes (11225.61 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 176 to 176
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    176
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             12648
+Time (Wallclock seconds):       11225.8
+Total time (CPU seconds):       12670.5   (Wallclock seconds):       11273.5

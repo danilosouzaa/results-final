@@ -1,0 +1,51 @@
+
+=================================================================
+==14783==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 396703464 byte(s) in 397173 object(s) allocated from:
+    #0 0x7fb3354b1608 in operator new[](unsigned long) (/usr/lib/x86_64-linux-gnu/libasan.so.4+0xe0608)
+    #1 0x7fb3329b3576 in CglLiftKnapsack::generateCuts(OsiSolverInterface const&, OsiCuts&, CglTreeInfo) /home/danilo/vFinalIntegrate/Cgl/src/CglLiftKnapsack/CglLiftKnapsack.cpp:5400
+    #2 0x7fb334c678b3 in CbcCutGenerator::generateCuts(OsiCuts&, int, OsiSolverInterface*, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcCutGenerator.cpp:352
+    #3 0x7fb334dc915e in CbcModel::serialCuts(OsiCuts&, CbcNode*, OsiCuts&, int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:10684
+    #4 0x7fb334dbda78 in CbcModel::solveWithCuts(OsiCuts&, int, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:9158
+    #5 0x7fb334e011b4 in CbcModel::doOneNode(CbcModel*, CbcNode*&, CbcNode*&) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:17746
+    #6 0x7fb334d8c381 in CbcModel::branchAndBound(int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:5527
+    #7 0x7fb334ed8706 in CbcMain1(std::deque<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, CbcModel&, CbcParameters&, int (*)(CbcModel*, int), ampl_info*) /home/danilo/vFinalIntegrate/Cbc/src/CbcSolver.cpp:8082
+    #8 0x556bcffb0cfe in main /home/danilo/vFinalIntegrate/Cbc/src/CoinSolve.cpp:228
+    #9 0x7fb3337fcc86 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c86)
+
+Direct leak of 198351732 byte(s) in 397173 object(s) allocated from:
+    #0 0x7fb3354b1608 in operator new[](unsigned long) (/usr/lib/x86_64-linux-gnu/libasan.so.4+0xe0608)
+    #1 0x7fb3329b3b62 in CglLiftKnapsack::generateCuts(OsiSolverInterface const&, OsiCuts&, CglTreeInfo) /home/danilo/vFinalIntegrate/Cgl/src/CglLiftKnapsack/CglLiftKnapsack.cpp:5440
+    #2 0x7fb334c678b3 in CbcCutGenerator::generateCuts(OsiCuts&, int, OsiSolverInterface*, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcCutGenerator.cpp:352
+    #3 0x7fb334dc915e in CbcModel::serialCuts(OsiCuts&, CbcNode*, OsiCuts&, int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:10684
+    #4 0x7fb334dbda78 in CbcModel::solveWithCuts(OsiCuts&, int, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:9158
+    #5 0x7fb334e011b4 in CbcModel::doOneNode(CbcModel*, CbcNode*&, CbcNode*&) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:17746
+    #6 0x7fb334d8c381 in CbcModel::branchAndBound(int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:5527
+    #7 0x7fb334ed8706 in CbcMain1(std::deque<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, CbcModel&, CbcParameters&, int (*)(CbcModel*, int), ampl_info*) /home/danilo/vFinalIntegrate/Cbc/src/CbcSolver.cpp:8082
+    #8 0x556bcffb0cfe in main /home/danilo/vFinalIntegrate/Cbc/src/CoinSolve.cpp:228
+    #9 0x7fb3337fcc86 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c86)
+
+Direct leak of 113680 byte(s) in 114 object(s) allocated from:
+    #0 0x7fb3354b1608 in operator new[](unsigned long) (/usr/lib/x86_64-linux-gnu/libasan.so.4+0xe0608)
+    #1 0x7fb3329b3576 in CglLiftKnapsack::generateCuts(OsiSolverInterface const&, OsiCuts&, CglTreeInfo) /home/danilo/vFinalIntegrate/Cgl/src/CglLiftKnapsack/CglLiftKnapsack.cpp:5400
+    #2 0x7fb334c678b3 in CbcCutGenerator::generateCuts(OsiCuts&, int, OsiSolverInterface*, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcCutGenerator.cpp:352
+    #3 0x7fb334dc915e in CbcModel::serialCuts(OsiCuts&, CbcNode*, OsiCuts&, int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:10684
+    #4 0x7fb334dbda78 in CbcModel::solveWithCuts(OsiCuts&, int, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:9158
+    #5 0x7fb334d7d126 in CbcModel::branchAndBound(int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:3704
+    #6 0x7fb334ed8706 in CbcMain1(std::deque<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, CbcModel&, CbcParameters&, int (*)(CbcModel*, int), ampl_info*) /home/danilo/vFinalIntegrate/Cbc/src/CbcSolver.cpp:8082
+    #7 0x556bcffb0cfe in main /home/danilo/vFinalIntegrate/Cbc/src/CoinSolve.cpp:228
+    #8 0x7fb3337fcc86 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c86)
+
+Direct leak of 56840 byte(s) in 114 object(s) allocated from:
+    #0 0x7fb3354b1608 in operator new[](unsigned long) (/usr/lib/x86_64-linux-gnu/libasan.so.4+0xe0608)
+    #1 0x7fb3329b3b62 in CglLiftKnapsack::generateCuts(OsiSolverInterface const&, OsiCuts&, CglTreeInfo) /home/danilo/vFinalIntegrate/Cgl/src/CglLiftKnapsack/CglLiftKnapsack.cpp:5440
+    #2 0x7fb334c678b3 in CbcCutGenerator::generateCuts(OsiCuts&, int, OsiSolverInterface*, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcCutGenerator.cpp:352
+    #3 0x7fb334dc915e in CbcModel::serialCuts(OsiCuts&, CbcNode*, OsiCuts&, int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:10684
+    #4 0x7fb334dbda78 in CbcModel::solveWithCuts(OsiCuts&, int, CbcNode*) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:9158
+    #5 0x7fb334d7d126 in CbcModel::branchAndBound(int) /home/danilo/vFinalIntegrate/Cbc/src/CbcModel.cpp:3704
+    #6 0x7fb334ed8706 in CbcMain1(std::deque<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, CbcModel&, CbcParameters&, int (*)(CbcModel*, int), ampl_info*) /home/danilo/vFinalIntegrate/Cbc/src/CbcSolver.cpp:8082
+    #7 0x556bcffb0cfe in main /home/danilo/vFinalIntegrate/Cbc/src/CoinSolve.cpp:228
+    #8 0x7fb3337fcc86 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c86)
+
+SUMMARY: AddressSanitizer: 595225716 byte(s) leaked in 794574 allocation(s).

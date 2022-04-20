@@ -1,0 +1,45 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/neos-5192052-neckar.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/neos-5192052-neckar.txt -quit (default strategy 1)
+At line 1 NAME          neos-5192052-neckar
+At line 2 ROWS
+At line 61 COLUMNS
+At line 789 RHS
+At line 806 BOUNDS
+At line 831 ENDATA
+Problem neos-5192052-neckar has 57 rows, 180 columns and 545 elements
+Coin0008I neos-5192052-neckar read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -1.198e+07 - 0.002142 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 17 strengthened rows, 0 substitutions
+Cgl0004I processed model has 56 rows, 159 columns (6 integer (6 of which binary)) and 539 elements
+Coin3009W Conflict graph built in 0.000 seconds, density: 0.012%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0038I Initial state - 0 integers unsatisfied sum - 2.22045e-16
+Cbc0038I Solution found of -1.167e+07
+Cbc0038I Relaxing continuous gives -1.167e+07
+Cbc0038I Before mini branch and bound, 6 integers at bound fixed and 145 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.03 seconds)
+Cbc0038I After 0.03 seconds - Feasibility pump exiting with objective of -1.167e+07 - took 0.01 seconds
+Cbc0012I Integer solution of -11670000 found by feasibility pump after 0 iterations and 0 nodes (0.04 seconds)
+Cbc0001I Search completed - best objective -11670000, took 0 iterations and 0 nodes (0.04 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -1.167e+07 to -1.167e+07
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                -11670000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.122197
+Time (Wallclock seconds):       0.063082
+Total time (CPU seconds):       0.135733   (Wallclock seconds):       0.0697749

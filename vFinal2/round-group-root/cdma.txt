@@ -1,0 +1,46 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/cdma.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/cdma.txt -quit (default strategy 1)
+At line 1 NAME           cdma
+At line 2 ROWS
+At line 9099 COLUMNS
+At line 179756 RHS
+At line 183902 BOUNDS
+At line 191794 ENDATA
+Problem cdma has 9095 rows, 7891 columns and 168227 elements
+Coin0008I cdma read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -6.38289e+16 - 7141.57 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 368 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 310 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 249 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 190 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 64 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 6 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 2 strengthened rows, 0 substitutions
+Cgl0004I processed model has 7137 rows, 5356 columns (2969 integer (2969 of which binary)) and 117577 elements
+Coin3009W Conflict graph built in 0.028 seconds, density: 0.064%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible -6.2664696e+16), took 0 iterations and 0 nodes (12868.78 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -6.26647e+16 to -6.26647e+16
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+No feasible solution found
+Lower bound:                    -6.26647e+16
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             17044.7
+Time (Wallclock seconds):       12868.8
+Total time (CPU seconds):       17045   (Wallclock seconds):       12869.3

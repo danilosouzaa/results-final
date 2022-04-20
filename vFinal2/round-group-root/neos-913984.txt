@@ -1,0 +1,76 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/neos-913984.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/neos-913984.txt -quit (default strategy 1)
+At line 1 NAME          neos-913984
+At line 2 ROWS
+At line 1080 COLUMNS
+At line 229083 RHS
+At line 230160 BOUNDS
+At line 306161 ENDATA
+Problem neos-913984 has 1076 rows, 76000 columns and 152000 elements
+Coin0008I neos-913984 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 1000 - 5.71536 seconds
+Cgl0005I 1000 SOS with 76000 members
+Cgl0004I processed model has 1076 rows, 76000 columns (76000 integer (76000 of which binary)) and 152000 elements
+Coin3009W Conflict graph built in 6.283 seconds, density: 0.025%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 137 integers unsatisfied sum - 39.8605
+Cbc0038I Pass   1: suminf.   12.87965 (69) obj. 1000 iterations 681
+Cbc0038I Pass   2: suminf.   10.06667 (63) obj. 1000 iterations 248
+Cbc0038I Pass   3: suminf.    8.46667 (51) obj. 1000 iterations 109
+Cbc0038I Pass   4: suminf.    9.73333 (53) obj. 1000 iterations 385
+Cbc0038I Pass   5: suminf.    8.66667 (57) obj. 1000 iterations 249
+Cbc0038I Pass   6: suminf.    8.66667 (57) obj. 1000 iterations 7
+Cbc0038I Pass   7: suminf.    9.62051 (61) obj. 1000 iterations 200
+Cbc0038I Pass   8: suminf.    8.43333 (58) obj. 1000 iterations 168
+Cbc0038I Pass   9: suminf.    8.43333 (58) obj. 1000 iterations 8
+Cbc0038I Pass  10: suminf.    9.70000 (58) obj. 1000 iterations 341
+Cbc0038I Pass  11: suminf.    7.86667 (54) obj. 1000 iterations 193
+Cbc0038I Pass  12: suminf.    8.63333 (57) obj. 1000 iterations 177
+Cbc0038I Pass  13: suminf.   20.26347 (76) obj. 1000 iterations 1218
+Cbc0038I Pass  14: suminf.    7.80000 (42) obj. 1000 iterations 1201
+Cbc0038I Pass  15: suminf.    7.03333 (43) obj. 1000 iterations 183
+Cbc0038I Pass  16: suminf.    6.80000 (32) obj. 1000 iterations 668
+Cbc0038I Pass  17: suminf.    5.73333 (31) obj. 1000 iterations 492
+Cbc0038I Pass  18: suminf.    5.03333 (31) obj. 1000 iterations 210
+Cbc0038I Pass  19: suminf.    6.63333 (31) obj. 1000 iterations 839
+Cbc0038I Pass  20: suminf.    5.53333 (31) obj. 1000 iterations 549
+Cbc0038I Pass  21: suminf.    5.13333 (30) obj. 1000 iterations 161
+Cbc0038I Pass  22: suminf.    6.46667 (29) obj. 1000 iterations 807
+Cbc0038I Pass  23: suminf.    4.80000 (27) obj. 1000 iterations 858
+Cbc0038I Pass  24: suminf.    5.33333 (26) obj. 1000 iterations 682
+Cbc0038I Pass  25: suminf.   19.12867 (72) obj. 1000 iterations 1257
+Cbc0038I Pass  26: suminf.    9.33333 (43) obj. 1000 iterations 1525
+Cbc0038I Pass  27: suminf.    6.20000 (30) obj. 1000 iterations 493
+Cbc0038I Pass  28: suminf.    6.93333 (31) obj. 1000 iterations 825
+Cbc0038I Pass  29: suminf.    6.36667 (29) obj. 1000 iterations 374
+Cbc0038I Pass  30: suminf.    6.30000 (33) obj. 1000 iterations 230
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 74122 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 1076 rows 76000 columns, reduced to 289 rows 1271 columns
+Cbc0038I Mini branch and bound improved solution from 1.79769e+308 to 1000 (23.87 seconds)
+Cbc0038I After 23.88 seconds - Feasibility pump exiting with objective of 1000 - took 7.95 seconds
+Cbc0012I Integer solution of 1000 found by feasibility pump after 0 iterations and 0 nodes (23.91 seconds)
+Cbc0001I Search completed - best objective 1000, took 0 iterations and 0 nodes (23.97 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 1000 to 1000
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                1000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             23.8106
+Time (Wallclock seconds):       24.2261
+Total time (CPU seconds):       24.1516   (Wallclock seconds):       24.494

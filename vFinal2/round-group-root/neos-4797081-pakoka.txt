@@ -1,0 +1,74 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/neos-4797081-pakoka.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/neos-4797081-pakoka.txt -quit (default strategy 1)
+At line 7 NAME          neos-4797081-pakoka
+At line 8 ROWS
+At line 7157 COLUMNS
+At line 241560 RHS
+At line 245135 BOUNDS
+At line 257529 ENDATA
+Problem neos-4797081-pakoka has 7147 rows, 12393 columns and 456124 elements
+Coin0008I neos-4797081-pakoka read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 0 - 2455.57 seconds
+Cgl0008I 1655 inequality constraints converted to equality constraints
+Cgl0004I processed model has 5792 rows, 12717 columns (12717 integer (11585 of which binary)) and 725525 elements
+Coin3009W Conflict graph built in 0.043 seconds, density: 0.014%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I No integer variables out of 12717 objects (12717 integer) have costs
+Cbc0045I branch on satisfied N create fake objective Y random cost Y
+Cbc0038I Initial state - 2231 integers unsatisfied sum - 564.574
+Cbc0038I Pass   1: (1361.40 seconds) suminf.  224.93254 (918) obj. 0 iterations 16364
+Cbc0038I Pass   2: (1368.18 seconds) suminf.  187.23817 (980) obj. 0 iterations 3244
+Cbc0038I Pass   3: (1370.90 seconds) suminf.  179.51781 (920) obj. 0 iterations 1292
+Cbc0038I Pass   4: (1372.19 seconds) suminf.  171.60768 (936) obj. 0 iterations 671
+Cbc0038I Pass   5: (1377.99 seconds) suminf.  146.87176 (813) obj. 0 iterations 3070
+Cbc0038I Pass   6: (1380.17 seconds) suminf.  137.87889 (807) obj. 0 iterations 1266
+Cbc0038I Pass   7: (1385.62 seconds) suminf.   99.14413 (782) obj. 0 iterations 2833
+Cbc0038I Pass   8: (1387.03 seconds) suminf.   86.76767 (785) obj. 0 iterations 703
+Cbc0038I Pass   9: (1392.13 seconds) suminf.   61.39010 (647) obj. 0 iterations 2471
+Cbc0038I Pass  10: (1396.92 seconds) suminf.   38.21514 (623) obj. 0 iterations 2290
+Cbc0038I Pass  11: (1418.64 seconds) suminf.   26.54401 (231) obj. 0 iterations 6340
+Cbc0038I Pass  12: (1477.41 seconds) suminf.   46.28164 (216) obj. 0 iterations 15382
+Cbc0038I Pass  13: (1496.55 seconds) suminf.   49.00379 (405) obj. 0 iterations 5552
+Cbc0038I Pass  14: (1517.57 seconds) suminf.   45.81467 (222) obj. 0 iterations 5768
+Cbc0038I Pass  15: (1543.56 seconds) suminf.   31.99889 (206) obj. 0 iterations 6699
+Cbc0038I Pass  16: (1575.35 seconds) suminf.   53.16667 (133) obj. 0 iterations 7648
+Cbc0038I Pass  17: (1618.68 seconds) suminf.   45.33333 (193) obj. 0 iterations 10595
+Cbc0038I Pass  18: (1632.99 seconds) suminf.   38.71020 (203) obj. 0 iterations 3594
+Cbc0038I Pass  19: (1660.93 seconds) suminf.   13.50000 (67) obj. 0 iterations 6937
+Cbc0038I Pass  20: (1661.67 seconds) suminf.   13.50000 (67) obj. 0 iterations 147
+Cbc0038I Pass  21: (1673.47 seconds) suminf.   16.86813 (109) obj. 0 iterations 2612
+Cbc0038I Pass  22: (1693.78 seconds) suminf.   12.39231 (102) obj. 0 iterations 4622
+Cbc0038I Pass  23: (1711.10 seconds) suminf.   16.03846 (86) obj. 0 iterations 3853
+Cbc0038I Pass  24: (1718.17 seconds) suminf.   13.50000 (27) obj. 0 iterations 1584
+Cbc0038I Pass  25: (1727.56 seconds) suminf.   16.25000 (64) obj. 0 iterations 1955
+Cbc0038I Pass  26: (1746.93 seconds) suminf.   18.90909 (80) obj. 0 iterations 4288
+Cbc0038I Pass  27: (1747.88 seconds) suminf.    0.00000 (0) obj. 0 iterations 194
+Cbc0038I Solution found of 0
+Cbc0038I Cleaned solution of 0
+Cbc0038I Before mini branch and bound, 8403 integers at bound fixed and 1106 continuous of which 74 were internal integer and 0 internal continuous
+Cbc0038I Mini branch and bound did not improve solution (1787.24 seconds)
+Cbc0038I After 1810.05 seconds - Feasibility pump exiting with objective of 0 - took 704.27 seconds
+Cbc0012I Integer solution of 0 found by feasibility pump after 0 iterations and 0 nodes (1810.08 seconds)
+Cbc0001I Search completed - best objective 0, took 0 iterations and 0 nodes (1811.27 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 0 to 0
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                0
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             3205.8
+Time (Wallclock seconds):       1820.93
+Total time (CPU seconds):       3206.25   (Wallclock seconds):       1821.31

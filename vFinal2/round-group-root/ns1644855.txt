@@ -1,0 +1,67 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Mar 30 2022
+command line - -import /home/danilo/cbc-test-set/ns1644855.mps.gz -timeM elapsed -seconds 10800 -knapsack off -solve -solu sol-group-root/ns1644855.txt -quit (default strategy 1)
+At line 1 NAME          ns1644855
+At line 2 ROWS
+At line 40702 COLUMNS
+At line 2161401 RHS
+At line 2171800 RANGES
+At line 2181801 BOUNDS
+At line 2212002 ENDATA
+Problem ns1644855 has 40698 rows, 30200 columns and 2110696 elements
+Coin0008I ns1644855 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -1524.33 - 148.195 seconds
+Cgl0011I 100 variables made integer
+Cgl0004I processed model has 30498 rows, 30099 columns (10100 integer (10000 of which binary)) and 2620244 elements
+Coin3009W Conflict graph built in 0.976 seconds, density: 0.055%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0038I Initial state - 170 integers unsatisfied sum - 46.5311
+Cbc0038I Pass   1: (1052.32 seconds) suminf.    0.00000 (0) obj. -994 iterations 30123
+Cbc0038I Solution found of -994
+Cbc0038I Relaxing continuous gives -1227.33
+Cbc0038I Before mini branch and bound, 9821 integers at bound fixed and 10789 continuous
+Cbc0038I Full problem 30498 rows 30099 columns, reduced to 9261 rows 6652 columns
+Cbc0038I Mini branch and bound improved solution from -1227.33 to -1380 (1079.40 seconds)
+Cbc0038I Freeing continuous variables gives a solution of -1400
+Cbc0038I Round again with cutoff of -1412.43
+Cbc0038I Pass   2: (1124.54 seconds) suminf.    2.06358 (26) obj. -1412.43 iterations 7598
+Cbc0038I Pass   3: (1137.77 seconds) suminf.    0.70025 (13) obj. -1412.43 iterations 3281
+Cbc0038I Pass   4: (1192.61 seconds) suminf.    0.52116 (10) obj. -1412.43 iterations 17099
+Cbc0038I Pass   5: (1196.83 seconds) suminf.    0.20886 (7) obj. -1412.43 iterations 1005
+Cbc0038I Pass   6: (1256.02 seconds) suminf.    0.37795 (4) obj. -1412.43 iterations 13835
+Cbc0038I Pass   7: (1266.79 seconds) suminf.    0.37469 (4) obj. -1412.43 iterations 1513
+Cbc0038I Pass   8: (1372.74 seconds) suminf.    0.20985 (4) obj. -1412.43 iterations 12126
+Cbc0038I Pass   9: (1455.22 seconds) suminf.    1.09880 (13) obj. -1412.43 iterations 12420
+Cbc0038I Pass  10: (1487.11 seconds) suminf.    0.68266 (10) obj. -1412.43 iterations 3845
+Cbc0038I Pass  11: (1488.76 seconds) suminf.    0.45506 (7) obj. -1412.43 iterations 9
+Cbc0038I Pass  12: (1509.99 seconds) suminf.    0.20874 (4) obj. -1412.43 iterations 3159
+Cbc0038I Pass  13: (1513.51 seconds) suminf.    0.20985 (4) obj. -1412.43 iterations 410
+Cbc0038I Pass  14: (1588.40 seconds) suminf.    1.32431 (13) obj. -1412.43 iterations 12777
+Cbc0038I Pass  15: (1625.94 seconds) suminf.    0.56640 (9) obj. -1412.43 iterations 5544
+Cbc0038I No solution found this major pass
+Cbc0038I After 1625.95 seconds - Feasibility pump exiting with objective of -1400 - took 807.54 seconds
+Cbc0012I Integer solution of -1400 found by feasibility pump after 0 iterations and 0 nodes (1705.27 seconds)
+Cbc0038I Full problem 30498 rows 30099 columns, reduced to 12709 rows 9004 columns
+Cbc0012I Integer solution of -1524.3333 found by RINS after 0 iterations and 0 nodes (1943.14 seconds)
+Cbc0001I Search completed - best objective -1524.333333333333, took 0 iterations and 0 nodes (1945.34 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -1524.33 to -1524.33
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+liftKnapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+OddWheel was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Optimal solution found
+Objective value:                -1524.33333333
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             2253.64
+Time (Wallclock seconds):       2638.41
+Total time (CPU seconds):       2254.95   (Wallclock seconds):       2639.65
