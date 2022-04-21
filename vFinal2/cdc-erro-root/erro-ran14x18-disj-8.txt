@@ -1,0 +1,50 @@
+cbc: /home/danilo/cdcVersionRoot/Cgl/src/CglProbing/CglProbing.cpp:5703: int CglProbing::probe(const OsiSolverInterface&, const OsiRowCutDebugger*, OsiCuts&, double*, double*, CoinPackedMatrix*, CoinPackedMatrix*, const CoinBigIndex*, const int*, const double*, const double*, const char*, double*, double*, int*, CglTreeInfo*): Assertion `newLo[icol]==COIN_DBL_MAX' failed.
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x169) [0x7fd7fe2853f2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7fd7fc438f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fd7fc438e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fd7fc43a7f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7fd7fc42a3fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7fd7fc42a472]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN10CglProbing5probeERK18OsiSolverInterfacePK17OsiRowCutDebuggerR7OsiCutsPdS8_P16CoinPackedMatrixSA_PKiSC_PKdSE_PKcS8_S8_PiP11CglTreeInfo+0xb3fe) [0x7fd7fdde42b0]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN10CglProbing18gutsOfGenerateCutsERK18OsiSolverInterfaceR7OsiCutsPdS5_S5_S5_P11CglTreeInfo+0x304f) [0x7fd7fddd41df]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN10CglProbing21generateCutsAndModifyERK18OsiSolverInterfaceR7OsiCutsP11CglTreeInfo+0x26d) [0x7fd7fddcf819]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN13CglPreProcess8modifiedEP18OsiSolverInterfacebRiii+0x375d) [0x7fd7fddbbd6d]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN13CglPreProcess20preProcessNonDefaultER18OsiSolverInterfaceiii+0x9d10) [0x7fd7fddae126]
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x10dcc) [0x7fd7fe29a02a]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN15CglLiftKnapsack18separateCutsLSCDC2EPddiPiS1_RK18OsiSolverInterfacedR7OsiCutsRK11CglTreeInfo+0x24ef) [0x7fd7fdd646a9]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN15CglLiftKnapsack12generateCutsERK18OsiSolverInterfaceR7OsiCuts11CglTreeInfo+0x6bd7) [0x7fd7fdd6ddf3]
+./cbc(+0x21c2) [0x5585184cf1c2]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fd7fc41bc87]
+./cbc(+0x19aa) [0x5585184ce9aa]
+
+
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x169) [0x7fd7fe2853f2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7fd7fc438f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fd7fc438e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fd7fc43a7f1]
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x25f) [0x7fd7fe2854e8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7fd7fc438f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fd7fc438e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fd7fc43a7f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7fd7fc42a3fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7fd7fc42a472]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN10CglProbing5probeERK18OsiSolverInterfacePK17OsiRowCutDebuggerR7OsiCutsPdS8_P16CoinPackedMatrixSA_PKiSC_PKdSE_PKcS8_S8_PiP11CglTreeInfo+0xb3fe) [0x7fd7fdde42b0]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN10CglProbing18gutsOfGenerateCutsERK18OsiSolverInterfaceR7OsiCutsPdS5_S5_S5_P11CglTreeInfo+0x304f) [0x7fd7fddd41df]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN10CglProbing21generateCutsAndModifyERK18OsiSolverInterfaceR7OsiCutsP11CglTreeInfo+0x26d) [0x7fd7fddcf819]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN13CglPreProcess8modifiedEP18OsiSolverInterfacebRiii+0x375d) [0x7fd7fddbbd6d]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN13CglPreProcess20preProcessNonDefaultER18OsiSolverInterfaceiii+0x9d10) [0x7fd7fddae126]
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x10dcc) [0x7fd7fe29a02a]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN15CglLiftKnapsack18separateCutsLSCDC2EPddiPiS1_RK18OsiSolverInterfacedR7OsiCutsRK11CglTreeInfo+0x24ef) [0x7fd7fdd646a9]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN15CglLiftKnapsack12generateCutsERK18OsiSolverInterfaceR7OsiCuts11CglTreeInfo+0x6bd7) [0x7fd7fdd6ddf3]
+./cbc(+0x21c2) [0x5585184cf1c2]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fd7fc41bc87]
+./cbc(+0x19aa) [0x5585184ce9aa]
+
+
+timeout: the monitored command dumped core

@@ -1,0 +1,54 @@
+cbc: /home/danilo/cdcVersionRoot/Clp/src/ClpSimplexDual.cpp:2779: int ClpSimplexDual::updateDualsInDual(CoinIndexedVector*, CoinIndexedVector*, CoinIndexedVector*, double, double&, bool): Assertion `fabs(lower[iSequence]) < 1.0e30' failed.
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x169) [0x7f3a9ffa73f2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f3a9e15af10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f3a9e15ae87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f3a9e15c7f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7f3a9e14c3fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7f3a9e14c472]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN14ClpSimplexDual17updateDualsInDualEP17CoinIndexedVectorS1_S1_dRdb+0x1e8a) [0x7f3a9f375682]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN14ClpSimplexDual21statusOfProblemInDualERiiPdR11ClpDataSavei+0x38e6) [0x7f3a9f37f690]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN14ClpSimplexDual10gutsOfDualEiRPdiR11ClpDataSave+0x448) [0x7f3a9f36f11a]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN14ClpSimplexDual4dualEii+0x30a) [0x7f3a9f36f9ba]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN10ClpSimplex4dualEii+0x132) [0x7f3a9f34c48e]
+/home/danilo/cdcVersionRoot/executavel/lib/libOsiClp.so.0(_ZN21OsiClpSolverInterface18computeLargestAwayEv+0xd1) [0x7f3a9f71627b]
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_ZN8CbcModel14branchAndBoundEi+0xc20a) [0x7f3a9ff33bd6]
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x21736) [0x7f3a9ffcc994]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN15CglLiftKnapsack18separateCutsLSCDC2EPddiPiS1_RK18OsiSolverInterfacedR7OsiCutsRK11CglTreeInfo+0x24ef) [0x7f3a9fa866a9]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN15CglLiftKnapsack12generateCutsERK18OsiSolverInterfaceR7OsiCuts11CglTreeInfo+0x2064) [0x7f3a9fa8b280]
+./cbc(+0x21c2) [0x561870c511c2]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f3a9e13dc87]
+./cbc(+0x19aa) [0x561870c509aa]
+
+
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x169) [0x7f3a9ffa73f2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f3a9e15af10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f3a9e15ae87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f3a9e15c7f1]
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x25f) [0x7f3a9ffa74e8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f3a9e15af10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f3a9e15ae87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f3a9e15c7f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7f3a9e14c3fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7f3a9e14c472]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN14ClpSimplexDual17updateDualsInDualEP17CoinIndexedVectorS1_S1_dRdb+0x1e8a) [0x7f3a9f375682]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN14ClpSimplexDual21statusOfProblemInDualERiiPdR11ClpDataSavei+0x38e6) [0x7f3a9f37f690]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN14ClpSimplexDual10gutsOfDualEiRPdiR11ClpDataSave+0x448) [0x7f3a9f36f11a]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN14ClpSimplexDual4dualEii+0x30a) [0x7f3a9f36f9ba]
+/home/danilo/cdcVersionRoot/executavel/lib/libClp.so.0(_ZN10ClpSimplex4dualEii+0x132) [0x7f3a9f34c48e]
+/home/danilo/cdcVersionRoot/executavel/lib/libOsiClp.so.0(_ZN21OsiClpSolverInterface18computeLargestAwayEv+0xd1) [0x7f3a9f71627b]
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_ZN8CbcModel14branchAndBoundEi+0xc20a) [0x7f3a9ff33bd6]
+/home/danilo/cdcVersionRoot/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x21736) [0x7f3a9ffcc994]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN15CglLiftKnapsack18separateCutsLSCDC2EPddiPiS1_RK18OsiSolverInterfacedR7OsiCutsRK11CglTreeInfo+0x24ef) [0x7f3a9fa866a9]
+/home/danilo/cdcVersionRoot/executavel/lib/libCgl.so.0(_ZN15CglLiftKnapsack12generateCutsERK18OsiSolverInterfaceR7OsiCuts11CglTreeInfo+0x2064) [0x7f3a9fa8b280]
+./cbc(+0x21c2) [0x561870c511c2]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f3a9e13dc87]
+./cbc(+0x19aa) [0x561870c509aa]
+
+
+timeout: the monitored command dumped core
