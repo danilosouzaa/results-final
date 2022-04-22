@@ -1,0 +1,52 @@
+cbc: /home/danilo/vFinalIntegrate/Cgl/src/CglFlowCover/CglFlowCover.cpp:1236: bool CglFlowCover::generateOneFlowCut(const OsiSolverInterface&, int, int*, double*, char, double, OsiRowCut&, double&): Assertion `fabs(violation-saveViolation)<1.0e-2' failed.
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/usr/lib/x86_64-linux-gnu/libasan.so.4(+0x558c0) [0x7fbe65ad78c0]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x349) [0x7fbe65542d41]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7fbe63ecaf10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fbe63ecae87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fbe63ecc7f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7fbe63ebc3fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7fbe63ebc472]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN12CglFlowCover18generateOneFlowCutERK18OsiSolverInterfaceiPiPdcdR9OsiRowCutRd+0x6400) [0x7fbe62f62256]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN12CglFlowCover12generateCutsERK18OsiSolverInterfaceR7OsiCuts11CglTreeInfo+0xe9c) [0x7fbe62f5a168]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN15CbcCutGenerator12generateCutsER7OsiCutsiP18OsiSolverInterfaceP7CbcNode+0x1266) [0x7fbe653188b4]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel10serialCutsER7OsiCutsP7CbcNodeS1_i+0x9c9) [0x7fbe6547a15f]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel13solveWithCutsER7OsiCutsiP7CbcNode+0x52eb) [0x7fbe6546ea79]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel9doOneNodeEPS_RP7CbcNodeS3_+0x4d93) [0x7fbe654b21b5]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel14branchAndBoundEi+0x2177a) [0x7fbe6543d382]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x3e06b) [0x7fbe65589707]
+./cbc(+0x5cff) [0x561acc8a2cff]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fbe63eadc87]
+./cbc(+0x552a) [0x561acc8a252a]
+
+
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/usr/lib/x86_64-linux-gnu/libasan.so.4(+0x558c0) [0x7fbe65ad78c0]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x349) [0x7fbe65542d41]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7fbe63ecaf10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fbe63ecae87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fbe63ecc7f1]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x4fc) [0x7fbe65542ef4]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7fbe63ecaf10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7fbe63ecae87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7fbe63ecc7f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7fbe63ebc3fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7fbe63ebc472]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN12CglFlowCover18generateOneFlowCutERK18OsiSolverInterfaceiPiPdcdR9OsiRowCutRd+0x6400) [0x7fbe62f62256]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN12CglFlowCover12generateCutsERK18OsiSolverInterfaceR7OsiCuts11CglTreeInfo+0xe9c) [0x7fbe62f5a168]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN15CbcCutGenerator12generateCutsER7OsiCutsiP18OsiSolverInterfaceP7CbcNode+0x1266) [0x7fbe653188b4]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel10serialCutsER7OsiCutsP7CbcNodeS1_i+0x9c9) [0x7fbe6547a15f]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel13solveWithCutsER7OsiCutsiP7CbcNode+0x52eb) [0x7fbe6546ea79]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel9doOneNodeEPS_RP7CbcNodeS3_+0x4d93) [0x7fbe654b21b5]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_ZN8CbcModel14branchAndBoundEi+0x2177a) [0x7fbe6543d382]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x3e06b) [0x7fbe65589707]
+./cbc(+0x5cff) [0x561acc8a2cff]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fbe63eadc87]
+./cbc(+0x552a) [0x561acc8a252a]
+
+
+timeout: the monitored command dumped core

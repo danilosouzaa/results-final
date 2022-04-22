@@ -1,0 +1,48 @@
+cbc: /home/danilo/vFinalIntegrate/Cgl/src/CglProbing/CglProbing.cpp:5702: int CglProbing::probe(const OsiSolverInterface&, const OsiRowCutDebugger*, OsiCuts&, double*, double*, CoinPackedMatrix*, CoinPackedMatrix*, const CoinBigIndex*, const int*, const double*, const double*, const char*, double*, double*, int*, CglTreeInfo*): Assertion `newLo[icol]==COIN_DBL_MAX' failed.
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/usr/lib/x86_64-linux-gnu/libasan.so.4(+0x558c0) [0x7f548dd9e8c0]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x349) [0x7f548d809d41]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f548c191f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f548c191e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f548c1937f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7f548c1833fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7f548c183472]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN10CglProbing5probeERK18OsiSolverInterfacePK17OsiRowCutDebuggerR7OsiCutsPdS8_P16CoinPackedMatrixSA_PKiSC_PKdSE_PKcS8_S8_PiP11CglTreeInfo+0x158db) [0x7f548b4260f3]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN10CglProbing18gutsOfGenerateCutsERK18OsiSolverInterfaceR7OsiCutsPdS5_S5_S5_P11CglTreeInfo+0x5f8b) [0x7f548b406bdb]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN10CglProbing21generateCutsAndModifyERK18OsiSolverInterfaceR7OsiCutsP11CglTreeInfo+0x550) [0x7f548b40072e]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN13CglPreProcess8modifiedEP18OsiSolverInterfacebRiii+0x76cf) [0x7f548b3d4b0b]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN13CglPreProcess20preProcessNonDefaultER18OsiSolverInterfaceiii+0x13561) [0x7f548b3b9185]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x204c7) [0x7f548d832b63]
+./cbc(+0x5cff) [0x562ce8ea0cff]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f548c174c87]
+./cbc(+0x552a) [0x562ce8ea052a]
+
+
+
+
+ERROR while running Cbc. Signal SIGABRT caught. Getting stack trace.
+/usr/lib/x86_64-linux-gnu/libasan.so.4(+0x558c0) [0x7f548dd9e8c0]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x349) [0x7f548d809d41]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f548c191f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f548c191e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f548c1937f1]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z15CbcCrashHandleri+0x4fc) [0x7f548d809ef4]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef10) [0x7f548c191f10]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f548c191e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f548c1937f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x303fa) [0x7f548c1833fa]
+/lib/x86_64-linux-gnu/libc.so.6(+0x30472) [0x7f548c183472]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN10CglProbing5probeERK18OsiSolverInterfacePK17OsiRowCutDebuggerR7OsiCutsPdS8_P16CoinPackedMatrixSA_PKiSC_PKdSE_PKcS8_S8_PiP11CglTreeInfo+0x158db) [0x7f548b4260f3]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN10CglProbing18gutsOfGenerateCutsERK18OsiSolverInterfaceR7OsiCutsPdS5_S5_S5_P11CglTreeInfo+0x5f8b) [0x7f548b406bdb]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN10CglProbing21generateCutsAndModifyERK18OsiSolverInterfaceR7OsiCutsP11CglTreeInfo+0x550) [0x7f548b40072e]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN13CglPreProcess8modifiedEP18OsiSolverInterfacebRiii+0x76cf) [0x7f548b3d4b0b]
+/home/danilo/vFinalIntegrate/executavel/lib/libCgl.so.0(_ZN13CglPreProcess20preProcessNonDefaultER18OsiSolverInterfaceiii+0x13561) [0x7f548b3b9185]
+/home/danilo/vFinalIntegrate/executavel/lib/libCbc.so.0(_Z8CbcMain1St5dequeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EER8CbcModelR13CbcParametersPFiPS8_iEP9ampl_info+0x204c7) [0x7f548d832b63]
+./cbc(+0x5cff) [0x562ce8ea0cff]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f548c174c87]
+./cbc(+0x552a) [0x562ce8ea052a]
+
+
+timeout: the monitored command dumped core
