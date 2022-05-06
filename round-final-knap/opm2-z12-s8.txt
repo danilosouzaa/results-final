@@ -1,0 +1,67 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Apr 26 2022
+command line - -import /home/danilo/cbc-test-set/opm2-z12-s8.mps.gz -timeM elapsed -seconds 10800 -solve -solu sol-final-knap/opm2-z12-s8.txt -quit (default strategy 1)
+At line 2 NAME          opm2-z12-s8
+At line 3 ROWS
+At line 319513 COLUMNS
+At line 1055617 RHS
+At line 1055626 BOUNDS
+At line 1066427 ENDATA
+Problem opm2-z12-s8 has 319508 rows, 10800 columns and 725377 elements
+Coin0008I opm2-z12-s8 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is -85456.2 - 1237.44 seconds
+Cgl0004I processed model has 300349 rows, 10409 columns (10409 integer (10409 of which binary)) and 683931 elements
+Coin3009W Conflict graph built in 0.211 seconds, density: 0.143%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0038I Initial state - 9990 integers unsatisfied sum - 1771.1
+Cbc0038I Solution found of -1914
+Cbc0038I Before mini branch and bound, 419 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 300349 rows 10409 columns, reduced to 279818 rows 9990 columns - 2 fixed gives 279720, 9988 - still too large
+Cbc0038I Mini branch and bound did not improve solution (1267.47 seconds)
+Cbc0038I Round again with cutoff of -10269.1
+Cbc0038I Pass   1: (3188.70 seconds) suminf.  173.00249 (9974) obj. -10269.1 iterations 61810
+Cbc0038I No solution found this major pass
+Cbc0038I After 3188.71 seconds - Feasibility pump exiting with objective of -1914 - took 1925.11 seconds
+Cbc0012I Integer solution of -1914 found by feasibility pump after 0 iterations and 0 nodes (3188.89 seconds)
+Cbc0013I At root node, 0 cuts changed objective from -85456.21 to -85456.21 in 1 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 4.572 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 49.099 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.512 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (liftKnapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 10.790 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 25.032 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 326.489 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.806 seconds - new frequency is -100
+Cbc0014I Cut generator 7 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.021 seconds - new frequency is -100
+Cbc0010I After 0 nodes, 1 on tree, -1914 best solution, best possible -85456.21 (7574.95 seconds)
+Cbc0010I After 1 nodes, 2 on tree, -1914 best solution, best possible -85456.21 (9168.34 seconds)
+Cbc0010I After 2 nodes, 3 on tree, -1914 best solution, best possible -85456.21 (10063.00 seconds)
+Cbc0010I After 3 nodes, 4 on tree, -1914 best solution, best possible -85456.21 (10294.55 seconds)
+Cbc0010I After 4 nodes, 5 on tree, -1914 best solution, best possible -85456.21 (10726.49 seconds)
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective -1914 (best possible -85456.21), took 18948 iterations and 5 nodes (10945.78 seconds)
+Cbc0032I Strong branching done 110 times (10913 iterations), fathomed 0 nodes and fixed 0 variables
+Cbc0035I Maximum depth 5, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -85456.2 to -85456.2
+Probing was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (4.57158 seconds)
+Gomory was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (49.0987 seconds)
+Knapsack was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.512429 seconds)
+liftKnapsack was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (10.7902 seconds)
+Clique was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (25.0319 seconds)
+OddWheel was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (326.489 seconds)
+MixedIntegerRounding2 was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.805702 seconds)
+FlowCover was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.020688 seconds)
+TwoMirCuts was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (85.7396 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (2520.07 seconds)
+
+Result - Stopped on time limit
+Objective value:                -1914
+Lower bound:                    -85456.2
+Gap:                            0.977603
+Enumerated nodes:               5
+Total iterations:               18948
+Time (CPU seconds):             10942.2
+Time (Wallclock seconds):       11114.1
+Total time (CPU seconds):       10943.7   (Wallclock seconds):       11115.6
