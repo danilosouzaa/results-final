@@ -1,0 +1,175 @@
+Welcome to the CBC MILP Solver
+Version: Devel (unstable)
+Build Date: Apr 26 2022
+command line - -import /home/danilo/cbc-test-set/chromaticindex1024-7.mps.gz -timeM elapsed -seconds 10800 -solve -solu sol-final-knap/chromaticindex1024-7.txt -quit (default strategy 1)
+At line 2 NAME          chromaticindex1024-7
+At line 3 ROWS
+At line 67588 COLUMNS
+At line 337919 RHS
+At line 356351 BOUNDS
+At line 430080 ENDATA
+Problem chromaticindex1024-7 has 67583 rows, 73728 columns and 270324 elements
+Coin0008I chromaticindex1024-7 read with 0 errors
+seconds was changed from 1e+08 to 10800
+Continuous objective value is 3 - 715.951 seconds
+Cgl0004I processed model has 67583 rows, 73728 columns (73728 integer (73728 of which binary)) and 270324 elements
+Coin3009W Conflict graph built in 0.390 seconds, density: 0.004%
+Cgl0015I Clique Strengthening extended 0 cliques, 0 were dominated
+Cbc0045I Cutoff increment increased from 0.0001 to 0.9999
+Cbc0045I 4 integer variables out of 73728 objects (73728 integer) have cost of 1 - high priority
+Cbc0045I branch on satisfied Y create fake objective Y random cost Y
+Cbc0038I Initial state - 50910 integers unsatisfied sum - 14877.5
+Cbc0038I Pass   1: (2852.41 seconds) suminf.   22.00000 (44) obj. 4 iterations 76916
+Cbc0038I Pass   2: (2854.03 seconds) suminf.   22.00000 (44) obj. 4 iterations 3985
+Cbc0038I Pass   3: (2854.31 seconds) suminf.    6.00000 (12) obj. 4 iterations 19
+Cbc0038I Pass   4: (2854.58 seconds) suminf.    6.00000 (12) obj. 4 iterations 17
+Cbc0038I Pass   5: (2854.84 seconds) suminf.    0.00000 (0) obj. 4 iterations 6
+Cbc0038I Solution found of 4
+Cbc0038I Before mini branch and bound, 22683 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 67583 rows 73728 columns, reduced to 57656 rows 44525 columns - 5538 fixed gives 17772, 15179 - ok now
+Cbc0038I Full problem 67583 rows 73728 columns, reduced to 17413 rows 15032 columns
+Cbc0038I Mini branch and bound did not improve solution (2981.06 seconds)
+Cbc0038I Round again with cutoff of 3.00009
+Cbc0038I Pass   6: (3332.02 seconds) suminf. 4966.79245 (33887) obj. 3.00009 iterations 35863
+Cbc0038I Pass   7: (3753.62 seconds) suminf. 4109.00361 (15705) obj. 3.00009 iterations 35343
+Cbc0038I Pass   8: (3756.56 seconds) suminf. 3710.02936 (14103) obj. 3.00009 iterations 4862
+Cbc0038I Pass   9: (3757.87 seconds) suminf. 3620.07419 (12897) obj. 3.00009 iterations 2217
+Cbc0038I Pass  10: (3758.34 seconds) suminf. 3587.93110 (12668) obj. 3.00009 iterations 459
+Cbc0038I Pass  11: (3759.15 seconds) suminf. 3582.92892 (12566) obj. 3.00009 iterations 172
+Cbc0038I Pass  12: (3759.71 seconds) suminf. 3582.42850 (12550) obj. 3.00009 iterations 38
+Cbc0038I Pass  13: (3760.26 seconds) suminf. 3582.42787 (12549) obj. 3.00009 iterations 7
+Cbc0038I Pass  14: (3760.77 seconds) suminf. 3581.92832 (12558) obj. 3.00009 iterations 14
+Cbc0038I Pass  15: (3761.33 seconds) suminf. 3581.92805 (12563) obj. 3.00009 iterations 32
+Cbc0038I Pass  16: (3761.78 seconds) suminf. 3581.92805 (12563) obj. 3.00009 iterations 31
+Cbc0038I Pass  17: (3762.23 seconds) suminf. 3581.92805 (12563) obj. 3.00009 iterations 36
+Cbc0038I Pass  18: (3765.27 seconds) suminf. 3544.55736 (11901) obj. 3.00009 iterations 3502
+Cbc0038I Pass  19: (3766.75 seconds) suminf. 3495.71541 (12396) obj. 3.00009 iterations 2178
+Cbc0038I Pass  20: (3767.79 seconds) suminf. 3471.88164 (12308) obj. 3.00009 iterations 667
+Cbc0038I Pass  21: (3768.72 seconds) suminf. 3467.77772 (12247) obj. 3.00009 iterations 233
+Cbc0038I Pass  22: (3769.46 seconds) suminf. 3463.52850 (12221) obj. 3.00009 iterations 89
+Cbc0038I Pass  23: (3770.04 seconds) suminf. 3463.52841 (12221) obj. 3.00009 iterations 3
+Cbc0038I Pass  24: (3770.51 seconds) suminf. 3463.52841 (12221) obj. 3.00009 iterations 30
+Cbc0038I Pass  25: (3770.96 seconds) suminf. 3463.52841 (12221) obj. 3.00009 iterations 23
+Cbc0038I Pass  26: (3771.89 seconds) suminf. 3463.52778 (12220) obj. 3.00009 iterations 70
+Cbc0038I Pass  27: (3772.61 seconds) suminf. 3463.52778 (12220) obj. 3.00009 iterations 61
+Cbc0038I Pass  28: (3773.34 seconds) suminf. 3463.52778 (12220) obj. 3.00009 iterations 27
+Cbc0038I Pass  29: (3775.36 seconds) suminf. 3463.55187 (11583) obj. 3.00009 iterations 2947
+Cbc0038I Pass  30: (3777.06 seconds) suminf. 3413.04890 (12163) obj. 3.00009 iterations 1874
+Cbc0038I Pass  31: (3777.98 seconds) suminf. 3408.69419 (12087) obj. 3.00009 iterations 588
+Cbc0038I Pass  32: (3778.51 seconds) suminf. 3408.19311 (12077) obj. 3.00009 iterations 68
+Cbc0038I Pass  33: (3779.20 seconds) suminf. 3408.19302 (12077) obj. 3.00009 iterations 7
+Cbc0038I Pass  34: (3779.68 seconds) suminf. 3408.19293 (12083) obj. 3.00009 iterations 62
+Cbc0038I Pass  35: (3780.31 seconds) suminf. 3408.19293 (12083) obj. 3.00009 iterations 40
+Cbc0038I Pass  36: (3780.84 seconds) suminf. 3408.19293 (12083) obj. 3.00009 iterations 18
+Cbc0038I Pass  37: (3782.54 seconds) suminf. 3402.05882 (11572) obj. 3.00009 iterations 2681
+Cbc0038I Pass  38: (3783.68 seconds) suminf. 3377.54848 (11976) obj. 3.00009 iterations 1673
+Cbc0038I Pass  39: (3784.19 seconds) suminf. 3377.53768 (11968) obj. 3.00009 iterations 418
+Cbc0038I Pass  40: (3784.66 seconds) suminf. 3377.53714 (11978) obj. 3.00009 iterations 49
+Cbc0038I Pass  41: (3784.94 seconds) suminf. 3377.53696 (11978) obj. 3.00009 iterations 6
+Cbc0038I Pass  42: (3785.23 seconds) suminf. 3377.53696 (11980) obj. 3.00009 iterations 5
+Cbc0038I Pass  43: (3785.52 seconds) suminf. 3377.53651 (11983) obj. 3.00009 iterations 60
+Cbc0038I Pass  44: (3785.82 seconds) suminf. 3377.53606 (11986) obj. 3.00009 iterations 42
+Cbc0038I Pass  45: (3786.10 seconds) suminf. 3377.53588 (11986) obj. 3.00009 iterations 8
+Cbc0038I Pass  46: (3786.39 seconds) suminf. 3377.53588 (11986) obj. 3.00009 iterations 28
+Cbc0038I Pass  47: (3787.39 seconds) suminf. 3377.56192 (11443) obj. 3.00009 iterations 2600
+Cbc0038I Pass  48: (3788.20 seconds) suminf. 3375.47422 (11928) obj. 3.00009 iterations 1699
+Cbc0038I Pass  49: (3788.52 seconds) suminf. 3373.78896 (11950) obj. 3.00009 iterations 390
+Cbc0038I Pass  50: (3788.81 seconds) suminf. 3356.28910 (11935) obj. 3.00009 iterations 99
+Cbc0038I Pass  51: (3789.09 seconds) suminf. 3356.27848 (11881) obj. 3.00009 iterations 79
+Cbc0038I Pass  52: (3789.38 seconds) suminf. 3356.27794 (11879) obj. 3.00009 iterations 50
+Cbc0038I Pass  53: (3789.66 seconds) suminf. 3356.27794 (11879) obj. 3.00009 iterations 45
+Cbc0038I Pass  54: (3789.95 seconds) suminf. 3356.27794 (11879) obj. 3.00009 iterations 25
+Cbc0038I Pass  55: (3791.00 seconds) suminf. 3356.30270 (11358) obj. 3.00009 iterations 2400
+Cbc0038I Pass  56: (3791.72 seconds) suminf. 3356.28018 (11785) obj. 3.00009 iterations 1543
+Cbc0038I Pass  57: (3792.02 seconds) suminf. 3356.27748 (11821) obj. 3.00009 iterations 229
+Cbc0038I Pass  58: (3792.31 seconds) suminf. 3356.27739 (11832) obj. 3.00009 iterations 24
+Cbc0038I Pass  59: (3792.60 seconds) suminf. 3356.27631 (11841) obj. 3.00009 iterations 60
+Cbc0038I Pass  60: (3792.90 seconds) suminf. 3356.27595 (11853) obj. 3.00009 iterations 55
+Cbc0038I Pass  61: (3793.19 seconds) suminf. 3356.27595 (11853) obj. 3.00009 iterations 6
+Cbc0038I Pass  62: (3793.48 seconds) suminf. 3356.27595 (11853) obj. 3.00009 iterations 41
+Cbc0038I Pass  63: (3794.46 seconds) suminf. 3351.64634 (11397) obj. 3.00009 iterations 2490
+Cbc0038I Pass  64: (3795.19 seconds) suminf. 3347.94817 (11823) obj. 3.00009 iterations 1648
+Cbc0038I Pass  65: (3795.51 seconds) suminf. 3347.94628 (11852) obj. 3.00009 iterations 295
+Cbc0038I Pass  66: (3795.79 seconds) suminf. 3347.94628 (11862) obj. 3.00009 iterations 19
+Cbc0038I Pass  67: (3796.09 seconds) suminf. 3347.94601 (11865) obj. 3.00009 iterations 62
+Cbc0038I Pass  68: (3796.38 seconds) suminf. 3347.94601 (11865) obj. 3.00009 iterations 48
+Cbc0038I Pass  69: (3796.67 seconds) suminf. 3347.94601 (11865) obj. 3.00009 iterations 39
+Cbc0038I Pass  70: (3797.65 seconds) suminf. 3347.97301 (11351) obj. 3.00009 iterations 2568
+Cbc0038I Pass  71: (3798.37 seconds) suminf. 3345.78434 (11800) obj. 3.00009 iterations 1594
+Cbc0038I Pass  72: (3798.68 seconds) suminf. 3345.77948 (11836) obj. 3.00009 iterations 398
+Cbc0038I Pass  73: (3799.13 seconds) suminf. 3345.27862 (11838) obj. 3.00009 iterations 61
+Cbc0038I Pass  74: (3799.42 seconds) suminf. 3344.77867 (11839) obj. 3.00009 iterations 18
+Cbc0038I Pass  75: (3799.70 seconds) suminf. 3344.77858 (11836) obj. 3.00009 iterations 4
+Cbc0038I Pass  76: (3799.99 seconds) suminf. 3344.77795 (11840) obj. 3.00009 iterations 80
+Cbc0038I Pass  77: (3800.28 seconds) suminf. 3344.77795 (11840) obj. 3.00009 iterations 59
+Cbc0038I Pass  78: (3800.58 seconds) suminf. 3344.77795 (11840) obj. 3.00009 iterations 46
+Cbc0038I Pass  79: (3801.66 seconds) suminf. 3344.79916 (11413) obj. 3.00009 iterations 2298
+Cbc0038I Pass  80: (3802.40 seconds) suminf. 3341.27778 (11785) obj. 3.00009 iterations 1513
+Cbc0038I Pass  81: (3802.72 seconds) suminf. 3341.27598 (11822) obj. 3.00009 iterations 327
+Cbc0038I Pass  82: (3803.05 seconds) suminf. 3341.27598 (11822) obj. 3.00009 iterations 13
+Cbc0038I Pass  83: (3803.61 seconds) suminf. 3341.27580 (11823) obj. 3.00009 iterations 38
+Cbc0038I Pass  84: (3804.10 seconds) suminf. 3341.27580 (11832) obj. 3.00009 iterations 26
+Cbc0038I Pass  85: (3804.47 seconds) suminf. 3341.27553 (11834) obj. 3.00009 iterations 46
+Cbc0038I Pass  86: (3804.93 seconds) suminf. 3341.27553 (11834) obj. 3.00009 iterations 36
+Cbc0038I Pass  87: (3805.38 seconds) suminf. 3341.27553 (11834) obj. 3.00009 iterations 41
+Cbc0038I Pass  88: (3806.89 seconds) suminf. 3341.29639 (11421) obj. 3.00009 iterations 2326
+Cbc0038I Pass  89: (3807.98 seconds) suminf. 3325.28480 (11760) obj. 3.00009 iterations 1421
+Cbc0038I Pass  90: (3808.79 seconds) suminf. 3325.27859 (11754) obj. 3.00009 iterations 320
+Cbc0038I Pass  91: (3809.31 seconds) suminf. 3325.27850 (11766) obj. 3.00009 iterations 21
+Cbc0038I Pass  92: (3810.07 seconds) suminf. 3325.27841 (11767) obj. 3.00009 iterations 23
+Cbc0038I Pass  93: (3810.58 seconds) suminf. 3325.27841 (11767) obj. 3.00009 iterations 15
+Cbc0038I Pass  94: (3811.11 seconds) suminf. 3325.27814 (11766) obj. 3.00009 iterations 46
+Cbc0038I Pass  95: (3811.51 seconds) suminf. 3325.27814 (11766) obj. 3.00009 iterations 42
+Cbc0038I Pass  96: (3811.79 seconds) suminf. 3325.27805 (11767) obj. 3.00009 iterations 43
+Cbc0038I Pass  97: (3812.07 seconds) suminf. 3325.27805 (11767) obj. 3.00009 iterations 35
+Cbc0038I Pass  98: (3812.45 seconds) suminf. 3325.27805 (11767) obj. 3.00009 iterations 22
+Cbc0038I Pass  99: (3812.73 seconds) suminf. 3325.27805 (11767) obj. 3.00009 iterations 15
+Cbc0038I Pass 100: (3814.12 seconds) suminf. 3325.30863 (11300) obj. 3.00009 iterations 2559
+Cbc0038I Pass 101: (3815.48 seconds) suminf. 3324.98177 (11798) obj. 3.00009 iterations 1753
+Cbc0038I Pass 102: (3816.00 seconds) suminf. 3324.97880 (11818) obj. 3.00009 iterations 335
+Cbc0038I Pass 103: (3816.77 seconds) suminf. 3324.97871 (11820) obj. 3.00009 iterations 18
+Cbc0038I Pass 104: (3817.52 seconds) suminf. 3324.97871 (11820) obj. 3.00009 iterations 4
+Cbc0038I Pass 105: (3819.05 seconds) suminf. 3321.00578 (11298) obj. 3.00009 iterations 2405
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 16234 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 67583 rows 73728 columns, reduced to 61430 rows 53416 columns - 5582 fixed gives 23962, 20873 - ok now
+Cbc0038I Mini branch and bound did not improve solution (3916.65 seconds)
+Cbc0038I After 3916.65 seconds - Feasibility pump exiting with objective of 4 - took 1839.04 seconds
+Cbc0012I Integer solution of 4 found by feasibility pump after 0 iterations and 0 nodes (3916.81 seconds)
+Cbc0038I Full problem 67583 rows 73728 columns, reduced to 57656 rows 44525 columns - 18435 fixed gives 0, 0 - ok now
+Cbc0031I 2310 added rows had average density of 435.99264
+Cbc0013I At root node, 2310 cuts changed objective from 3 to 3 in 1 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 205.097 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 893 row cuts average 563.8 elements, 0 column cuts (0 active)  in 262.256 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.284 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (liftKnapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 81.893 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 460.561 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (OddWheel) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 4059.864 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.725 seconds - new frequency is -100
+Cbc0014I Cut generator 7 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.013 seconds - new frequency is -100
+Cbc0014I Cut generator 8 (TwoMirCuts) - 1417 row cuts average 355.4 elements, 0 column cuts (0 active)  in 523.298 seconds - new frequency is -100
+Cbc0014I Cut generator 9 (ZeroHalf) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 4 (best possible 2.9999995), took 12857 iterations and 0 nodes (11507.87 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 3 to 3
+Probing was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (205.097 seconds)
+Gomory was tried 1 times and created 893 cuts of which 0 were active after adding rounds of cuts (262.256 seconds)
+Knapsack was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.284203 seconds)
+liftKnapsack was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (81.8927 seconds)
+Clique was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (460.561 seconds)
+OddWheel was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (4059.86 seconds)
+MixedIntegerRounding2 was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.725363 seconds)
+FlowCover was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.012763 seconds)
+TwoMirCuts was tried 1 times and created 1417 cuts of which 0 were active after adding rounds of cuts (523.298 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0 seconds)
+
+Result - Stopped on time limit
+Objective value:                4
+Lower bound:                    3
+Gap:                            0.333334
+Enumerated nodes:               0
+Total iterations:               12857
+Time (CPU seconds):             9227.15
+Time (Wallclock seconds):       11604.6
+Total time (CPU seconds):       9227.96   (Wallclock seconds):       11605.7
